@@ -1,0 +1,38 @@
+[
+  {
+    "level1": "Main category",
+    "level2": "Subcategory",
+    "level3": "Sub-Subcategory OR Name of parameter",
+    "description": "Description of this parameter",
+    "importance": "Importance of this parameter in scale of 0 to 100",
+    "prompt": "3-5 sentences prompt to AI model to get most accurate info about this parameter, give JSON format output",
+    "output": "JSON format output",
+    "parameter_name": "name of parameter",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "The purpose of this parameter is to..."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "This parameter affects the model's performance by..."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "The default values for this parameter are..."
+      },
+      {
+        "question": "Can this parameter be adjusted during training?",
+        "answer": "Yes, this parameter can be adjusted during training to..."
+      },
+      {
+        "question": "What are the common values used for this parameter?",
+        "answer": "Common values used for this parameter include..."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Yes, there are known issues with this parameter such as..."
+      }
+    ]
+  }
+]
