@@ -1,0 +1,938 @@
+[
+  {
+    "level1": "Cost of Service",
+    "level2": "Service Metric",
+    "level3": "Average Annual Maintenance Cost",
+    "description": "Estimated yearly expenditure on routine preventive maintenance tasks such as calibration, cleaning and safety checks.",
+    "importance": 90,
+    "prompt": "Provide the typical annual preventive‑maintenance cost, in USD per year, for this specific instrument model. Quote recent manufacturer price guides, third‑party service contracts or industry averages published after 2022. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"average_annual_maintenance_cost\":{\"value\":\"<number>\",\"unit\":\"USD/year\"}}",
+    "parameter_name": "average_annual_maintenance_cost",
+    "FAQs": [
+      {
+        "question": "What does this cost include?",
+        "answer": "It covers scheduled maintenance visits, basic consumables, and calibration certificates."
+      },
+      {
+        "question": "Is labor included?",
+        "answer": "Yes—labor for the preventive visit is generally part of the quoted sum."
+      },
+      {
+        "question": "Can I reduce this cost?",
+        "answer": "Signing a multi‑year contract or bundling multiple instruments often lowers the rate."
+      },
+      {
+        "question": "Does heavy use increase the cost?",
+        "answer": "Yes, units in 24‑hour operation may require extra service visits."
+      },
+      {
+        "question": "Are spare parts included?",
+        "answer": "Only inexpensive consumables; major parts are billed separately."
+      },
+      {
+        "question": "Is the figure inflation‑adjusted?",
+        "answer": "Figures should be reported in current‑year USD values."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Service Metric",
+    "level3": "Typical Minor Repair Cost",
+    "description": "Average cost for small, non‑critical repairs such as replacing fuses, knobs, or minor seals.",
+    "importance": 75,
+    "prompt": "State the usual price range, in USD, for minor repair events on this model—parts plus labor. Use service‑provider invoices or manufacturer sources from 2022‑2025. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"typical_minor_repair_cost\":{\"value\":\"<number>\",\"unit\":\"USD\"}}",
+    "parameter_name": "typical_minor_repair_cost",
+    "FAQs": [
+      {
+        "question": "What qualifies as a minor repair?",
+        "answer": "Repairs that do not require disassembling major subsystems and cost under USD 1000."
+      },
+      {
+        "question": "Are diagnostics billed separately?",
+        "answer": "Diagnostics are usually folded into the minor‑repair flat rate."
+      },
+      {
+        "question": "Is there warranty coverage?",
+        "answer": "Warranty typically covers the first 12 months for manufacturer defects."
+      },
+      {
+        "question": "Typical turnaround time?",
+        "answer": "Often completed within one on‑site visit (2‑3 hours)."
+      },
+      {
+        "question": "Are OEM parts mandatory?",
+        "answer": "Using OEM parts preserves the warranty but increases cost ~10‑20 %."
+      },
+      {
+        "question": "Can I perform it myself?",
+        "answer": "User‑performed minor fixes are possible but may void warranty."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Service Metric",
+    "level3": "Typical Major Repair Cost",
+    "description": "Estimated cost for large‑scale repairs such as motor or compressor replacement.",
+    "importance": 92,
+    "prompt": "Report the expected cost, in USD, for a typical major repair on this instrument (e.g., motor or compressor swap). Reference OEM parts catalogs and authorized‑service quotes from 2023‑2025. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"typical_major_repair_cost\":{\"value\":\"<number>\",\"unit\":\"USD\"}}",
+    "parameter_name": "typical_major_repair_cost",
+    "FAQs": [
+      {
+        "question": "What counts as a major repair?",
+        "answer": "Any repair involving core subsystems costing over USD 1000."
+      },
+      {
+        "question": "Does the quote include calibration?",
+        "answer": "Yes—post‑repair calibration is standard."
+      },
+      {
+        "question": "Is loaner equipment provided?",
+        "answer": "Some OEMs offer rental units at extra charge."
+      },
+      {
+        "question": "Lead time for parts?",
+        "answer": "Critical parts generally ship within 7‑10 days from regional hubs."
+      },
+      {
+        "question": "Warranty on the repair?",
+        "answer": "Major repairs usually carry a 3‑ to 6‑month parts & labor warranty."
+      },
+      {
+        "question": "Can third‑party parts be used?",
+        "answer": "Yes, but compatibility and certification must be verified."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Service Metric",
+    "level3": "Warranty Coverage Duration",
+    "description": "Length of the standard factory warranty supplied at purchase.",
+    "importance": 70,
+    "prompt": "List the default factory warranty duration in months for new units sold in North America. Use official datasheets dated 2023‑2025. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"warranty_coverage_duration\":{\"value\":\"<number>\",\"unit\":\"months\"}}",
+    "parameter_name": "warranty_coverage_duration",
+    "FAQs": [
+      {
+        "question": "What does the warranty cover?",
+        "answer": "Defects in materials and workmanship, excluding consumables."
+      },
+      {
+        "question": "Does it include on‑site labor?",
+        "answer": "Most OEM warranties include labor for warranty repairs."
+      },
+      {
+        "question": "Is calibration covered?",
+        "answer": "Initial factory calibration is covered; routine recalibration is not."
+      },
+      {
+        "question": "How to extend coverage?",
+        "answer": "Purchase an extended‑warranty plan within 90 days of delivery."
+      },
+      {
+        "question": "Is warranty transferable?",
+        "answer": "Yes, upon written notification to the OEM."
+      },
+      {
+        "question": "Are shipping costs covered?",
+        "answer": "Inbound shipping is covered; outbound may be the owner’s responsibility."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Service Metric",
+    "level3": "Extended Warranty Cost",
+    "description": "Price charged to lengthen warranty beyond the standard term.",
+    "importance": 65,
+    "prompt": "Specify the additional cost, in USD, for a one‑year OEM extended warranty purchased at the time of sale. Include prices valid after 2023. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"extended_warranty_cost\":{\"value\":\"<number>\",\"unit\":\"USD\"}}",
+    "parameter_name": "extended_warranty_cost",
+    "FAQs": [
+      {
+        "question": "Does it cover spare parts?",
+        "answer": "Yes—OEM parts are covered during the extended period."
+      },
+      {
+        "question": "Can it be bought later?",
+        "answer": "Usually within the original warranty window for a surcharge."
+      },
+      {
+        "question": "Is on‑site labor included?",
+        "answer": "Yes, in most territories."
+      },
+      {
+        "question": "Discounts for multi‑year?",
+        "answer": "Yes—2‑ or 3‑year bundles receive 10‑15 % discounts."
+      },
+      {
+        "question": "Refund if unused?",
+        "answer": "Refunds are typically not offered."
+      },
+      {
+        "question": "Does downtime compensation apply?",
+        "answer": "No, downtime reimbursement is separate."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Service Metric",
+    "level3": "Average Spare Parts Cost per Year",
+    "description": "Typical annual expenditure on consumable or wear items outside scheduled service contracts.",
+    "importance": 78,
+    "prompt": "Estimate the yearly spend, in USD, on consumable spare parts (seals, brushes) for this model, assuming normal lab usage. Cite purchase records from 2022‑2025. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"average_spare_parts_cost_per_year\":{\"value\":\"<number>\",\"unit\":\"USD/year\"}}",
+    "parameter_name": "average_spare_parts_cost_per_year",
+    "FAQs": [
+      {
+        "question": "What items are counted?",
+        "answer": "Seals, O‑rings, belts, minor filters."
+      },
+      {
+        "question": "How does usage affect cost?",
+        "answer": "Higher duty cycles increase wear and thus costs."
+      },
+      {
+        "question": "Is shipping included?",
+        "answer": "Yes—standard ground shipping to continental US."
+      },
+      {
+        "question": "Are bulk discounts available?",
+        "answer": "Yes—OEMs offer 5‑10 % off for multi‑pack orders."
+      },
+      {
+        "question": "Can I substitute third‑party parts?",
+        "answer": "Yes, but ensure chemical compatibility."
+      },
+      {
+        "question": "Are taxes included?",
+        "answer": "Quotes should be exclusive of local taxes unless stated."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Service Metric",
+    "level3": "Service Interval (Operating Hours)",
+    "description": "Recommended number of operating hours between scheduled service events.",
+    "importance": 60,
+    "prompt": "Provide the OEM‑recommended service interval in operating hours. Use the latest service manuals (2023‑2025). give the answer in JSON format and create a json file of all of this",
+    "output": "{\"service_interval_operating_hours\":{\"value\":\"<number>\",\"unit\":\"hours\"}}",
+    "parameter_name": "service_interval_operating_hours",
+    "FAQs": [
+      {
+        "question": "What happens at this interval?",
+        "answer": "Inspection, lubrication, calibration, safety checks."
+      },
+      {
+        "question": "Does idle time count?",
+        "answer": "Only powered operating hours count."
+      },
+      {
+        "question": "Can interval be extended?",
+        "answer": "In low‑duty environments, OEM may approve extension after oil analysis."
+      },
+      {
+        "question": "Indicator for service?",
+        "answer": "Controller displays a wrench icon and logs hours."
+      },
+      {
+        "question": "Reset procedure?",
+        "answer": "Reset via service menu after maintenance completion."
+      },
+      {
+        "question": "Warranty impact if skipped?",
+        "answer": "Skipping service can void warranty coverage."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Service Metric",
+    "level3": "Mean Time to Repair (MTTR)",
+    "description": "Average labor hours required to diagnose and complete a repair once initiated.",
+    "importance": 68,
+    "prompt": "State the MTTR, in hours, for typical in‑field repairs. Source field‑service statistics from 2022‑2025. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"mean_time_to_repair_mttr\":{\"value\":\"<number>\",\"unit\":\"hours\"}}",
+    "parameter_name": "mean_time_to_repair_mttr",
+    "FAQs": [
+      {
+        "question": "Does MTTR include part shipping?",
+        "answer": "No—clock starts when technician begins work on site."
+      },
+      {
+        "question": "How is MTTR calculated?",
+        "answer": "Average of documented repair durations over a 3‑year period."
+      },
+      {
+        "question": "Factors affecting MTTR?",
+        "answer": "Technician skill, parts availability, site access."
+      },
+      {
+        "question": "Benchmark vs industry?",
+        "answer": "Unit MTTR is ~15 % below average for comparable centrifuges."
+      },
+      {
+        "question": "Can MTTR be improved?",
+        "answer": "Stocking critical parts on site lowers time significantly."
+      },
+      {
+        "question": "Does remote diagnostics help?",
+        "answer": "Yes—pre‑call troubleshooting cuts 0.5 h on average."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Service Metric",
+    "level3": "Service Labor Rate",
+    "description": "Hourly rate charged by OEM‑certified technicians for out‑of‑contract service.",
+    "importance": 83,
+    "prompt": "Provide the typical OEM service labor rate in USD per hour for North American customers, current as of 2025. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"service_labor_rate\":{\"value\":\"<number>\",\"unit\":\"USD/hour\"}}",
+    "parameter_name": "service_labor_rate",
+    "FAQs": [
+      {
+        "question": "Is travel included?",
+        "answer": "Travel time is often billed at 50 % of the rate."
+      },
+      {
+        "question": "Weekend surcharge?",
+        "answer": "Expect ~25 % premium for weekend calls."
+      },
+      {
+        "question": "Minimum billable hours?",
+        "answer": "Typically a 2‑hour minimum applies."
+      },
+      {
+        "question": "Discounts for contract customers?",
+        "answer": "Yes—contract holders receive 10‑20 % off."
+      },
+      {
+        "question": "Currency adjustments?",
+        "answer": "Rates are reviewed annually based on CPI."
+      },
+      {
+        "question": "Remote support fee?",
+        "answer": "Remote troubleshooting may be billed at half rate."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Service Metric",
+    "level3": "Downtime Cost per Day",
+    "description": "Estimated financial impact per calendar day the equipment is non‑operational.",
+    "importance": 88,
+    "prompt": "Estimate the average revenue or productivity loss, in USD per day, incurred when this instrument is down. Supply industry benchmarks or customer case studies. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"downtime_cost_per_day\":{\"value\":\"<number>\",\"unit\":\"USD/day\"}}",
+    "parameter_name": "downtime_cost_per_day",
+    "FAQs": [
+      {
+        "question": "How is this calculated?",
+        "answer": "Lost billable assays + labor idle time + opportunity cost."
+      },
+      {
+        "question": "Varies by lab size?",
+        "answer": "Yes—high‑throughput labs suffer higher losses."
+      },
+      {
+        "question": "Insurance coverage?",
+        "answer": "Some policies cover lost revenue after 48 hours downtime."
+      },
+      {
+        "question": "Mitigation strategies?",
+        "answer": "Maintain backup units or service agreements with rapid response."
+      },
+      {
+        "question": "Tax implications?",
+        "answer": "Losses may be deductible as business interruption."
+      },
+      {
+        "question": "Can OEM compensate?",
+        "answer": "Only if downtime is due to warranty‑covered failure."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Spare Part Cost",
+    "level3": "Rotor Replacement Cost",
+    "description": "Typical price for a standard 24‑place fixed‑angle rotor compatible with the instrument.",
+    "importance": 95,
+    "prompt": "Provide the list price, in USD, to purchase a replacement fixed‑angle rotor for this model. Use 2024‑2025 OEM catalogs or distributor quotes. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"rotor_replacement_cost\":{\"value\":\"<number>\",\"unit\":\"USD\"}}",
+    "parameter_name": "rotor_replacement_cost",
+    "FAQs": [
+      {
+        "question": "Includes rotor lid?",
+        "answer": "Yes, complete rotor assembly with lid."
+      },
+      {
+        "question": "Is balance verification included?",
+        "answer": "Sold separately as a certification service."
+      },
+      {
+        "question": "Lead time?",
+        "answer": "Typically 2‑6 weeks if not in local stock."
+      },
+      {
+        "question": "Discount for trade‑in?",
+        "answer": "Some OEMs offer 10 % credit for old rotors."
+      },
+      {
+        "question": "Warranty length?",
+        "answer": "One‑year manufacturer warranty."
+      },
+      {
+        "question": "Alternate compatible rotors?",
+        "answer": "Third‑party rotors exist but may void warranty."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Spare Part Cost",
+    "level3": "Bucket Adapter Set Cost",
+    "description": "Cost for a full set of swing‑bucket adapters (usually 4 adapters).",
+    "importance": 80,
+    "prompt": "State the OEM list price, in USD, for a complete swing‑bucket adapter set for this centrifuge as of 2025. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"bucket_adapter_set_cost\":{\"value\":\"<number>\",\"unit\":\"USD\"}}",
+    "parameter_name": "bucket_adapter_set_cost",
+    "FAQs": [
+      {
+        "question": "Sold individually?",
+        "answer": "Yes, but buying the set is ~15 % cheaper."
+      },
+      {
+        "question": "Material?",
+        "answer": "High‑strength aluminum with anodized finish."
+      },
+      {
+        "question": "Autoclavable?",
+        "answer": "Yes—up to 121 °C."
+      },
+      {
+        "question": "Expected lifespan?",
+        "answer": "Approximately 10 000 cycles."
+      },
+      {
+        "question": "Compatibility with other models?",
+        "answer": "Adapters are model‑specific."
+      },
+      {
+        "question": "Certification needed?",
+        "answer": "Include balancing certificate on request."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Spare Part Cost",
+    "level3": "Lid Gasket Cost",
+    "description": "Price to replace the centrifugal‑chamber lid seal/gasket.",
+    "importance": 60,
+    "prompt": "Provide the OEM price, in USD, for a replacement lid gasket for the centrifuge. Use 2024‑2025 price lists. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"lid_gasket_cost\":{\"value\":\"<number>\",\"unit\":\"USD\"}}",
+    "parameter_name": "lid_gasket_cost",
+    "FAQs": [
+      {
+        "question": "Material type?",
+        "answer": "EPDM rubber, chemical‑resistant."
+      },
+      {
+        "question": "Recommended replacement interval?",
+        "answer": "Every 18‑24 months or upon visible wear."
+      },
+      {
+        "question": "Is adhesive supplied?",
+        "answer": "Gaskets are self‑seating—no adhesive required."
+      },
+      {
+        "question": "Bulk pack discount?",
+        "answer": "10‑pack orders receive 12 % discount."
+      },
+      {
+        "question": "Can generic gaskets be used?",
+        "answer": "Only if identical temperature/pressure ratings."
+      },
+      {
+        "question": "Installation time?",
+        "answer": "Under 15 minutes."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Spare Part Cost",
+    "level3": "Drive Motor Cost",
+    "description": "Replacement price for the centrifuge drive‑motor assembly.",
+    "importance": 90,
+    "prompt": "Provide the list price, in USD, for a new OEM drive motor for this model. Reference 2023‑2025 parts catalogs. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"drive_motor_cost\":{\"value\":\"<number>\",\"unit\":\"USD\"}}",
+    "parameter_name": "drive_motor_cost",
+    "FAQs": [
+      {
+        "question": "Does it include bearings?",
+        "answer": "Yes—motor comes pre‑assembled with sealed bearings."
+      },
+      {
+        "question": "Core exchange program?",
+        "answer": "Discounted price if old motor returned."
+      },
+      {
+        "question": "Installation skill level?",
+        "answer": "Requires certified technician."
+      },
+      {
+        "question": "Typical lead time?",
+        "answer": "4‑8 weeks."
+      },
+      {
+        "question": "Warranty?",
+        "answer": "6 months parts & labor."
+      },
+      {
+        "question": "Firmware update needed?",
+        "answer": "Controller auto‑detects new motor."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Spare Part Cost",
+    "level3": "Control Board Cost",
+    "description": "Price to replace the primary PCB (control electronics).",
+    "importance": 85,
+    "prompt": "State the OEM price, in USD, for the main control PCB for this centrifuge (2024‑2025 edition). give the answer in JSON format and create a json file of all of this",
+    "output": "{\"control_board_cost\":{\"value\":\"<number>\",\"unit\":\"USD\"}}",
+    "parameter_name": "control_board_cost",
+    "FAQs": [
+      {
+        "question": "Is firmware pre‑loaded?",
+        "answer": "Yes, with the latest stable release."
+      },
+      {
+        "question": "Calibration after swap?",
+        "answer": "A full system calibration is required."
+      },
+      {
+        "question": "Return of faulty board required?",
+        "answer": "Yes, for rebate against new part."
+      },
+      {
+        "question": "Static‑safe packaging?",
+        "answer": "Ships in ESD‑safe bag and foam box."
+      },
+      {
+        "question": "Does price include technician labor?",
+        "answer": "Labor billed separately."
+      },
+      {
+        "question": "Lead time?",
+        "answer": "2‑4 weeks."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Spare Part Cost",
+    "level3": "Display Module Cost",
+    "description": "Cost to replace the LCD or touch‑screen display module.",
+    "importance": 70,
+    "prompt": "Quote the OEM price, in USD, for the complete display/touch‑screen module for this centrifuge. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"display_module_cost\":{\"value\":\"<number>\",\"unit\":\"USD\"}}",
+    "parameter_name": "display_module_cost",
+    "FAQs": [
+      {
+        "question": "Includes bezel?",
+        "answer": "Yes—module is a sealed unit."
+      },
+      {
+        "question": "Screen size?",
+        "answer": "4.3‑inch diagonal."
+      },
+      {
+        "question": "Firmware compatibility?",
+        "answer": "Compatible with firmware v3.1 and higher."
+      },
+      {
+        "question": "Installation time?",
+        "answer": "About 30 minutes."
+      },
+      {
+        "question": "Back‑order risk?",
+        "answer": "Low—module kept in stock."
+      },
+      {
+        "question": "Touch calibration needed?",
+        "answer": "Auto‑calibrates on first boot."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Spare Part Cost",
+    "level3": "Rotor Lid Replacement Cost",
+    "description": "Price for a replacement locking rotor lid or cap.",
+    "importance": 65,
+    "prompt": "Provide the cost, in USD, for a replacement rotor lid compatible with the standard fixed‑angle rotor. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"rotor_lid_replacement_cost\":{\"value\":\"<number>\",\"unit\":\"USD\"}}",
+    "parameter_name": "rotor_lid_replacement_cost",
+    "FAQs": [
+      {
+        "question": "Material?",
+        "answer": "Aluminum alloy with anodized finish."
+      },
+      {
+        "question": "Interchangeable with swing‑bucket rotors?",
+        "answer": "No—each rotor type has a unique lid."
+      },
+      {
+        "question": "Warranty?",
+        "answer": "3 months."
+      },
+      {
+        "question": "Stock status?",
+        "answer": "Usually in regional warehouses."
+      },
+      {
+        "question": "Locking mechanism included?",
+        "answer": "Yes—captive screw."
+      },
+      {
+        "question": "Autoclavable?",
+        "answer": "Yes, up to 121 °C."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Spare Part Cost",
+    "level3": "O‑Ring Set Cost",
+    "description": "Cost for a full set of replacement O‑rings and gaskets for lid and rotor interfaces.",
+    "importance": 55,
+    "prompt": "Quote the OEM price, in USD, for a complete gasket/O‑ring kit for this model (2025 pricing). give the answer in JSON format and create a json file of all of this",
+    "output": "{\"o_ring_set_cost\":{\"value\":\"<number>\",\"unit\":\"USD\"}}",
+    "parameter_name": "o_ring_set_cost",
+    "FAQs": [
+      {
+        "question": "Kit contents?",
+        "answer": "Two lid seals, one rotor seal, lubricant sachet."
+      },
+      {
+        "question": "Shelf life?",
+        "answer": "5 years if unopened."
+      },
+      {
+        "question": "Material type?",
+        "answer": "Silicone rubber, USP class VI."
+      },
+      {
+        "question": "Installation tool provided?",
+        "answer": "Plastic pick included."
+      },
+      {
+        "question": "Bulk order discount?",
+        "answer": "10 % for 5 kits."
+      },
+      {
+        "question": "Shipping class?",
+        "answer": "Non‑hazardous."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Spare Part Cost",
+    "level3": "Bearing Kit Cost",
+    "description": "Price for a complete rotor‑shaft bearing replacement kit.",
+    "importance": 75,
+    "prompt": "Provide the OEM list price, in USD, for the rotor‑shaft bearing kit (includes upper and lower bearings). give the answer in JSON format and create a json file of all of this",
+    "output": "{\"bearing_kit_cost\":{\"value\":\"<number>\",\"unit\":\"USD\"}}",
+    "parameter_name": "bearing_kit_cost",
+    "FAQs": [
+      {
+        "question": "Bearing type?",
+        "answer": "Sealed angular‑contact ball bearings."
+      },
+      {
+        "question": "Grease pre‑packed?",
+        "answer": "Yes—lifetime lubrication."
+      },
+      {
+        "question": "Press tool required?",
+        "answer": "Hydraulic press recommended."
+      },
+      {
+        "question": "OEM part number?",
+        "answer": "BN‑5427‑KIT."
+      },
+      {
+        "question": "Expected lifespan?",
+        "answer": "≥10 000 operating hours."
+      },
+      {
+        "question": "Return of old parts?",
+        "answer": "Not required."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Spare Part Cost",
+    "level3": "Belt Set Cost",
+    "description": "Cost to replace primary and secondary drive belts.",
+    "importance": 58,
+    "prompt": "State the price, in USD, for the OEM belt set (primary + secondary) for this centrifuge. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"belt_set_cost\":{\"value\":\"<number>\",\"unit\":\"USD\"}}",
+    "parameter_name": "belt_set_cost",
+    "FAQs": [
+      {
+        "question": "Belt material?",
+        "answer": "Neoprene with Kevlar fibers."
+      },
+      {
+        "question": "Change interval?",
+        "answer": "Every 5 000 hours or 3 years."
+      },
+      {
+        "question": "Tension spec included?",
+        "answer": "Yes—service manual section 4.3."
+      },
+      {
+        "question": "Special tools required?",
+        "answer": "Belt‑tension gauge."
+      },
+      {
+        "question": "Availability?",
+        "answer": "Stocked in regional depots."
+      },
+      {
+        "question": "Warranty?",
+        "answer": "90 days."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Spare Part Cost",
+    "level3": "Door Latch Assembly Cost",
+    "description": "Price for replacement of the safety door‑latch mechanism.",
+    "importance": 70,
+    "prompt": "Provide the OEM price, in USD, for the complete door‑latch assembly for this centrifuge model. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"door_latch_assembly_cost\":{\"value\":\"<number>\",\"unit\":\"USD\"}}",
+    "parameter_name": "door_latch_assembly_cost",
+    "FAQs": [
+      {
+        "question": "Includes microswitch?",
+        "answer": "Yes—safety interlock microswitch included."
+      },
+      {
+        "question": "Alignment procedure?",
+        "answer": "See service manual section 5.2."
+      },
+      {
+        "question": "Lubrication required?",
+        "answer": "Factory‑lubed—no extra grease needed."
+      },
+      {
+        "question": "Common failure mode?",
+        "answer": "Wear on the striker pin after ~50 000 cycles."
+      },
+      {
+        "question": "Lead time?",
+        "answer": "2 weeks."
+      },
+      {
+        "question": "Warranty?",
+        "answer": "6 months parts only."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Spare Part Cost",
+    "level3": "Refrigeration Compressor Cost",
+    "description": "Replacement price for the refrigeration compressor unit.",
+    "importance": 91,
+    "prompt": "Quote the OEM list price, in USD, for the refrigeration compressor assembly (including dryer filter) for this refrigerated centrifuge. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"refrigeration_compressor_cost\":{\"value\":\"<number>\",\"unit\":\"USD\"}}",
+    "parameter_name": "refrigeration_compressor_cost",
+    "FAQs": [
+      {
+        "question": "Refrigerant type shipped?",
+        "answer": "R134a (factory pre‑charged)."
+      },
+      {
+        "question": "Installation requires EPA certification?",
+        "answer": "Yes—technician must hold Section 608 Type I or higher."
+      },
+      {
+        "question": "Compressor brand?",
+        "answer": "Embraco or Secop, depending on batch."
+      },
+      {
+        "question": "Burn‑in test needed?",
+        "answer": "24 h leak check recommended."
+      },
+      {
+        "question": "Warranty?",
+        "answer": "One year parts & labor."
+      },
+      {
+        "question": "Return of old compressor?",
+        "answer": "OEM arranges disposal as hazardous waste."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Spare Part Cost",
+    "level3": "Cooling Fan Cost",
+    "description": "Cost to replace the internal electronics‑cooling fan.",
+    "importance": 50,
+    "prompt": "Provide the OEM price, in USD, for the main cooling/ventilation fan unit. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"cooling_fan_cost\":{\"value\":\"<number>\",\"unit\":\"USD\"}}",
+    "parameter_name": "cooling_fan_cost",
+    "FAQs": [
+      {
+        "question": "Fan size?",
+        "answer": "120 mm x 25 mm brushless DC."
+      },
+      {
+        "question": "Connector type?",
+        "answer": "3‑pin Molex KK."
+      },
+      {
+        "question": "Expected MTBF?",
+        "answer": "60 000 h at 40 °C."
+      },
+      {
+        "question": "Noise level?",
+        "answer": "≤32 dB(A)."
+      },
+      {
+        "question": "Stock status?",
+        "answer": "Always in stock."
+      },
+      {
+        "question": "Can I use third‑party fan?",
+        "answer": "Yes, if voltage and airflow match OEM spec."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Spare Part Cost",
+    "level3": "Power Supply Unit Cost",
+    "description": "Price for the AC‑to‑DC main power‑supply module.",
+    "importance": 82,
+    "prompt": "State the OEM price, in USD, for the main PSU module for this centrifuge model. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"power_supply_unit_cost\":{\"value\":\"<number>\",\"unit\":\"USD\"}}",
+    "parameter_name": "power_supply_unit_cost",
+    "FAQs": [
+      {
+        "question": "Output power?",
+        "answer": "400 W continuous."
+      },
+      {
+        "question": "Voltage range?",
+        "answer": "90‑264 VAC input."
+      },
+      {
+        "question": "Includes wiring harness?",
+        "answer": "Yes—plug‑and‑play."
+      },
+      {
+        "question": "Fanless?",
+        "answer": "Internal fan included."
+      },
+      {
+        "question": "Certification?",
+        "answer": "UL, CE."
+      },
+      {
+        "question": "Lead time?",
+        "answer": "3‑4 weeks."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Spare Part Cost",
+    "level3": "Temperature Sensor Cost",
+    "description": "Cost to replace the chamber temperature probe or sensor.",
+    "importance": 57,
+    "prompt": "Provide the OEM list price, in USD, for the chamber temperature sensor (NTC/PT100) for this centrifuge. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"temperature_sensor_cost\":{\"value\":\"<number>\",\"unit\":\"USD\"}}",
+    "parameter_name": "temperature_sensor_cost",
+    "FAQs": [
+      {
+        "question": "Sensor type?",
+        "answer": "PT100 class A."
+      },
+      {
+        "question": "Calibration needed?",
+        "answer": "Factory‑calibrated; verify with ice‑water test."
+      },
+      {
+        "question": "Cable length?",
+        "answer": "50 cm with Molex micro‑fit."
+      },
+      {
+        "question": "Operating range?",
+        "answer": "‑20 °C to 100 °C."
+      },
+      {
+        "question": "Warranty?",
+        "answer": "90 days."
+      },
+      {
+        "question": "Installation time?",
+        "answer": "20 minutes."
+      }
+    ]
+  },
+  {
+    "level1": "Cost of Service",
+    "level2": "Spare Part Cost",
+    "level3": "Vibration Damper Set Cost",
+    "description": "Price for a complete set of anti‑vibration feet/dampers.",
+    "importance": 52,
+    "prompt": "Quote the OEM price, in USD, for the set of four vibration dampers/feet for this centrifuge. give the answer in JSON format and create a json file of all of this",
+    "output": "{\"vibration_damper_set_cost\":{\"value\":\"<number>\",\"unit\":\"USD\"}}",
+    "parameter_name": "vibration_damper_set_cost",
+    "FAQs": [
+      {
+        "question": "Material?",
+        "answer": "Neoprene over steel core."
+      },
+      {
+        "question": "Load rating?",
+        "answer": "50 kg each."
+      },
+      {
+        "question": "Height adjustable?",
+        "answer": "Yes, ±5 mm thread."
+      },
+      {
+        "question": "Replacement interval?",
+        "answer": "Inspect every 3 years."
+      },
+      {
+        "question": "Effect on noise?",
+        "answer": "Reduces structure‑borne noise by ~4 dB."
+      },
+      {
+        "question": "Stock status?",
+        "answer": "Common stock item."
+      }
+    ]
+  }
+]

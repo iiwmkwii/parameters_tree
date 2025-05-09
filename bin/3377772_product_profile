@@ -1,0 +1,901 @@
+[
+  {
+    "parameter": "Manufacturer",
+    "level1": "Identification",
+    "level2": "Manufacturer Info",
+    "level3": "Manufacturer"
+  },
+  {
+    "parameter": "Product Line / Series",
+    "level1": "Identification",
+    "level2": "Manufacturer Info",
+    "level3": "Product Line"
+  },
+  {
+    "parameter": "Equipment Name",
+    "level1": "Identification",
+    "level2": "Manufacturer Info",
+    "level3": "Equipment Name"
+  },
+  {
+    "parameter": "Model Number",
+    "level1": "Identification",
+    "level2": "Manufacturer Info",
+    "level3": "Model Number"
+  },
+  {
+    "parameter": "SKU",
+    "level1": "Identification",
+    "level2": "Catalog Info",
+    "level3": "SKU"
+  },
+  {
+    "parameter": "Part Number",
+    "level1": "Identification",
+    "level2": "Catalog Info",
+    "level3": "Part Number"
+  },
+  {
+    "parameter": "Country of Origin",
+    "level1": "Identification",
+    "level2": "Manufacturing Info",
+    "level3": "Country of Origin"
+  },
+  {
+    "parameter": "Year of Manufacture",
+    "level1": "Identification",
+    "level2": "Manufacturing Info",
+    "level3": "Year of Manufacture"
+  },
+  {
+    "parameter": "Date of First Use",
+    "level1": "Identification",
+    "level2": "Lifecycle Info",
+    "level3": "Date of First Use"
+  },
+  {
+    "parameter": "Equipment Type",
+    "level1": "Identification",
+    "level2": "Class",
+    "level3": "Equipment Type"
+  },
+  {
+    "parameter": "Instrument Category",
+    "level1": "Identification",
+    "level2": "Class",
+    "level3": "Instrument Category"
+  },
+  {
+    "parameter": "Certification",
+    "level1": "Regulatory & Safety",
+    "level2": "Certifications",
+    "level3": "Certification"
+  },
+  {
+    "parameter": "Compliance Standards",
+    "level1": "Regulatory & Safety",
+    "level2": "Standards",
+    "level3": "Compliance Standards"
+  },
+  {
+    "parameter": "Warranty Period",
+    "level1": "Identification",
+    "level2": "Lifecycle Info",
+    "level3": "Warranty Period"
+  },
+  {
+    "parameter": "Support Expiry Date",
+    "level1": "Identification",
+    "level2": "Lifecycle Info",
+    "level3": "Support Expiry Date"
+  },
+  {
+    "parameter": "Max RPM",
+    "level1": "Functional Characteristics",
+    "level2": "Main Drive",
+    "level3": "Max RPM"
+  },
+  {
+    "parameter": "Min RPM",
+    "level1": "Functional Characteristics",
+    "level2": "Main Drive",
+    "level3": "Min RPM"
+  },
+  {
+    "parameter": "Max RCF",
+    "level1": "Functional Characteristics",
+    "level2": "Main Drive",
+    "level3": "Max RCF"
+  },
+  {
+    "parameter": "Temperature Range (°C)",
+    "level1": "Functional Characteristics",
+    "level2": "Thermal Control",
+    "level3": "Temperature Range"
+  },
+  {
+    "parameter": "Heating (Yes/No)",
+    "level1": "Functional Characteristics",
+    "level2": "Thermal Control",
+    "level3": "Heating Capability"
+  },
+  {
+    "parameter": "Cooling (Yes/No)",
+    "level1": "Functional Characteristics",
+    "level2": "Thermal Control",
+    "level3": "Cooling Capability"
+  },
+  {
+    "parameter": "Temperature Control Type",
+    "level1": "Functional Characteristics",
+    "level2": "Thermal Control",
+    "level3": "Control Type"
+  },
+  {
+    "parameter": "Temperature Stability (± °C)",
+    "level1": "Functional Characteristics",
+    "level2": "Thermal Control",
+    "level3": "Temperature Stability"
+  },
+  {
+    "parameter": "Humidity Control (Yes/No)",
+    "level1": "Functional Characteristics",
+    "level2": "Humidity Control",
+    "level3": "Humidity Control Capability"
+  },
+  {
+    "parameter": "CO₂ Control (Yes/No)",
+    "level1": "Functional Characteristics",
+    "level2": "Gas Control",
+    "level3": "CO₂ Control"
+  },
+  {
+    "parameter": "O₂ Control (Yes/No)",
+    "level1": "Functional Characteristics",
+    "level2": "Gas Control",
+    "level3": "O₂ Control"
+  },
+  {
+    "parameter": "Vacuum Control (Yes/No)",
+    "level1": "Functional Characteristics",
+    "level2": "Pressure Control",
+    "level3": "Vacuum Control"
+  },
+  {
+    "parameter": "Gas Purge Options",
+    "level1": "Functional Characteristics",
+    "level2": "Gas Control",
+    "level3": "Gas Purge Options"
+  },
+  {
+    "parameter": "Speed Range",
+    "level1": "Functional Characteristics",
+    "level2": "Main Drive",
+    "level3": "Speed Range"
+  },
+  {
+    "parameter": "Acceleration Time",
+    "level1": "Functional Characteristics",
+    "level2": "Main Drive",
+    "level3": "Acceleration Time"
+  },
+  {
+    "parameter": "Deceleration Time",
+    "level1": "Functional Characteristics",
+    "level2": "Main Drive",
+    "level3": "Deceleration Time"
+  },
+  {
+    "parameter": "Timer Range",
+    "level1": "Functional Characteristics",
+    "level2": "Timing",
+    "level3": "Timer Range"
+  },
+  {
+    "parameter": "Timed Modes",
+    "level1": "Functional Characteristics",
+    "level2": "Timing",
+    "level3": "Timed Modes"
+  },
+  {
+    "parameter": "Continuous Run Mode",
+    "level1": "Functional Characteristics",
+    "level2": "Timing",
+    "level3": "Continuous Run Mode"
+  },
+  {
+    "parameter": "Load Balancing System",
+    "level1": "Functional Characteristics",
+    "level2": "Main Drive",
+    "level3": "Load Balancing System"
+  },
+  {
+    "parameter": "Internal Sensors",
+    "level1": "Functional Characteristics",
+    "level2": "Sensors",
+    "level3": "Internal Sensors"
+  },
+  {
+    "parameter": "Optical Detection (Yes/No)",
+    "level1": "Functional Characteristics",
+    "level2": "Detection System",
+    "level3": "Optical Detection Capability"
+  },
+  {
+    "parameter": "UV Support (Yes/No)",
+    "level1": "Functional Characteristics",
+    "level2": "Detection System",
+    "level3": "UV Support"
+  },
+  {
+    "parameter": "Light Source Type",
+    "level1": "Functional Characteristics",
+    "level2": "Detection System",
+    "level3": "Light Source Type"
+  },
+  {
+    "parameter": "Frequency Range (Hz)",
+    "level1": "Functional Characteristics",
+    "level2": "Main Drive",
+    "level3": "Frequency Range"
+  },
+  {
+    "parameter": "Max Sample Capacity",
+    "level1": "Functional Characteristics",
+    "level2": "Sample Handling",
+    "level3": "Max Sample Capacity"
+  },
+  {
+    "parameter": "Min Sample Volume",
+    "level1": "Functional Characteristics",
+    "level2": "Sample Handling",
+    "level3": "Min Sample Volume"
+  },
+  {
+    "parameter": "Max Sample Volume",
+    "level1": "Functional Characteristics",
+    "level2": "Sample Handling",
+    "level3": "Max Sample Volume"
+  },
+  {
+    "parameter": "Chamber Volume",
+    "level1": "Functional Characteristics",
+    "level2": "Sample Handling",
+    "level3": "Chamber Volume"
+  },
+  {
+    "parameter": "Working Volume",
+    "level1": "Functional Characteristics",
+    "level2": "Sample Handling",
+    "level3": "Working Volume"
+  },
+  {
+    "parameter": "Number of Slots / Wells",
+    "level1": "Functional Characteristics",
+    "level2": "Sample Handling",
+    "level3": "Number of Slots / Wells"
+  },
+  {
+    "parameter": "Slide Capacity",
+    "level1": "Functional Characteristics",
+    "level2": "Sample Handling",
+    "level3": "Slide Capacity"
+  },
+  {
+    "parameter": "Number of Channels",
+    "level1": "Functional Characteristics",
+    "level2": "Sample Handling",
+    "level3": "Number of Channels"
+  },
+  {
+    "parameter": "Tube Compatibility",
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Tube Compatibility"
+  },
+  {
+    "parameter": "Plate Compatibility",
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Plate Compatibility"
+  },
+  {
+    "parameter": "Rotor Compatibility",
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Rotor Compatibility"
+  },
+  {
+    "parameter": "Adapter Compatibility",
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Adapter Compatibility"
+  },
+  {
+    "parameter": "Well Format Supported",
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Well Format Supported"
+  },
+  {
+    "parameter": "Cuvette Compatibility",
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Cuvette Compatibility"
+  },
+  {
+    "parameter": "Cartridge Type",
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Cartridge Type"
+  },
+  {
+    "parameter": "Filter Type",
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Filter Type"
+  },
+  {
+    "parameter": "Reagent Compatibility",
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Reagent Compatibility"
+  },
+  {
+    "parameter": "Biohazard Compatibility",
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Biohazard Compatibility"
+  },{
+    "parameter": "Dimensions (L x W x H)",
+    "level1": "Physical Specifications",
+    "level2": "Footprint",
+    "level3": "Dimensions"
+  },
+  {
+    "parameter": "Weight",
+    "level1": "Physical Specifications",
+    "level2": "Mass & Load",
+    "level3": "Weight"
+  },
+  {
+    "parameter": "Shipping Dimensions",
+    "level1": "Physical Specifications",
+    "level2": "Shipping",
+    "level3": "Shipping Dimensions"
+  },
+  {
+    "parameter": "Shipping Weight",
+    "level1": "Physical Specifications",
+    "level2": "Shipping",
+    "level3": "Shipping Weight"
+  },
+  {
+    "parameter": "Benchtop or Floor",
+    "level1": "Physical Specifications",
+    "level2": "Installation",
+    "level3": "Configuration Type"
+  },
+  {
+    "parameter": "Stackable",
+    "level1": "Physical Specifications",
+    "level2": "Installation",
+    "level3": "Stackability"
+  },
+  {
+    "parameter": "Mounting Options",
+    "level1": "Physical Specifications",
+    "level2": "Installation",
+    "level3": "Mounting Options"
+  },
+  {
+    "parameter": "Door Type",
+    "level1": "Physical Specifications",
+    "level2": "Housing",
+    "level3": "Door Type"
+  },
+  {
+    "parameter": "Door Opening Angle",
+    "level1": "Physical Specifications",
+    "level2": "Housing",
+    "level3": "Door Opening Angle"
+  },
+  {
+    "parameter": "Chamber Insulation Type",
+    "level1": "Physical Specifications",
+    "level2": "Chamber",
+    "level3": "Insulation Type"
+  },
+  {
+    "parameter": "Housing Material",
+    "level1": "Physical Specifications",
+    "level2": "Housing",
+    "level3": "Housing Material"
+  },
+  {
+    "parameter": "Chamber Material",
+    "level1": "Physical Specifications",
+    "level2": "Chamber",
+    "level3": "Chamber Material"
+  },
+  {
+    "parameter": "Rotor Material",
+    "level1": "Physical Specifications",
+    "level2": "Main Drive",
+    "level3": "Rotor Material"
+  },
+  {
+    "parameter": "Construction Type (Monoblock, Modular)",
+    "level1": "Physical Specifications",
+    "level2": "Structure",
+    "level3": "Construction Type"
+  },
+  {
+    "parameter": "Chemical Resistance",
+    "level1": "Physical Specifications",
+    "level2": "Protection",
+    "level3": "Chemical Resistance"
+  },
+  {
+    "parameter": "Autoclavable Components",
+    "level1": "Physical Specifications",
+    "level2": "Protection",
+    "level3": "Autoclavable Components"
+  },
+  {
+    "parameter": "Surface Coating",
+    "level1": "Physical Specifications",
+    "level2": "Protection",
+    "level3": "Surface Coating"
+  },
+  {
+    "parameter": "Dust Protection",
+    "level1": "Physical Specifications",
+    "level2": "Protection",
+    "level3": "Dust Protection"
+  },
+  {
+    "parameter": "Vibration Damping System",
+    "level1": "Physical Specifications",
+    "level2": "Structure",
+    "level3": "Vibration Damping System"
+  },
+  {
+    "parameter": "Voltage (V)",
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Voltage"
+  },
+  {
+    "parameter": "Frequency (Hz)",
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Frequency"
+  },
+  {
+    "parameter": "Power Consumption (W)",
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Power Consumption"
+  },
+  {
+    "parameter": "Max Power Output",
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Max Power Output"
+  },
+  {
+    "parameter": "Standby Power",
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Standby Power"
+  },
+  {
+    "parameter": "Plug Type",
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Plug Type"
+  },
+  {
+    "parameter": "Cable Length",
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Cable Length"
+  },
+  {
+    "parameter": "Fuse Rating",
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Fuse Rating"
+  },
+  {
+    "parameter": "Power Supply Type (AC/DC)",
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Power Supply Type"
+  },
+  {
+    "parameter": "Battery Backup",
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Battery Backup"
+  },
+  {
+    "parameter": "Energy Efficiency Class",
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Energy Efficiency Class"
+  },
+  {
+    "parameter": "Surge Protection",
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Surge Protection"
+  },
+  {
+    "parameter": "Heat Emission (BTU/hr)",
+    "level1": "Physical Specifications",
+    "level2": "Thermal Properties",
+    "level3": "Heat Emission"
+  },
+  {
+    "parameter": "Display Type",
+    "level1": "User Interface & Software",
+    "level2": "Display",
+    "level3": "Display Type"
+  },
+  {
+    "parameter": "Display Size",
+    "level1": "User Interface & Software",
+    "level2": "Display",
+    "level3": "Display Size"
+  },
+  {
+    "parameter": "Display Resolution",
+    "level1": "User Interface & Software",
+    "level2": "Display",
+    "level3": "Display Resolution"
+  },
+  {
+    "parameter": "Touchscreen (Yes/No)",
+    "level1": "User Interface & Software",
+    "level2": "Display",
+    "level3": "Touchscreen Capability"
+  },
+  {
+    "parameter": "Multilingual Interface",
+    "level1": "User Interface & Software",
+    "level2": "Software Features",
+    "level3": "Multilingual Interface"
+  },
+  {
+    "parameter": "Programmable Modes",
+    "level1": "User Interface & Software",
+    "level2": "Software Features",
+    "level3": "Programmable Modes"
+  },
+  {
+    "parameter": "Number of Stored Programs",
+    "level1": "User Interface & Software",
+    "level2": "Software Features",
+    "level3": "Number of Stored Programs"
+  },
+  {
+    "parameter": "Preset Profiles",
+    "level1": "User Interface & Software",
+    "level2": "Software Features",
+    "level3": "Preset Profiles"
+  },
+  {
+    "parameter": "Real-Time Monitoring",
+    "level1": "User Interface & Software",
+    "level2": "Monitoring & Alerts",
+    "level3": "Real-Time Monitoring"
+  },
+  {
+    "parameter": "Error Codes Display",
+    "level1": "User Interface & Software",
+    "level2": "Diagnostics",
+    "level3": "Error Codes Display"
+  },
+  {
+    "parameter": "Auto-Shutdown Feature",
+    "level1": "User Interface & Software",
+    "level2": "Software Features",
+    "level3": "Auto-Shutdown Feature"
+  },
+  {
+    "parameter": "Alarms / Notifications",
+    "level1": "User Interface & Software",
+    "level2": "Monitoring & Alerts",
+    "level3": "Alarms / Notifications"
+  },
+  {
+    "parameter": "Password Protection",
+    "level1": "User Interface & Software",
+    "level2": "Security",
+    "level3": "Password Protection"
+  },
+  {
+    "parameter": "User Management System",
+    "level1": "User Interface & Software",
+    "level2": "Security",
+    "level3": "User Management System"
+  },
+  {
+    "parameter": "Lockout Mode",
+    "level1": "User Interface & Software",
+    "level2": "Security",
+    "level3": "Lockout Mode"
+  },
+  {
+    "parameter": "QR Code Support",
+    "level1": "User Interface & Software",
+    "level2": "Connectivity",
+    "level3": "QR Code Support"
+  },
+  {
+    "parameter": "RFID Access Support",
+    "level1": "User Interface & Software",
+    "level2": "Connectivity",
+    "level3": "RFID Access Support"
+  },
+  {
+    "parameter": "USB Port",
+    "level1": "Utilities & Interfaces",
+    "level2": "I/O Ports",
+    "level3": "USB Port"
+  },
+  {
+    "parameter": "RS-232",
+    "level1": "Utilities & Interfaces",
+    "level2": "I/O Ports",
+    "level3": "RS-232 Port"
+  },
+  {
+    "parameter": "Ethernet Port",
+    "level1": "Utilities & Interfaces",
+    "level2": "I/O Ports",
+    "level3": "Ethernet Port"
+  },
+  {
+    "parameter": "Wi-Fi",
+    "level1": "Utilities & Interfaces",
+    "level2": "Computer Links",
+    "level3": "Wi-Fi Connectivity"
+  },
+  {
+    "parameter": "Bluetooth",
+    "level1": "Utilities & Interfaces",
+    "level2": "Computer Links",
+    "level3": "Bluetooth Connectivity"
+  },
+  {
+    "parameter": "PC Connectivity",
+    "level1": "Utilities & Interfaces",
+    "level2": "Computer Links",
+    "level3": "PC Connectivity"
+  },
+  {
+    "parameter": "API Support",
+    "level1": "User Interface & Software",
+    "level2": "Connectivity",
+    "level3": "API Support"
+  },
+  {
+    "parameter": "Web Interface",
+    "level1": "User Interface & Software",
+    "level2": "Connectivity",
+    "level3": "Web Interface"
+  },
+  {
+    "parameter": "Mobile App Support",
+    "level1": "User Interface & Software",
+    "level2": "Connectivity",
+    "level3": "Mobile App Support"
+  },
+  {
+    "parameter": "Cloud Sync (Yes/No)",
+    "level1": "User Interface & Software",
+    "level2": "Connectivity",
+    "level3": "Cloud Sync"
+  },
+  {
+    "parameter": "Lab Management Software Integration",
+    "level1": "User Interface & Software",
+    "level2": "Connectivity",
+    "level3": "Lab Management Software Integration"
+  },
+  {
+    "parameter": "Data Export Options",
+    "level1": "User Interface & Software",
+    "level2": "Data Management",
+    "level3": "Data Export Options"
+  },
+  {
+    "parameter": "Export File Formats",
+    "level1": "User Interface & Software",
+    "level2": "Data Management",
+    "level3": "Export File Formats"
+  },
+  {
+    "parameter": "Data Logging Interval",
+    "level1": "User Interface & Software",
+    "level2": "Data Management",
+    "level3": "Data Logging Interval"
+  },
+  {
+    "parameter": "Software Included",
+    "level1": "User Interface & Software",
+    "level2": "Software Info",
+    "level3": "Software Included"
+  },
+  {
+    "parameter": "Software Version",
+    "level1": "User Interface & Software",
+    "level2": "Software Info",
+    "level3": "Software Version"
+  },
+  {
+    "parameter": "Updateable Firmware",
+    "level1": "User Interface & Software",
+    "level2": "Software Info",
+    "level3": "Updateable Firmware"
+  },
+  {
+    "parameter": "Compatible OS",
+    "level1": "User Interface & Software",
+    "level2": "Software Info",
+    "level3": "Compatible OS"
+  },
+  {
+    "parameter": "Operating Temperature",
+    "level1": "Environmental Requirements",
+    "level2": "Temperature Range",
+    "level3": "Operating Temperature"
+  },
+  {
+    "parameter": "Storage Temperature",
+    "level1": "Environmental Requirements",
+    "level2": "Storage Conditions",
+    "level3": "Storage Temperature"
+  },
+  {
+    "parameter": "Operating Humidity",
+    "level1": "Environmental Requirements",
+    "level2": "Humidity Range",
+    "level3": "Operating Humidity"
+  },
+  {
+    "parameter": "Noise Level (dB)",
+    "level1": "Physical Specifications",
+    "level2": "Acoustic Properties",
+    "level3": "Noise Level"
+  },
+  {
+    "parameter": "IP Rating",
+    "level1": "Regulatory & Safety",
+    "level2": "Ingress Protection",
+    "level3": "IP Rating"
+  },
+  {
+    "parameter": "EMC Compliance",
+    "level1": "Regulatory & Safety",
+    "level2": "EMC",
+    "level3": "EMC Compliance"
+  },
+  {
+    "parameter": "Fire Safety Classification",
+    "level1": "Regulatory & Safety",
+    "level2": "Fire Safety",
+    "level3": "Fire Safety Classification"
+  },
+  {
+    "parameter": "Biosafety Level Compatibility",
+    "level1": "Regulatory & Safety",
+    "level2": "Biosafety",
+    "level3": "Biosafety Level Compatibility"
+  },
+  {
+    "parameter": "Sterility Maintenance",
+    "level1": "Regulatory & Safety",
+    "level2": "Sterility",
+    "level3": "Sterility Maintenance"
+  },
+  {
+    "parameter": "HEPA Filtration",
+    "level1": "Regulatory & Safety",
+    "level2": "Filtration",
+    "level3": "HEPA Filtration"
+  },
+  {
+    "parameter": "Decontamination Support",
+    "level1": "Regulatory & Safety",
+    "level2": "Decontamination",
+    "level3": "Decontamination Support"
+  },
+  {
+    "parameter": "UV Sterilization Support",
+    "level1": "Regulatory & Safety",
+    "level2": "Decontamination",
+    "level3": "UV Sterilization Support"
+  },
+  {
+    "parameter": "Spill Containment",
+    "level1": "Regulatory & Safety",
+    "level2": "Safety Features",
+    "level3": "Spill Containment"
+  },
+  {
+    "parameter": "Cleanroom Certification",
+    "level1": "Regulatory & Safety",
+    "level2": "Certifications",
+    "level3": "Cleanroom Certification"
+  },
+  {
+    "parameter": "Safety Certifications (TÜV, NRTL)",
+    "level1": "Regulatory & Safety",
+    "level2": "Certifications",
+    "level3": "Safety Certifications"
+  },
+  {
+    "parameter": "Service Interval",
+    "level1": "Identification",
+    "level2": "Service & Maintenance",
+    "level3": "Service Interval"
+  },
+  {
+    "parameter": "Maintenance Type (User/Certified)",
+    "level1": "Identification",
+    "level2": "Service & Maintenance",
+    "level3": "Maintenance Type"
+  },
+  {
+    "parameter": "Calibration Required",
+    "level1": "Identification",
+    "level2": "Service & Maintenance",
+    "level3": "Calibration Required"
+  },
+  {
+    "parameter": "Calibration Interval",
+    "level1": "Identification",
+    "level2": "Service & Maintenance",
+    "level3": "Calibration Interval"
+  },
+  {
+    "parameter": "Self-Diagnostics",
+    "level1": "User Interface & Software",
+    "level2": "Diagnostics",
+    "level3": "Self-Diagnostics"
+  },
+  {
+    "parameter": "Service Manual Included",
+    "level1": "Identification",
+    "level2": "Service & Maintenance",
+    "level3": "Service Manual Included"
+  },
+  {
+    "parameter": "Replaceable Parts",
+    "level1": "Consumables & Accessories",
+    "level2": "Spare Parts",
+    "level3": "Replaceable Parts"
+  },
+  {
+    "parameter": "Spare Parts Availability",
+    "level1": "Consumables & Accessories",
+    "level2": "Spare Parts",
+    "level3": "Spare Parts Availability"
+  },
+  {
+    "parameter": "Consumables List",
+    "level1": "Consumables & Accessories",
+    "level2": "Consumables",
+    "level3": "Consumables List"
+  },
+  {
+    "parameter": "Training Required",
+    "level1": "Regulatory & Safety",
+    "level2": "Training",
+    "level3": "Training Required"
+  }
+]

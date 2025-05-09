@@ -1,0 +1,2790 @@
+{
+  "meta": {
+    "schema_version": "3.0.0"
+  },
+  "domains": [
+    {
+      "id": "ID",
+      "name": "Identification"
+    },
+    {
+      "id": "FC",
+      "name": "Functional Characteristics"
+    },
+    {
+      "id": "ER",
+      "name": "Environmental Requirements"
+    },
+    {
+      "id": "PS",
+      "name": "Physical Specifications"
+    },
+    {
+      "id": "UT",
+      "name": "Utilities & Interfaces"
+    },
+    {
+      "id": "RS",
+      "name": "Regulatory & Safety"
+    },
+    {
+      "id": "UI",
+      "name": "User Interface & Software"
+    },
+    {
+      "id": "SM",
+      "name": "Service & Maintenance"
+    }
+  ],
+  "areas": [
+    {
+      "id": "ID_GENINF",
+      "domain_id": "ID",
+      "name": "General Info"
+    },
+    {
+      "id": "RS_CERTIF",
+      "domain_id": "RS",
+      "name": "Certifications"
+    },
+    {
+      "id": "ID_LIFECY",
+      "domain_id": "ID",
+      "name": "Lifecycle Info"
+    },
+    {
+      "id": "FC_MAIN_D",
+      "domain_id": "FC",
+      "name": "Main Drive"
+    },
+    {
+      "id": "ER_THERMA",
+      "domain_id": "ER",
+      "name": "Thermal Control"
+    },
+    {
+      "id": "ER_HUMIDI",
+      "domain_id": "ER",
+      "name": "Humidity Control"
+    },
+    {
+      "id": "ER_GAS_CO",
+      "domain_id": "ER",
+      "name": "Gas Control"
+    },
+    {
+      "id": "ER_PRESSU",
+      "domain_id": "ER",
+      "name": "Pressure Control"
+    },
+    {
+      "id": "RS_DECONT",
+      "domain_id": "RS",
+      "name": "Decontamination"
+    },
+    {
+      "id": "FC_SAMPLE",
+      "domain_id": "FC",
+      "name": "Sample Handling"
+    },
+    {
+      "id": "FC_CONSUM",
+      "domain_id": "FC",
+      "name": "Consumable Compatibility"
+    },
+    {
+      "id": "PS_FOOTPR",
+      "domain_id": "PS",
+      "name": "Footprint"
+    },
+    {
+      "id": "PS_MASS_L",
+      "domain_id": "PS",
+      "name": "Mass & Load"
+    },
+    {
+      "id": "PS_INSTAL",
+      "domain_id": "PS",
+      "name": "Installation"
+    },
+    {
+      "id": "PS_HOUSIN",
+      "domain_id": "PS",
+      "name": "Housing"
+    },
+    {
+      "id": "PS_STRUCT",
+      "domain_id": "PS",
+      "name": "Structure"
+    },
+    {
+      "id": "PS_PROTEC",
+      "domain_id": "PS",
+      "name": "Protection"
+    },
+    {
+      "id": "UT_ELECTR",
+      "domain_id": "UT",
+      "name": "Electrical Power"
+    },
+    {
+      "id": "PS_THERMA",
+      "domain_id": "PS",
+      "name": "Thermal Properties"
+    },
+    {
+      "id": "UI_DISPLA",
+      "domain_id": "UI",
+      "name": "Display"
+    },
+    {
+      "id": "UI_CONNEC",
+      "domain_id": "UI",
+      "name": "Connectivity"
+    },
+    {
+      "id": "UI_SOFTWA",
+      "domain_id": "UI",
+      "name": "Software Features"
+    },
+    {
+      "id": "UI_SECURI",
+      "domain_id": "UI",
+      "name": "Security"
+    },
+    {
+      "id": "UT_I_O_PO",
+      "domain_id": "UT",
+      "name": "I/O Ports"
+    },
+    {
+      "id": "UT_COMPUT",
+      "domain_id": "UT",
+      "name": "Computer Links"
+    },
+    {
+      "id": "UI_DATA_M",
+      "domain_id": "UI",
+      "name": "Data Management"
+    },
+    {
+      "id": "PS_ACOUST",
+      "domain_id": "PS",
+      "name": "Acoustic Properties"
+    },
+    {
+      "id": "RS_INGRES",
+      "domain_id": "RS",
+      "name": "Ingress Protection"
+    },
+    {
+      "id": "RS_EMC",
+      "domain_id": "RS",
+      "name": "EMC"
+    },
+    {
+      "id": "RS_FIRE_S",
+      "domain_id": "RS",
+      "name": "Fire Safety"
+    },
+    {
+      "id": "RS_BIOSAF",
+      "domain_id": "RS",
+      "name": "Biosafety"
+    },
+    {
+      "id": "RS_STERIL",
+      "domain_id": "RS",
+      "name": "Sterility"
+    },
+    {
+      "id": "RS_FILTRA",
+      "domain_id": "RS",
+      "name": "Filtration"
+    },
+    {
+      "id": "RS_SAFETY",
+      "domain_id": "RS",
+      "name": "Safety Features"
+    },
+    {
+      "id": "SM_SERVIC",
+      "domain_id": "SM",
+      "name": "Service & Maintenance"
+    },
+    {
+      "id": "RS_TRAINI",
+      "domain_id": "RS",
+      "name": "Training"
+    }
+  ],
+  "attributes": [
+    {
+      "id": "ID_",
+      "area_id": "ID_GENINF",
+      "name": ":----------",
+      "datatype": ":---------------------",
+      "unit": ":-----",
+      "embedding": [
+        0.4988,
+        -0.7806,
+        -0.7906,
+        0.6435,
+        0.4976,
+        -0.0677,
+        -0.2457,
+        0.7047
+      ]
+    },
+    {
+      "id": "ID_EQUIPMENT_NA",
+      "area_id": "ID_GENINF",
+      "name": "Equipment Name",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.0453,
+        -0.5007,
+        0.6163,
+        -0.2922,
+        0.6831,
+        0.4584,
+        -0.6742,
+        0.6195
+      ]
+    },
+    {
+      "id": "ID_MODEL_NUMBER",
+      "area_id": "ID_GENINF",
+      "name": "Model Number",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.4575,
+        -0.8406,
+        0.2099,
+        -0.2487,
+        0.3914,
+        -0.8609,
+        -0.991,
+        0.1976
+      ]
+    },
+    {
+      "id": "ID_MANUFACTURER",
+      "area_id": "ID_GENINF",
+      "name": "Manufacturer",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.6933,
+        -0.9385,
+        -0.6662,
+        -0.8215,
+        0.1315,
+        -0.3698,
+        0.8592,
+        0.2684
+      ]
+    },
+    {
+      "id": "ID_PRODUCT_LINE",
+      "area_id": "ID_GENINF",
+      "name": "Product Line / Series",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.4761,
+        0.6069,
+        -0.4395,
+        0.6379,
+        0.6998,
+        -0.3711,
+        -0.9226,
+        0.9476
+      ]
+    },
+    {
+      "id": "ID_SKU",
+      "area_id": "ID_GENINF",
+      "name": "SKU",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.193,
+        0.4886,
+        0.5516,
+        0.614,
+        0.7767,
+        -0.7866,
+        0.4405,
+        -0.0811
+      ]
+    },
+    {
+      "id": "ID_PART_NUMBER",
+      "area_id": "ID_GENINF",
+      "name": "Part Number",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.1751,
+        -0.0351,
+        0.8729,
+        0.6308,
+        -0.9549,
+        0.058,
+        0.7136,
+        0.5178
+      ]
+    },
+    {
+      "id": "ID_COUNTRY_OF_O",
+      "area_id": "ID_GENINF",
+      "name": "Country of Origin",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.1703,
+        -0.6715,
+        0.5228,
+        0.4457,
+        -0.4915,
+        0.5616,
+        0.7727,
+        -0.8629
+      ]
+    },
+    {
+      "id": "ID_YEAR_OF_MANU",
+      "area_id": "ID_GENINF",
+      "name": "Year of Manufacture",
+      "datatype": "date",
+      "unit": null,
+      "embedding": [
+        -0.9761,
+        -0.6759,
+        -0.527,
+        -0.4866,
+        -0.3286,
+        0.0743,
+        0.2113,
+        0.1137
+      ]
+    },
+    {
+      "id": "ID_DATE_OF_FIRS",
+      "area_id": "ID_GENINF",
+      "name": "Date of First Use",
+      "datatype": "date",
+      "unit": null,
+      "embedding": [
+        0.1431,
+        0.8203,
+        0.4191,
+        0.5609,
+        -0.7272,
+        -0.6725,
+        -0.3526,
+        -0.9349
+      ]
+    },
+    {
+      "id": "ID_EQUIPMENT_TY",
+      "area_id": "ID_GENINF",
+      "name": "Equipment Type",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.4851,
+        0.9118,
+        -0.4871,
+        0.0196,
+        0.1937,
+        0.5887,
+        -0.5858,
+        0.3882
+      ]
+    },
+    {
+      "id": "ID_INSTRUMENT_C",
+      "area_id": "ID_GENINF",
+      "name": "Instrument Category",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.1927,
+        -0.9243,
+        -0.6012,
+        -0.7304,
+        -0.393,
+        -0.7927,
+        0.1848,
+        0.3614
+      ]
+    },
+    {
+      "id": "RS_CERTIFICATIO",
+      "area_id": "RS_CERTIF",
+      "name": "Certification (e.g. CE, UL, ISO)",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.0107,
+        -0.7508,
+        0.6739,
+        0.3702,
+        -0.358,
+        -0.51,
+        0.8119,
+        -0.9229
+      ]
+    },
+    {
+      "id": "ID_COMPLIANCE_S",
+      "area_id": "ID_GENINF",
+      "name": "Compliance Standards",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.4962,
+        0.2388,
+        -0.302,
+        -0.2481,
+        -0.5714,
+        0.7712,
+        0.3857,
+        -0.4346
+      ]
+    },
+    {
+      "id": "ID_WARRANTY_PER",
+      "area_id": "ID_LIFECY",
+      "name": "Warranty Period",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.511,
+        -0.3573,
+        0.1987,
+        -0.0252,
+        0.3414,
+        0.5539,
+        0.2102,
+        -0.7603
+      ]
+    },
+    {
+      "id": "ID_SUPPORT_EXPI",
+      "area_id": "ID_LIFECY",
+      "name": "Support Expiry Date",
+      "datatype": "date",
+      "unit": null,
+      "embedding": [
+        -0.8807,
+        0.4287,
+        -0.2751,
+        -0.1164,
+        -0.2121,
+        0.7712,
+        -0.3914,
+        -0.7968
+      ]
+    },
+    {
+      "id": "FC_MAX_RPM",
+      "area_id": "FC_MAIN_D",
+      "name": "Max RPM",
+      "datatype": "number",
+      "unit": "rpm",
+      "embedding": [
+        0.4627,
+        -0.0291,
+        -0.8914,
+        0.6054,
+        0.7284,
+        0.5981,
+        0.5374,
+        -0.795
+      ]
+    },
+    {
+      "id": "FC_MIN_RPM",
+      "area_id": "FC_MAIN_D",
+      "name": "Min RPM",
+      "datatype": "number",
+      "unit": "rpm",
+      "embedding": [
+        -0.2482,
+        0.2619,
+        -0.2203,
+        0.1157,
+        -0.1296,
+        -0.6832,
+        -0.5918,
+        -0.1462
+      ]
+    },
+    {
+      "id": "FC_MAX_RCF",
+      "area_id": "FC_MAIN_D",
+      "name": "Max RCF",
+      "datatype": "number",
+      "unit": "\u00d7g",
+      "embedding": [
+        0.7794,
+        0.4979,
+        0.2851,
+        0.774,
+        0.8659,
+        -0.4735,
+        0.8375,
+        -0.5984
+      ]
+    },
+    {
+      "id": "ER_TEMPERATURE_",
+      "area_id": "ER_THERMA",
+      "name": "Temperature Range (\u00b0C)",
+      "datatype": "number",
+      "unit": "\u00b0C",
+      "embedding": [
+        0.5656,
+        0.0555,
+        0.2608,
+        -0.1981,
+        -0.5186,
+        0.7659,
+        0.8839,
+        -0.6218
+      ]
+    },
+    {
+      "id": "ER_HEATING_YES_",
+      "area_id": "ER_THERMA",
+      "name": "Heating (Yes/No)",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        -0.8334,
+        0.6761,
+        0.0594,
+        0.2661,
+        0.5469,
+        -0.9637,
+        0.1802,
+        0.632
+      ]
+    },
+    {
+      "id": "ER_COOLING_YES_",
+      "area_id": "ER_THERMA",
+      "name": "Cooling (Yes/No)",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        0.226,
+        -0.6851,
+        -0.5645,
+        -0.4333,
+        0.2431,
+        -0.9823,
+        -0.499,
+        -0.8066
+      ]
+    },
+    {
+      "id": "ER_TEMPERATURE_",
+      "area_id": "ER_THERMA",
+      "name": "Temperature Control Type",
+      "datatype": "number",
+      "unit": "\u00b0C",
+      "embedding": [
+        -0.7426,
+        0.8104,
+        -0.0469,
+        0.6051,
+        -0.6576,
+        -0.2686,
+        -0.8896,
+        0.8584
+      ]
+    },
+    {
+      "id": "ER_TEMPERATURE_",
+      "area_id": "ER_THERMA",
+      "name": "Temperature Stability (\u00b1 \u00b0C)",
+      "datatype": "number",
+      "unit": "\u00b0C",
+      "embedding": [
+        -0.1162,
+        0.5441,
+        -0.49,
+        -0.6115,
+        -0.7347,
+        0.4045,
+        0.45,
+        0.4903
+      ]
+    },
+    {
+      "id": "ER_HUMIDITY_CON",
+      "area_id": "ER_HUMIDI",
+      "name": "Humidity Control (Yes/No)",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        -0.8864,
+        -0.2547,
+        0.8596,
+        -0.0707,
+        -0.0601,
+        -0.8416,
+        0.354,
+        0.3523
+      ]
+    },
+    {
+      "id": "ER_CO2_CONTROL_",
+      "area_id": "ER_GAS_CO",
+      "name": "CO\u2082 Control (Yes/No)",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        0.7835,
+        0.1507,
+        -0.5783,
+        -0.7616,
+        -0.2809,
+        -0.1167,
+        -0.7275,
+        0.8293
+      ]
+    },
+    {
+      "id": "ER_O2_CONTROL_Y",
+      "area_id": "ER_GAS_CO",
+      "name": "O\u2082 Control (Yes/No)",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        -0.5573,
+        -0.8301,
+        0.6607,
+        -0.4791,
+        -0.5406,
+        -0.1098,
+        0.422,
+        0.8024
+      ]
+    },
+    {
+      "id": "ER_VACUUM_CONTR",
+      "area_id": "ER_PRESSU",
+      "name": "Vacuum Control (Yes/No)",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        0.839,
+        -0.2391,
+        -0.9072,
+        -0.0483,
+        -0.0874,
+        0.2415,
+        -0.4187,
+        -0.7826
+      ]
+    },
+    {
+      "id": "ER_GAS_PURGE_OP",
+      "area_id": "ER_GAS_CO",
+      "name": "Gas Purge Options",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.9347,
+        -0.8835,
+        -0.9537,
+        0.4328,
+        0.6668,
+        0.1277,
+        0.968,
+        -0.1722
+      ]
+    },
+    {
+      "id": "FC_SPEED_RANGE",
+      "area_id": "FC_MAIN_D",
+      "name": "Speed Range",
+      "datatype": "number",
+      "unit": "rpm",
+      "embedding": [
+        0.917,
+        -0.9786,
+        -0.1932,
+        -0.1148,
+        -0.3488,
+        0.9237,
+        0.643,
+        -0.8362
+      ]
+    },
+    {
+      "id": "FC_ACCELERATION",
+      "area_id": "FC_MAIN_D",
+      "name": "Acceleration Time",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.4547,
+        0.2377,
+        -0.1892,
+        -0.5106,
+        0.8704,
+        -0.1824,
+        -0.3238,
+        -0.6934
+      ]
+    },
+    {
+      "id": "FC_DECELERATION",
+      "area_id": "FC_MAIN_D",
+      "name": "Deceleration Time",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.1582,
+        -0.8322,
+        -0.9502,
+        -0.5387,
+        -0.8068,
+        -0.1389,
+        -0.6476,
+        -0.647
+      ]
+    },
+    {
+      "id": "ID_TIMER_RANGE",
+      "area_id": "ID_GENINF",
+      "name": "Timer Range",
+      "datatype": "number",
+      "unit": null,
+      "embedding": [
+        -0.2517,
+        0.0245,
+        -0.9875,
+        -0.2119,
+        0.9506,
+        0.3646,
+        0.9366,
+        -0.3987
+      ]
+    },
+    {
+      "id": "ID_TIMED_MODES",
+      "area_id": "ID_GENINF",
+      "name": "Timed Modes",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.888,
+        -0.6961,
+        0.169,
+        0.2134,
+        -0.0913,
+        -0.5198,
+        0.465,
+        -0.4848
+      ]
+    },
+    {
+      "id": "ID_CONTINUOUS_R",
+      "area_id": "ID_GENINF",
+      "name": "Continuous Run Mode",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.2351,
+        -0.6713,
+        -0.435,
+        -0.2618,
+        -0.6208,
+        0.8423,
+        -0.4106,
+        -0.6564
+      ]
+    },
+    {
+      "id": "FC_LOAD_BALANCI",
+      "area_id": "FC_MAIN_D",
+      "name": "Load Balancing System",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.2117,
+        0.4199,
+        0.0087,
+        -0.9638,
+        -0.9996,
+        0.365,
+        -0.8447,
+        0.5986
+      ]
+    },
+    {
+      "id": "ID_INTERNAL_SEN",
+      "area_id": "ID_GENINF",
+      "name": "Internal Sensors",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.3887,
+        0.3293,
+        0.3104,
+        0.979,
+        -0.1536,
+        -0.6576,
+        0.2323,
+        0.6349
+      ]
+    },
+    {
+      "id": "ID_OPTICAL_DETE",
+      "area_id": "ID_GENINF",
+      "name": "Optical Detection (Yes/No)",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        0.4733,
+        -0.8571,
+        -0.3212,
+        -0.6353,
+        -0.2134,
+        -0.8159,
+        -0.2882,
+        -0.8981
+      ]
+    },
+    {
+      "id": "RS_UV_SUPPORT_Y",
+      "area_id": "RS_DECONT",
+      "name": "UV Support (Yes/No)",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        0.1859,
+        -0.2788,
+        -0.9964,
+        -0.6847,
+        -0.23,
+        -0.6594,
+        -0.9961,
+        -0.6145
+      ]
+    },
+    {
+      "id": "ID_LIGHT_SOURCE",
+      "area_id": "ID_GENINF",
+      "name": "Light Source Type",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.2455,
+        -0.1875,
+        -0.7302,
+        -0.6277,
+        -0.1311,
+        -0.1039,
+        0.9704,
+        -0.1331
+      ]
+    },
+    {
+      "id": "ID_FREQUENCY_RA",
+      "area_id": "ID_GENINF",
+      "name": "Frequency Range (Hz)",
+      "datatype": "number",
+      "unit": "Hz",
+      "embedding": [
+        -0.2852,
+        -0.0004,
+        -0.1849,
+        0.0682,
+        -0.0871,
+        -0.5049,
+        0.2319,
+        -0.7911
+      ]
+    },
+    {
+      "id": "FC_MAX_SAMPLE_C",
+      "area_id": "FC_SAMPLE",
+      "name": "Max Sample Capacity",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.3456,
+        0.233,
+        -0.8881,
+        0.6391,
+        -0.1857,
+        -0.4048,
+        -0.0681,
+        0.8647
+      ]
+    },
+    {
+      "id": "FC_MIN_SAMPLE_V",
+      "area_id": "FC_SAMPLE",
+      "name": "Min Sample Volume",
+      "datatype": "number",
+      "unit": "mL",
+      "embedding": [
+        0.6438,
+        -0.0743,
+        -0.4622,
+        -0.9365,
+        0.5603,
+        0.0204,
+        0.7561,
+        0.2953
+      ]
+    },
+    {
+      "id": "FC_MAX_SAMPLE_V",
+      "area_id": "FC_SAMPLE",
+      "name": "Max Sample Volume",
+      "datatype": "number",
+      "unit": "mL",
+      "embedding": [
+        -0.6376,
+        -0.2518,
+        -0.7787,
+        -0.7554,
+        -0.2628,
+        -0.2098,
+        -0.985,
+        -0.8651
+      ]
+    },
+    {
+      "id": "FC_TUBE_COMPATI",
+      "area_id": "FC_CONSUM",
+      "name": "Tube Compatibility",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.9809,
+        0.9982,
+        0.2121,
+        0.6858,
+        0.8715,
+        0.1795,
+        0.843,
+        0.4129
+      ]
+    },
+    {
+      "id": "FC_PLATE_COMPAT",
+      "area_id": "FC_CONSUM",
+      "name": "Plate Compatibility",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.4761,
+        -0.9959,
+        -0.899,
+        0.7456,
+        0.4686,
+        0.5598,
+        0.1372,
+        -0.2927
+      ]
+    },
+    {
+      "id": "FC_ROTOR_COMPAT",
+      "area_id": "FC_MAIN_D",
+      "name": "Rotor Compatibility",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.3991,
+        0.7798,
+        -0.0082,
+        -0.2466,
+        -0.144,
+        0.5727,
+        -0.2594,
+        0.8473
+      ]
+    },
+    {
+      "id": "FC_ADAPTER_COMP",
+      "area_id": "FC_CONSUM",
+      "name": "Adapter Compatibility",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.1743,
+        0.303,
+        0.2694,
+        -0.1561,
+        -0.0457,
+        0.1639,
+        -0.6877,
+        0.7697
+      ]
+    },
+    {
+      "id": "FC_CHAMBER_VOLU",
+      "area_id": "FC_SAMPLE",
+      "name": "Chamber Volume",
+      "datatype": "number",
+      "unit": "cm",
+      "embedding": [
+        0.7952,
+        -0.7688,
+        -0.0521,
+        0.6233,
+        -0.2806,
+        -0.2587,
+        -0.1178,
+        0.0278
+      ]
+    },
+    {
+      "id": "ID_WORKING_VOLU",
+      "area_id": "ID_GENINF",
+      "name": "Working Volume",
+      "datatype": "number",
+      "unit": "cm",
+      "embedding": [
+        -0.5414,
+        -0.2285,
+        -0.7009,
+        0.4487,
+        0.227,
+        0.3927,
+        0.8042,
+        0.3248
+      ]
+    },
+    {
+      "id": "FC_NUMBER_OF_SL",
+      "area_id": "FC_SAMPLE",
+      "name": "Number of Slots / Wells",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.7866,
+        0.9363,
+        -0.1045,
+        0.3244,
+        -0.0057,
+        -0.9912,
+        0.0685,
+        0.5128
+      ]
+    },
+    {
+      "id": "FC_SLIDE_CAPACI",
+      "area_id": "FC_SAMPLE",
+      "name": "Slide Capacity",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.1546,
+        -0.8053,
+        -0.9852,
+        0.2197,
+        -0.5149,
+        -0.0691,
+        0.1317,
+        -0.3502
+      ]
+    },
+    {
+      "id": "FC_WELL_FORMAT_",
+      "area_id": "FC_CONSUM",
+      "name": "Well Format Supported",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        0.4121,
+        0.4462,
+        0.6108,
+        -0.7483,
+        -0.4176,
+        -0.4944,
+        -0.934,
+        0.0124
+      ]
+    },
+    {
+      "id": "FC_CUVETTE_COMP",
+      "area_id": "FC_CONSUM",
+      "name": "Cuvette Compatibility",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.1551,
+        0.881,
+        -0.7284,
+        0.1566,
+        0.959,
+        0.4867,
+        -0.6897,
+        -0.6581
+      ]
+    },
+    {
+      "id": "FC_NUMBER_OF_CH",
+      "area_id": "FC_SAMPLE",
+      "name": "Number of Channels",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.686,
+        0.2586,
+        -0.6612,
+        -0.4789,
+        -0.2056,
+        -0.0257,
+        0.3623,
+        0.2888
+      ]
+    },
+    {
+      "id": "FC_CARTRIDGE_TY",
+      "area_id": "FC_CONSUM",
+      "name": "Cartridge Type",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.0607,
+        0.8905,
+        0.1425,
+        0.999,
+        -0.5584,
+        0.966,
+        -0.5222,
+        -0.1121
+      ]
+    },
+    {
+      "id": "FC_FILTER_TYPE",
+      "area_id": "FC_CONSUM",
+      "name": "Filter Type",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.1677,
+        0.7351,
+        -0.2125,
+        0.5325,
+        0.899,
+        -0.2083,
+        -0.4404,
+        0.462
+      ]
+    },
+    {
+      "id": "FC_REAGENT_COMP",
+      "area_id": "FC_CONSUM",
+      "name": "Reagent Compatibility",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.8494,
+        -0.9456,
+        -0.9579,
+        0.324,
+        0.3247,
+        0.9924,
+        -0.4204,
+        -0.5049
+      ]
+    },
+    {
+      "id": "FC_BIOHAZARD_CO",
+      "area_id": "FC_CONSUM",
+      "name": "Biohazard Compatibility",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.4855,
+        0.3926,
+        0.0952,
+        0.3537,
+        0.9778,
+        -0.677,
+        -0.4143,
+        -0.6649
+      ]
+    },
+    {
+      "id": "PS_DIMENSIONS_W",
+      "area_id": "PS_FOOTPR",
+      "name": "Dimensions (W \u00d7 D \u00d7 H)",
+      "datatype": "number",
+      "unit": "cm",
+      "embedding": [
+        0.6647,
+        0.6675,
+        0.0803,
+        0.8941,
+        0.6914,
+        0.8926,
+        -0.6328,
+        -0.4402
+      ]
+    },
+    {
+      "id": "PS_WEIGHT",
+      "area_id": "PS_MASS_L",
+      "name": "Weight",
+      "datatype": "number",
+      "unit": "kg",
+      "embedding": [
+        -0.6184,
+        0.1741,
+        0.1402,
+        -0.0425,
+        0.5151,
+        0.7546,
+        0.5271,
+        -0.9744
+      ]
+    },
+    {
+      "id": "PS_SHIPPING_DIM",
+      "area_id": "PS_FOOTPR",
+      "name": "Shipping Dimensions",
+      "datatype": "number",
+      "unit": "cm",
+      "embedding": [
+        0.6798,
+        -0.7697,
+        -0.4125,
+        0.3981,
+        0.7535,
+        0.3182,
+        -0.7182,
+        0.7287
+      ]
+    },
+    {
+      "id": "PS_SHIPPING_WEI",
+      "area_id": "PS_MASS_L",
+      "name": "Shipping Weight",
+      "datatype": "number",
+      "unit": "kg",
+      "embedding": [
+        0.8578,
+        0.5209,
+        0.7273,
+        -0.1551,
+        -0.2502,
+        -0.5768,
+        -0.7926,
+        0.786
+      ]
+    },
+    {
+      "id": "PS_BENCHTOP_OR_",
+      "area_id": "PS_INSTAL",
+      "name": "Benchtop or Floor",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.9719,
+        0.0041,
+        -0.5138,
+        -0.5686,
+        -0.6378,
+        -0.2758,
+        0.2867,
+        -0.178
+      ]
+    },
+    {
+      "id": "PS_STACKABLE",
+      "area_id": "PS_INSTAL",
+      "name": "Stackable",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.9565,
+        0.5042,
+        -0.8849,
+        -0.1074,
+        -0.1791,
+        -0.1414,
+        -0.4621,
+        0.5192
+      ]
+    },
+    {
+      "id": "PS_MOUNTING_OPT",
+      "area_id": "PS_INSTAL",
+      "name": "Mounting Options",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.4473,
+        -0.6324,
+        -0.3721,
+        0.8119,
+        -0.7384,
+        0.9583,
+        0.0853,
+        0.4745
+      ]
+    },
+    {
+      "id": "PS_DOOR_TYPE",
+      "area_id": "PS_HOUSIN",
+      "name": "Door Type",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.8415,
+        -0.6707,
+        -0.2655,
+        -0.8433,
+        0.5846,
+        -0.9476,
+        -0.9395,
+        -0.7892
+      ]
+    },
+    {
+      "id": "PS_DOOR_OPENING",
+      "area_id": "PS_HOUSIN",
+      "name": "Door Opening Angle",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.2185,
+        0.2472,
+        0.9149,
+        -0.3705,
+        -0.6538,
+        -0.2067,
+        -0.3694,
+        -0.4071
+      ]
+    },
+    {
+      "id": "FC_CHAMBER_INSU",
+      "area_id": "FC_SAMPLE",
+      "name": "Chamber Insulation Type",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.4875,
+        -0.5684,
+        0.5763,
+        0.7171,
+        -0.8767,
+        0.2749,
+        -0.0526,
+        -0.2636
+      ]
+    },
+    {
+      "id": "PS_HOUSING_MATE",
+      "area_id": "PS_HOUSIN",
+      "name": "Housing Material",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.8993,
+        -0.7143,
+        -0.3167,
+        -0.454,
+        0.934,
+        -0.2951,
+        -0.4519,
+        -0.174
+      ]
+    },
+    {
+      "id": "FC_CHAMBER_MATE",
+      "area_id": "FC_SAMPLE",
+      "name": "Chamber Material",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.1592,
+        -0.5016,
+        0.9202,
+        0.7725,
+        -0.6266,
+        -0.8522,
+        -0.7864,
+        0.006
+      ]
+    },
+    {
+      "id": "FC_ROTOR_MATERI",
+      "area_id": "FC_MAIN_D",
+      "name": "Rotor Material",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.6547,
+        0.0295,
+        -0.5642,
+        -0.1101,
+        -0.179,
+        -0.2392,
+        -0.4108,
+        -0.8863
+      ]
+    },
+    {
+      "id": "PS_CONSTRUCTION",
+      "area_id": "PS_STRUCT",
+      "name": "Construction Type (Monoblock, Modular)",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.0172,
+        0.9454,
+        0.3183,
+        -0.5845,
+        -0.5419,
+        0.7886,
+        -0.8933,
+        -0.4018
+      ]
+    },
+    {
+      "id": "PS_CHEMICAL_RES",
+      "area_id": "PS_PROTEC",
+      "name": "Chemical Resistance",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.1038,
+        0.052,
+        0.4164,
+        0.63,
+        -0.1483,
+        0.3002,
+        -0.5485,
+        -0.2295
+      ]
+    },
+    {
+      "id": "ID_AUTOCLAVABLE",
+      "area_id": "ID_GENINF",
+      "name": "Autoclavable Components",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.7282,
+        0.494,
+        -0.9771,
+        0.073,
+        -0.9973,
+        -0.8296,
+        0.745,
+        -0.319
+      ]
+    },
+    {
+      "id": "PS_SURFACE_COAT",
+      "area_id": "PS_PROTEC",
+      "name": "Surface Coating",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.2741,
+        0.1843,
+        0.583,
+        0.77,
+        -0.933,
+        0.9149,
+        -0.8887,
+        -0.1268
+      ]
+    },
+    {
+      "id": "PS_DUST_PROTECT",
+      "area_id": "PS_PROTEC",
+      "name": "Dust Protection",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        0.3092,
+        -0.2458,
+        0.8697,
+        0.0804,
+        -0.2349,
+        0.558,
+        -0.8254,
+        0.6067
+      ]
+    },
+    {
+      "id": "PS_VIBRATION_DA",
+      "area_id": "PS_STRUCT",
+      "name": "Vibration Damping System",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.8132,
+        -0.407,
+        0.6661,
+        0.8048,
+        -0.2522,
+        -0.375,
+        -0.6857,
+        -0.5042
+      ]
+    },
+    {
+      "id": "UT_VOLTAGE_V",
+      "area_id": "UT_ELECTR",
+      "name": "Voltage (V)",
+      "datatype": "string",
+      "unit": "V",
+      "embedding": [
+        0.267,
+        -0.0394,
+        0.7534,
+        -0.3158,
+        0.516,
+        -0.2719,
+        0.1514,
+        0.9582
+      ]
+    },
+    {
+      "id": "UT_FREQUENCY_HZ",
+      "area_id": "UT_ELECTR",
+      "name": "Frequency (Hz)",
+      "datatype": "number",
+      "unit": "Hz",
+      "embedding": [
+        0.4986,
+        0.8033,
+        -0.486,
+        -0.1322,
+        -0.9871,
+        -0.5106,
+        -0.0054,
+        -0.8695
+      ]
+    },
+    {
+      "id": "UT_POWER_CONSUM",
+      "area_id": "UT_ELECTR",
+      "name": "Power Consumption (W)",
+      "datatype": "number",
+      "unit": "W",
+      "embedding": [
+        -0.5569,
+        -0.2475,
+        0.8084,
+        -0.2813,
+        -0.5955,
+        0.2103,
+        -0.3354,
+        -0.8699
+      ]
+    },
+    {
+      "id": "UT_MAX_POWER_OU",
+      "area_id": "UT_ELECTR",
+      "name": "Max Power Output",
+      "datatype": "number",
+      "unit": "W",
+      "embedding": [
+        0.2444,
+        0.0015,
+        -0.1058,
+        -0.0457,
+        -0.698,
+        -0.0794,
+        0.7081,
+        0.9258
+      ]
+    },
+    {
+      "id": "UT_STANDBY_POWE",
+      "area_id": "UT_ELECTR",
+      "name": "Standby Power",
+      "datatype": "number",
+      "unit": "W",
+      "embedding": [
+        0.2002,
+        0.9592,
+        0.4438,
+        0.1468,
+        0.3864,
+        0.8001,
+        -0.2952,
+        -0.1208
+      ]
+    },
+    {
+      "id": "UT_PLUG_TYPE",
+      "area_id": "UT_ELECTR",
+      "name": "Plug Type",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.2395,
+        -0.2321,
+        -0.2082,
+        0.0986,
+        -0.651,
+        0.3878,
+        0.7494,
+        -0.5
+      ]
+    },
+    {
+      "id": "UT_CABLE_LENGTH",
+      "area_id": "UT_ELECTR",
+      "name": "Cable Length",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.6911,
+        0.3641,
+        -0.7146,
+        0.8527,
+        -0.3641,
+        0.452,
+        0.2305,
+        -0.135
+      ]
+    },
+    {
+      "id": "UT_FUSE_RATING",
+      "area_id": "UT_ELECTR",
+      "name": "Fuse Rating",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.6586,
+        -0.919,
+        -0.8132,
+        -0.2271,
+        -0.9531,
+        0.7587,
+        -0.235,
+        -0.2189
+      ]
+    },
+    {
+      "id": "UT_POWER_SUPPLY",
+      "area_id": "UT_ELECTR",
+      "name": "Power Supply Type (AC/DC)",
+      "datatype": "number",
+      "unit": null,
+      "embedding": [
+        0.2352,
+        -0.3997,
+        0.8158,
+        -0.4089,
+        0.9882,
+        -0.3797,
+        -0.4305,
+        0.2832
+      ]
+    },
+    {
+      "id": "UT_BATTERY_BACK",
+      "area_id": "UT_ELECTR",
+      "name": "Battery Backup",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        0.9699,
+        -0.3136,
+        -0.4225,
+        -0.0924,
+        -0.8634,
+        -0.4167,
+        -0.2416,
+        -0.0301
+      ]
+    },
+    {
+      "id": "UT_ENERGY_EFFIC",
+      "area_id": "UT_ELECTR",
+      "name": "Energy Efficiency Class",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.8732,
+        0.8932,
+        -0.454,
+        -0.2567,
+        0.0973,
+        0.9921,
+        -0.3171,
+        0.6624
+      ]
+    },
+    {
+      "id": "UT_SURGE_PROTEC",
+      "area_id": "UT_ELECTR",
+      "name": "Surge Protection",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        0.7358,
+        0.7904,
+        -0.5446,
+        -0.823,
+        -0.8505,
+        0.9697,
+        0.9442,
+        -0.8384
+      ]
+    },
+    {
+      "id": "PS_HEAT_EMISSIO",
+      "area_id": "PS_THERMA",
+      "name": "Heat Emission (BTU/hr)",
+      "datatype": "number",
+      "unit": "BTU/hr",
+      "embedding": [
+        0.1426,
+        0.7258,
+        -0.5012,
+        -0.6918,
+        0.0795,
+        -0.1305,
+        0.2819,
+        -0.2374
+      ]
+    },
+    {
+      "id": "UI_DISPLAY_TYPE",
+      "area_id": "UI_DISPLA",
+      "name": "Display Type",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.8736,
+        0.5106,
+        -0.2562,
+        -0.6209,
+        0.1203,
+        -0.4926,
+        -0.0044,
+        -0.6093
+      ]
+    },
+    {
+      "id": "UI_DISPLAY_SIZE",
+      "area_id": "UI_DISPLA",
+      "name": "Display Size",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.6574,
+        -0.7071,
+        -0.0621,
+        0.5043,
+        -0.4359,
+        -0.3504,
+        -0.0484,
+        0.4548
+      ]
+    },
+    {
+      "id": "UI_DISPLAY_RESO",
+      "area_id": "UI_DISPLA",
+      "name": "Display Resolution",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.1253,
+        0.6973,
+        0.2797,
+        0.4726,
+        -0.3099,
+        -0.4493,
+        -0.2815,
+        0.9676
+      ]
+    },
+    {
+      "id": "UI_TOUCHSCREEN_",
+      "area_id": "UI_DISPLA",
+      "name": "Touchscreen (Yes/No)",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        0.9026,
+        0.6076,
+        -0.0986,
+        0.2941,
+        -0.2085,
+        0.3462,
+        -0.676,
+        -0.8313
+      ]
+    },
+    {
+      "id": "UI_MULTILINGUAL",
+      "area_id": "UI_CONNEC",
+      "name": "Multilingual Interface",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.5196,
+        0.0393,
+        -0.3751,
+        -0.5407,
+        -0.0653,
+        0.493,
+        0.8698,
+        0.9164
+      ]
+    },
+    {
+      "id": "UI_PROGRAMMABLE",
+      "area_id": "UI_SOFTWA",
+      "name": "Programmable Modes",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.4776,
+        0.5936,
+        0.8424,
+        0.3425,
+        -0.9,
+        0.0993,
+        -0.7207,
+        0.5773
+      ]
+    },
+    {
+      "id": "UI_NUMBER_OF_ST",
+      "area_id": "UI_SOFTWA",
+      "name": "Number of Stored Programs",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.6863,
+        0.1361,
+        -0.9384,
+        -0.9153,
+        -0.7609,
+        -0.4056,
+        -0.7357,
+        -0.041
+      ]
+    },
+    {
+      "id": "ID_PRESET_PROFI",
+      "area_id": "ID_GENINF",
+      "name": "Preset Profiles",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.981,
+        -0.6535,
+        -0.0044,
+        0.977,
+        0.6204,
+        -0.2962,
+        0.322,
+        -0.6777
+      ]
+    },
+    {
+      "id": "ID_REAL_TIME_MO",
+      "area_id": "ID_GENINF",
+      "name": "Real-Time Monitoring",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.8864,
+        -0.4405,
+        -0.897,
+        -0.0518,
+        -0.0102,
+        -0.1738,
+        -0.9998,
+        -0.1715
+      ]
+    },
+    {
+      "id": "UI_ERROR_CODES_",
+      "area_id": "UI_DISPLA",
+      "name": "Error Codes Display",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.7506,
+        0.0749,
+        -0.6045,
+        -0.9527,
+        0.0939,
+        -0.2658,
+        0.1916,
+        -0.6014
+      ]
+    },
+    {
+      "id": "ID_AUTO_SHUTDOW",
+      "area_id": "ID_GENINF",
+      "name": "Auto-Shutdown Feature",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.7764,
+        0.7986,
+        -0.837,
+        0.2856,
+        -0.4322,
+        -0.7986,
+        -0.1357,
+        0.2348
+      ]
+    },
+    {
+      "id": "ID_ALARMS_NOTIF",
+      "area_id": "ID_GENINF",
+      "name": "Alarms / Notifications",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.6122,
+        0.0788,
+        -0.7194,
+        0.8343,
+        0.0255,
+        0.3665,
+        -0.6568,
+        0.3359
+      ]
+    },
+    {
+      "id": "UI_PASSWORD_PRO",
+      "area_id": "UI_SECURI",
+      "name": "Password Protection",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        0.3449,
+        -0.2102,
+        0.3691,
+        -0.0406,
+        0.6013,
+        -0.4399,
+        0.7015,
+        -0.5695
+      ]
+    },
+    {
+      "id": "UI_USER_MANAGEM",
+      "area_id": "UI_SECURI",
+      "name": "User Management System",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.8596,
+        0.8504,
+        0.0349,
+        -0.2642,
+        0.3479,
+        -0.5969,
+        -0.3288,
+        0.277
+      ]
+    },
+    {
+      "id": "UI_LOCKOUT_MODE",
+      "area_id": "UI_SECURI",
+      "name": "Lockout Mode",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        0.8458,
+        0.9049,
+        0.0326,
+        0.1154,
+        -0.1648,
+        0.2748,
+        -0.0053,
+        -0.1737
+      ]
+    },
+    {
+      "id": "UI_QR_CODE_SUPP",
+      "area_id": "UI_CONNEC",
+      "name": "QR Code Support",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        0.7698,
+        -0.1838,
+        -0.7485,
+        0.5914,
+        -0.614,
+        -0.3895,
+        -0.113,
+        0.3146
+      ]
+    },
+    {
+      "id": "UI_RFID_ACCESS_",
+      "area_id": "UI_CONNEC",
+      "name": "RFID Access Support",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        0.5758,
+        -0.6901,
+        0.2775,
+        -0.3181,
+        -0.7344,
+        0.9907,
+        0.9714,
+        0.6674
+      ]
+    },
+    {
+      "id": "UT_USB_PORT",
+      "area_id": "UT_I_O_PO",
+      "name": "USB Port",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.2955,
+        0.626,
+        0.5588,
+        -0.1983,
+        0.2203,
+        -0.3341,
+        0.3656,
+        -0.3402
+      ]
+    },
+    {
+      "id": "UT_RS_232",
+      "area_id": "UT_I_O_PO",
+      "name": "RS-232",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.3083,
+        0.1975,
+        -0.7013,
+        -0.7663,
+        -0.7611,
+        0.5149,
+        0.4392,
+        0.3969
+      ]
+    },
+    {
+      "id": "UT_ETHERNET_POR",
+      "area_id": "UT_I_O_PO",
+      "name": "Ethernet Port",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.716,
+        0.7887,
+        0.9355,
+        -0.6892,
+        0.8202,
+        0.2502,
+        0.8404,
+        -0.9469
+      ]
+    },
+    {
+      "id": "UT_WI_FI",
+      "area_id": "UT_COMPUT",
+      "name": "Wi-Fi",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.9168,
+        -0.4391,
+        -0.005,
+        0.2532,
+        0.148,
+        0.2284,
+        0.9042,
+        -0.7034
+      ]
+    },
+    {
+      "id": "UT_BLUETOOTH",
+      "area_id": "UT_COMPUT",
+      "name": "Bluetooth",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.5136,
+        0.5893,
+        -0.1476,
+        0.5498,
+        -0.7906,
+        -0.252,
+        0.3802,
+        0.7241
+      ]
+    },
+    {
+      "id": "UI_API_SUPPORT",
+      "area_id": "UI_CONNEC",
+      "name": "API Support",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        -0.5037,
+        -0.3729,
+        -0.4421,
+        -0.4898,
+        0.6452,
+        0.1342,
+        0.0791,
+        0.4215
+      ]
+    },
+    {
+      "id": "UI_WEB_INTERFAC",
+      "area_id": "UI_CONNEC",
+      "name": "Web Interface",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.2999,
+        -0.7268,
+        0.9549,
+        0.5782,
+        -0.1539,
+        -0.0408,
+        -0.0262,
+        -0.1647
+      ]
+    },
+    {
+      "id": "UI_MOBILE_APP_S",
+      "area_id": "UI_CONNEC",
+      "name": "Mobile App Support",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        0.7338,
+        0.4428,
+        -0.176,
+        0.6751,
+        -0.3885,
+        0.7121,
+        0.5356,
+        -0.7945
+      ]
+    },
+    {
+      "id": "UI_CLOUD_SYNC_Y",
+      "area_id": "UI_CONNEC",
+      "name": "Cloud Sync (Yes/No)",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        0.2801,
+        0.2005,
+        -0.0835,
+        -0.6903,
+        0.1004,
+        0.3345,
+        0.9859,
+        -0.4129
+      ]
+    },
+    {
+      "id": "UI_DATA_EXPORT_",
+      "area_id": "UI_DATA_M",
+      "name": "Data Export Options",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.8806,
+        -0.6094,
+        -0.355,
+        -0.2437,
+        -0.16,
+        -0.548,
+        -0.1376,
+        -0.823
+      ]
+    },
+    {
+      "id": "ID_EXPORT_FILE_",
+      "area_id": "ID_GENINF",
+      "name": "Export File Formats",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.0116,
+        -0.5146,
+        0.6607,
+        -0.0821,
+        -0.3749,
+        0.0098,
+        -0.8895,
+        -0.5292
+      ]
+    },
+    {
+      "id": "UI_DATA_LOGGING",
+      "area_id": "UI_DATA_M",
+      "name": "Data Logging Interval",
+      "datatype": "number",
+      "unit": null,
+      "embedding": [
+        -0.1006,
+        0.4454,
+        0.9679,
+        0.5087,
+        -0.0684,
+        0.834,
+        -0.46,
+        -0.4436
+      ]
+    },
+    {
+      "id": "UI_SOFTWARE_INC",
+      "area_id": "UI_SOFTWA",
+      "name": "Software Included",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.5597,
+        0.5005,
+        -0.2206,
+        0.8753,
+        -0.7721,
+        0.2853,
+        -0.9661,
+        -0.7891
+      ]
+    },
+    {
+      "id": "UI_SOFTWARE_VER",
+      "area_id": "UI_SOFTWA",
+      "name": "Software Version",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.049,
+        -0.0513,
+        0.8747,
+        -0.3404,
+        -0.9346,
+        -0.8521,
+        0.9233,
+        0.5103
+      ]
+    },
+    {
+      "id": "UI_UPDATEABLE_F",
+      "area_id": "UI_SOFTWA",
+      "name": "Updateable Firmware",
+      "datatype": "date",
+      "unit": null,
+      "embedding": [
+        0.063,
+        -0.888,
+        0.358,
+        -0.2644,
+        0.1355,
+        0.599,
+        -0.6241,
+        -0.6152
+      ]
+    },
+    {
+      "id": "UI_PC_CONNECTIV",
+      "area_id": "UI_CONNEC",
+      "name": "PC Connectivity",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.8393,
+        -0.9626,
+        0.1977,
+        -0.2162,
+        0.1565,
+        0.5353,
+        0.1531,
+        0.4468
+      ]
+    },
+    {
+      "id": "UI_COMPATIBLE_O",
+      "area_id": "UI_SOFTWA",
+      "name": "Compatible OS",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.0696,
+        0.8024,
+        0.3341,
+        0.9357,
+        -0.6064,
+        0.8463,
+        -0.5436,
+        -0.2668
+      ]
+    },
+    {
+      "id": "UI_LAB_MANAGEME",
+      "area_id": "UI_SOFTWA",
+      "name": "Lab Management Software Integration",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.1163,
+        -0.3828,
+        0.68,
+        0.2991,
+        -0.2563,
+        -0.2763,
+        0.9671,
+        0.6048
+      ]
+    },
+    {
+      "id": "ER_OPERATING_TE",
+      "area_id": "ER_THERMA",
+      "name": "Operating Temperature",
+      "datatype": "number",
+      "unit": "\u00b0C",
+      "embedding": [
+        0.1817,
+        -0.8621,
+        0.292,
+        -0.5079,
+        0.3522,
+        0.1249,
+        0.9748,
+        -0.606
+      ]
+    },
+    {
+      "id": "ER_STORAGE_TEMP",
+      "area_id": "ER_THERMA",
+      "name": "Storage Temperature",
+      "datatype": "number",
+      "unit": "\u00b0C",
+      "embedding": [
+        0.5899,
+        0.1992,
+        -0.1811,
+        0.2507,
+        -0.7931,
+        0.3344,
+        0.0543,
+        -0.5226
+      ]
+    },
+    {
+      "id": "ER_OPERATING_HU",
+      "area_id": "ER_HUMIDI",
+      "name": "Operating Humidity",
+      "datatype": "number",
+      "unit": null,
+      "embedding": [
+        0.471,
+        0.4643,
+        -0.8689,
+        0.3985,
+        -0.885,
+        -0.6146,
+        0.0363,
+        0.4082
+      ]
+    },
+    {
+      "id": "PS_NOISE_LEVEL_",
+      "area_id": "PS_ACOUST",
+      "name": "Noise Level (dB)",
+      "datatype": "number",
+      "unit": "dB",
+      "embedding": [
+        -0.5062,
+        -0.2289,
+        -0.3609,
+        -0.5297,
+        -0.8659,
+        0.7481,
+        -0.7144,
+        0.7466
+      ]
+    },
+    {
+      "id": "RS_IP_RATING",
+      "area_id": "RS_INGRES",
+      "name": "IP Rating",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.3329,
+        -0.5234,
+        0.3553,
+        -0.7726,
+        0.6857,
+        -0.8898,
+        -0.2829,
+        0.5865
+      ]
+    },
+    {
+      "id": "RS_EMC_COMPLIAN",
+      "area_id": "RS_EMC",
+      "name": "EMC Compliance",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.296,
+        0.4471,
+        -0.7342,
+        -0.7578,
+        -0.0178,
+        0.4825,
+        -0.3453,
+        0.102
+      ]
+    },
+    {
+      "id": "RS_FIRE_SAFETY_",
+      "area_id": "RS_FIRE_S",
+      "name": "Fire Safety Classification",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.9746,
+        -0.6615,
+        0.2131,
+        -0.1254,
+        -0.0735,
+        0.0749,
+        -0.407,
+        0.4909
+      ]
+    },
+    {
+      "id": "RS_BIOSAFETY_LE",
+      "area_id": "RS_BIOSAF",
+      "name": "Biosafety Level Compatibility",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.3107,
+        0.9843,
+        -0.1516,
+        -0.1741,
+        0.3378,
+        -0.8256,
+        0.4451,
+        -0.2813
+      ]
+    },
+    {
+      "id": "RS_STERILITY_MA",
+      "area_id": "RS_STERIL",
+      "name": "Sterility Maintenance",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.7223,
+        0.4593,
+        -0.3962,
+        0.8312,
+        -0.9438,
+        -0.8886,
+        0.396,
+        -0.5975
+      ]
+    },
+    {
+      "id": "RS_HEPA_FILTRAT",
+      "area_id": "RS_FILTRA",
+      "name": "HEPA Filtration",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.1686,
+        0.2079,
+        0.3048,
+        -0.8565,
+        -0.4583,
+        -0.5976,
+        0.3224,
+        -0.883
+      ]
+    },
+    {
+      "id": "RS_DECONTAMINAT",
+      "area_id": "RS_DECONT",
+      "name": "Decontamination Support",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        -0.7112,
+        -0.8871,
+        0.3092,
+        -0.3193,
+        -0.4524,
+        -0.7321,
+        -0.8522,
+        0.5946
+      ]
+    },
+    {
+      "id": "RS_UV_STERILIZA",
+      "area_id": "RS_DECONT",
+      "name": "UV Sterilization Support",
+      "datatype": "boolean",
+      "unit": null,
+      "embedding": [
+        0.9351,
+        0.7965,
+        -0.1143,
+        -0.6225,
+        -0.5479,
+        0.8309,
+        -0.7104,
+        -0.6521
+      ]
+    },
+    {
+      "id": "RS_SPILL_CONTAI",
+      "area_id": "RS_SAFETY",
+      "name": "Spill Containment",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.6847,
+        -0.203,
+        -0.977,
+        0.5195,
+        0.9804,
+        -0.2123,
+        -0.0063,
+        0.0277
+      ]
+    },
+    {
+      "id": "RS_CLEANROOM_CE",
+      "area_id": "RS_CERTIF",
+      "name": "Cleanroom Certification",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.7881,
+        0.5858,
+        0.4485,
+        -0.433,
+        -0.154,
+        0.2366,
+        0.4606,
+        0.92
+      ]
+    },
+    {
+      "id": "RS_SAFETY_CERTI",
+      "area_id": "RS_CERTIF",
+      "name": "Safety Certifications (T\u00dcV, NRTL)",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.493,
+        -0.1232,
+        0.134,
+        -0.8054,
+        -0.1072,
+        0.9997,
+        -0.6867,
+        -0.9276
+      ]
+    },
+    {
+      "id": "SM_SERVICE_INTE",
+      "area_id": "SM_SERVIC",
+      "name": "Service Interval",
+      "datatype": "number",
+      "unit": null,
+      "embedding": [
+        -0.5392,
+        0.5127,
+        0.7395,
+        0.2805,
+        -0.1768,
+        0.6036,
+        -0.3945,
+        -0.5958
+      ]
+    },
+    {
+      "id": "SM_MAINTENANCE_",
+      "area_id": "SM_SERVIC",
+      "name": "Maintenance Type (User/Certified)",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.326,
+        0.3564,
+        -0.1281,
+        0.8352,
+        0.5032,
+        -0.7905,
+        0.1203,
+        0.7251
+      ]
+    },
+    {
+      "id": "SM_CALIBRATION_",
+      "area_id": "SM_SERVIC",
+      "name": "Calibration Required",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.9995,
+        -0.9739,
+        0.2282,
+        0.1506,
+        0.0972,
+        0.2252,
+        0.6578,
+        0.0147
+      ]
+    },
+    {
+      "id": "SM_CALIBRATION_",
+      "area_id": "SM_SERVIC",
+      "name": "Calibration Interval",
+      "datatype": "number",
+      "unit": null,
+      "embedding": [
+        0.881,
+        0.6817,
+        -0.3114,
+        0.7397,
+        -0.5961,
+        0.686,
+        -0.0277,
+        -0.7411
+      ]
+    },
+    {
+      "id": "ID_SELF_DIAGNOS",
+      "area_id": "ID_GENINF",
+      "name": "Self-Diagnostics",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.1709,
+        -0.9681,
+        0.8676,
+        -0.5985,
+        0.8829,
+        -0.2017,
+        -0.9616,
+        0.5645
+      ]
+    },
+    {
+      "id": "SM_SERVICE_MANU",
+      "area_id": "SM_SERVIC",
+      "name": "Service Manual Included",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.7896,
+        -0.4081,
+        0.675,
+        -0.5312,
+        0.2409,
+        -0.8443,
+        0.7701,
+        0.2462
+      ]
+    },
+    {
+      "id": "ID_REPLACEABLE_",
+      "area_id": "ID_GENINF",
+      "name": "Replaceable Parts",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.8733,
+        0.1956,
+        0.9623,
+        0.1739,
+        0.7328,
+        0.3165,
+        -0.4833,
+        0.9155
+      ]
+    },
+    {
+      "id": "ID_SPARE_PARTS_",
+      "area_id": "ID_GENINF",
+      "name": "Spare Parts Availability",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.5149,
+        0.5652,
+        -0.4666,
+        0.1646,
+        0.8422,
+        -0.6781,
+        0.8711,
+        -0.3493
+      ]
+    },
+    {
+      "id": "ID_CONSUMABLES_",
+      "area_id": "ID_GENINF",
+      "name": "Consumables List",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        0.7748,
+        0.3141,
+        0.3286,
+        -0.1276,
+        0.206,
+        0.4957,
+        0.129,
+        0.4991
+      ]
+    },
+    {
+      "id": "RS_TRAINING_REQ",
+      "area_id": "RS_TRAINI",
+      "name": "Training Required",
+      "datatype": "string",
+      "unit": null,
+      "embedding": [
+        -0.5388,
+        -0.4614,
+        0.8689,
+        -0.4475,
+        -0.0339,
+        0.5356,
+        0.591,
+        0.6042
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1379 @@
+[
+  {
+    "level1": "Identification",
+    "level2": "Manufacturer Info",
+    "level3": "Equipment Name",
+    "description": "Equipment Name specification.",
+    "importance": 46,
+    "prompt": "Provide Equipment Name value.",
+    "output": "Eppendorf Centrifuge 5427 R"
+  },
+  {
+    "level1": "Identification",
+    "level2": "Manufacturer Info",
+    "level3": "Model Number",
+    "description": "Model Number specification.",
+    "importance": 58,
+    "prompt": "Provide Model Number value.",
+    "output": "5427 R"
+  },
+  {
+    "level1": "Identification",
+    "level2": "Manufacturer Info",
+    "level3": "Manufacturer",
+    "description": "Manufacturer specification.",
+    "importance": 55,
+    "prompt": "Provide Manufacturer value.",
+    "output": "Eppendorf"
+  },
+  {
+    "level1": "Identification",
+    "level2": "Manufacturer Info",
+    "level3": "Product Line / Series",
+    "description": "Product Line / Series specification.",
+    "importance": 58,
+    "prompt": "Provide Product Line / Series value.",
+    "output": "Centrifuge 5427"
+  },
+  {
+    "level1": "Identification",
+    "level2": "Manufacturer Info",
+    "level3": "SKU",
+    "description": "SKU specification.",
+    "importance": 41,
+    "prompt": "Provide SKU value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Identification",
+    "level2": "Manufacturer Info",
+    "level3": "Part Number",
+    "description": "Part Number specification.",
+    "importance": 57,
+    "prompt": "Provide Part Number value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Identification",
+    "level2": "Manufacturer Info",
+    "level3": "Country of Origin",
+    "description": "Country of Origin specification.",
+    "importance": 47,
+    "prompt": "Provide Country of Origin value.",
+    "output": "Germany"
+  },
+  {
+    "level1": "Identification",
+    "level2": "Lifecycle Info",
+    "level3": "Year of Manufacture",
+    "description": "Year of Manufacture specification.",
+    "importance": 50,
+    "prompt": "Provide Year of Manufacture value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Identification",
+    "level2": "Lifecycle Info",
+    "level3": "Date of First Use",
+    "description": "Date of First Use specification.",
+    "importance": 45,
+    "prompt": "Provide Date of First Use value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Identification",
+    "level2": "Asset Class",
+    "level3": "Equipment Type",
+    "description": "Equipment Type specification.",
+    "importance": 47,
+    "prompt": "Provide Equipment Type value.",
+    "output": "Benchtop refrigerated microcentrifuge"
+  },
+  {
+    "level1": "Identification",
+    "level2": "Asset Class",
+    "level3": "Instrument Category",
+    "description": "Instrument Category specification.",
+    "importance": 57,
+    "prompt": "Provide Instrument Category value.",
+    "output": "Centrifuge"
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Certifications",
+    "level3": "Certification (e.g. CE, UL, ISO)",
+    "description": "Certification (e.g. CE, UL, ISO) specification.",
+    "importance": 90,
+    "prompt": "Provide Certification (e.g. CE, UL, ISO) value.",
+    "output": "CE, cTUVus, IVDR"
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Compliance",
+    "level3": "Compliance Standards",
+    "description": "Compliance Standards specification.",
+    "importance": 57,
+    "prompt": "Provide Compliance Standards value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Identification",
+    "level2": "Lifecycle Info",
+    "level3": "Warranty Period",
+    "description": "Warranty Period specification.",
+    "importance": 41,
+    "prompt": "Provide Warranty Period value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Identification",
+    "level2": "Lifecycle Info",
+    "level3": "Support Expiry Date",
+    "description": "Support Expiry Date specification.",
+    "importance": 58,
+    "prompt": "Provide Support Expiry Date value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Performance",
+    "level3": "Max RPM",
+    "description": "Max RPM specification.",
+    "importance": 88,
+    "prompt": "Provide Max RPM value.",
+    "output": "16220"
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Performance",
+    "level3": "Min RPM",
+    "description": "Min RPM specification.",
+    "importance": 54,
+    "prompt": "Provide Min RPM value.",
+    "output": "100"
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Performance",
+    "level3": "Max RCF",
+    "description": "Max RCF specification.",
+    "importance": 95,
+    "prompt": "Provide Max RCF value.",
+    "output": "25001"
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Thermal",
+    "level3": "Temperature Range (\u00b0C)",
+    "description": "Temperature Range (\u00b0C) specification.",
+    "importance": 86,
+    "prompt": "Provide Temperature Range (\u00b0C) value.",
+    "output": "-11\u00a0\u2026\u00a0+40\u00a0\u00b0C"
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Thermal",
+    "level3": "Heating (Yes/No)",
+    "description": "Heating (Yes/No) specification.",
+    "importance": 59,
+    "prompt": "Provide Heating (Yes/No) value.",
+    "output": "No"
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Thermal",
+    "level3": "Cooling (Yes/No)",
+    "description": "Cooling (Yes/No) specification.",
+    "importance": 92,
+    "prompt": "Provide Cooling (Yes/No) value.",
+    "output": "Yes"
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Thermal",
+    "level3": "Temperature Control Type",
+    "description": "Temperature Control Type specification.",
+    "importance": 50,
+    "prompt": "Provide Temperature Control Type value.",
+    "output": "Active refrigeration (CFC\u2011free R134a)"
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Thermal",
+    "level3": "Temperature Stability (\u00b1 \u00b0C)",
+    "description": "Temperature Stability (\u00b1 \u00b0C) specification.",
+    "importance": 42,
+    "prompt": "Provide Temperature Stability (\u00b1 \u00b0C) value.",
+    "output": "\u00b11\u00a0\u00b0C"
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Thermal",
+    "level3": "Humidity Control (Yes/No)",
+    "description": "Humidity Control (Yes/No) specification.",
+    "importance": 55,
+    "prompt": "Provide Humidity Control (Yes/No) value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Gas Control",
+    "level3": "CO\u2082 Control (Yes/No)",
+    "description": "CO\u2082 Control (Yes/No) specification.",
+    "importance": 53,
+    "prompt": "Provide CO\u2082 Control (Yes/No) value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Gas Control",
+    "level3": "O\u2082 Control (Yes/No)",
+    "description": "O\u2082 Control (Yes/No) specification.",
+    "importance": 56,
+    "prompt": "Provide O\u2082 Control (Yes/No) value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Gas Control",
+    "level3": "Vacuum Control (Yes/No)",
+    "description": "Vacuum Control (Yes/No) specification.",
+    "importance": 55,
+    "prompt": "Provide Vacuum Control (Yes/No) value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Gas Control",
+    "level3": "Gas Purge Options",
+    "description": "Gas Purge Options specification.",
+    "importance": 46,
+    "prompt": "Provide Gas Purge Options value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Performance",
+    "level3": "Speed Range",
+    "description": "Speed Range specification.",
+    "importance": 91,
+    "prompt": "Provide Speed Range value.",
+    "output": "100\u00a0\u2013\u00a016\u202f220\u00a0rpm"
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Performance",
+    "level3": "Acceleration Time",
+    "description": "Acceleration Time specification.",
+    "importance": 88,
+    "prompt": "Provide Acceleration Time value.",
+    "output": "\u224813\u00a0s to max speed (FA\u201145\u201148\u201111)"
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Performance",
+    "level3": "Deceleration Time",
+    "description": "Deceleration Time specification.",
+    "importance": 89,
+    "prompt": "Provide Deceleration Time value.",
+    "output": "\u224813\u00a0s from max speed"
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Timing",
+    "level3": "Timer Range",
+    "description": "Timer Range specification.",
+    "importance": 52,
+    "prompt": "Provide Timer Range value.",
+    "output": "10\u00a0s\u00a0\u2013\u00a09\u00a0h\u00a059\u00a0min or continuous"
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Timing",
+    "level3": "Timed Modes",
+    "description": "Timed Modes specification.",
+    "importance": 60,
+    "prompt": "Provide Timed Modes value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Timing",
+    "level3": "Continuous Run Mode",
+    "description": "Continuous Run Mode specification.",
+    "importance": 54,
+    "prompt": "Provide Continuous Run Mode value.",
+    "output": "Yes"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "Load Balancing System",
+    "description": "Load Balancing System specification.",
+    "importance": 45,
+    "prompt": "Provide Load Balancing System value.",
+    "output": "Automatic imbalance detection with auto\u2011stop"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "Internal Sensors",
+    "description": "Internal Sensors specification.",
+    "importance": 49,
+    "prompt": "Provide Internal Sensors value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "Optical Detection (Yes/No)",
+    "description": "Optical Detection (Yes/No) specification.",
+    "importance": 59,
+    "prompt": "Provide Optical Detection (Yes/No) value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "UV Support (Yes/No)",
+    "description": "UV Support (Yes/No) specification.",
+    "importance": 41,
+    "prompt": "Provide UV Support (Yes/No) value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "Light Source Type",
+    "description": "Light Source Type specification.",
+    "importance": 47,
+    "prompt": "Provide Light Source Type value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Frequency Range (Hz)",
+    "description": "Frequency Range (Hz) specification.",
+    "importance": 44,
+    "prompt": "Provide Frequency Range (Hz) value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Capacity",
+    "level3": "Max Sample Capacity",
+    "description": "Max Sample Capacity specification.",
+    "importance": 93,
+    "prompt": "Provide Max Sample Capacity value.",
+    "output": "48\u00a0\u00d7\u00a02\u202fmL"
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Capacity",
+    "level3": "Min Sample Volume",
+    "description": "Min Sample Volume specification.",
+    "importance": 56,
+    "prompt": "Provide Min Sample Volume value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Capacity",
+    "level3": "Max Sample Volume",
+    "description": "Max Sample Volume specification.",
+    "importance": 93,
+    "prompt": "Provide Max Sample Volume value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Tube Compatibility",
+    "description": "Tube Compatibility specification.",
+    "importance": 90,
+    "prompt": "Provide Tube Compatibility value.",
+    "output": "1.5/2.0\u00a0mL microcentrifuge tubes"
+  },
+  {
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Plate Compatibility",
+    "description": "Plate Compatibility specification.",
+    "importance": 55,
+    "prompt": "Provide Plate Compatibility value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Rotor Compatibility",
+    "description": "Rotor Compatibility specification.",
+    "importance": 89,
+    "prompt": "Provide Rotor Compatibility value.",
+    "output": "FA\u201145\u201148\u201111 and 8 additional Eppendorf rotors"
+  },
+  {
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Adapter Compatibility",
+    "description": "Adapter Compatibility specification.",
+    "importance": 45,
+    "prompt": "Provide Adapter Compatibility value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Capacity",
+    "level3": "Chamber Volume",
+    "description": "Chamber Volume specification.",
+    "importance": 58,
+    "prompt": "Provide Chamber Volume value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Capacity",
+    "level3": "Working Volume",
+    "description": "Working Volume specification.",
+    "importance": 40,
+    "prompt": "Provide Working Volume value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Capacity",
+    "level3": "Number of Slots / Wells",
+    "description": "Number of Slots / Wells specification.",
+    "importance": 57,
+    "prompt": "Provide Number of Slots / Wells value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Capacity",
+    "level3": "Slide Capacity",
+    "description": "Slide Capacity specification.",
+    "importance": 12,
+    "prompt": "Provide Slide Capacity value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Well Format Supported",
+    "description": "Well Format Supported specification.",
+    "importance": 46,
+    "prompt": "Provide Well Format Supported value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Cuvette Compatibility",
+    "description": "Cuvette Compatibility specification.",
+    "importance": 52,
+    "prompt": "Provide Cuvette Compatibility value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "Number of Channels",
+    "description": "Number of Channels specification.",
+    "importance": 41,
+    "prompt": "Provide Number of Channels value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Cartridge Type",
+    "description": "Cartridge Type specification.",
+    "importance": 46,
+    "prompt": "Provide Cartridge Type value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Filter Type",
+    "description": "Filter Type specification.",
+    "importance": 43,
+    "prompt": "Provide Filter Type value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Reagent Compatibility",
+    "description": "Reagent Compatibility specification.",
+    "importance": 49,
+    "prompt": "Provide Reagent Compatibility value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Consumables & Accessories",
+    "level2": "Consumable Compatibility",
+    "level3": "Biohazard Compatibility",
+    "description": "Biohazard Compatibility specification.",
+    "importance": 43,
+    "prompt": "Provide Biohazard Compatibility value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Footprint",
+    "level3": "Dimensions (W \u00d7 D \u00d7 H)",
+    "description": "Dimensions (W \u00d7 D \u00d7 H) specification.",
+    "importance": 85,
+    "prompt": "Provide Dimensions (W \u00d7 D \u00d7 H) value.",
+    "output": "31.9\u00a0\u00d7\u00a054\u00a0\u00d7\u00a025.4\u00a0cm"
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Mass & Load",
+    "level3": "Weight",
+    "description": "Weight specification.",
+    "importance": 92,
+    "prompt": "Provide Weight value.",
+    "output": "30\u00a0kg"
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Footprint",
+    "level3": "Shipping Dimensions",
+    "description": "Shipping Dimensions specification.",
+    "importance": 95,
+    "prompt": "Provide Shipping Dimensions value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Mass & Load",
+    "level3": "Shipping Weight",
+    "description": "Shipping Weight specification.",
+    "importance": 86,
+    "prompt": "Provide Shipping Weight value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Installation",
+    "level3": "Benchtop or Floor",
+    "description": "Benchtop or Floor specification.",
+    "importance": 55,
+    "prompt": "Provide Benchtop or Floor value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "Stackable",
+    "description": "Stackable specification.",
+    "importance": 52,
+    "prompt": "Provide Stackable value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Installation",
+    "level3": "Mounting Options",
+    "description": "Mounting Options specification.",
+    "importance": 58,
+    "prompt": "Provide Mounting Options value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Housing",
+    "level3": "Door Type",
+    "description": "Door Type specification.",
+    "importance": 50,
+    "prompt": "Provide Door Type value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Housing",
+    "level3": "Door Opening Angle",
+    "description": "Door Opening Angle specification.",
+    "importance": 55,
+    "prompt": "Provide Door Opening Angle value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Housing",
+    "level3": "Chamber Insulation Type",
+    "description": "Chamber Insulation Type specification.",
+    "importance": 60,
+    "prompt": "Provide Chamber Insulation Type value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Housing",
+    "level3": "Housing Material",
+    "description": "Housing Material specification.",
+    "importance": 40,
+    "prompt": "Provide Housing Material value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "Chamber Material",
+    "description": "Chamber Material specification.",
+    "importance": 58,
+    "prompt": "Provide Chamber Material value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "Rotor Material",
+    "description": "Rotor Material specification.",
+    "importance": 46,
+    "prompt": "Provide Rotor Material value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Structure",
+    "level3": "Construction Type (Monoblock, Modular)",
+    "description": "Construction Type (Monoblock, Modular) specification.",
+    "importance": 58,
+    "prompt": "Provide Construction Type (Monoblock, Modular) value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Protection",
+    "level3": "Chemical Resistance",
+    "description": "Chemical Resistance specification.",
+    "importance": 46,
+    "prompt": "Provide Chemical Resistance value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "Autoclavable Components",
+    "description": "Autoclavable Components specification.",
+    "importance": 56,
+    "prompt": "Provide Autoclavable Components value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Protection",
+    "level3": "Surface Coating",
+    "description": "Surface Coating specification.",
+    "importance": 56,
+    "prompt": "Provide Surface Coating value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Protection",
+    "level3": "Dust Protection",
+    "description": "Dust Protection specification.",
+    "importance": 74,
+    "prompt": "Provide Dust Protection value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Structure",
+    "level3": "Vibration Damping System",
+    "description": "Vibration Damping System specification.",
+    "importance": 68,
+    "prompt": "Provide Vibration Damping System value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Voltage (V)",
+    "description": "Voltage (V) specification.",
+    "importance": 87,
+    "prompt": "Provide Voltage (V) value.",
+    "output": "100\u2013120\u00a0V\u00a0/\u00a0220\u2013240\u00a0V models"
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Frequency (Hz)",
+    "description": "Frequency (Hz) specification.",
+    "importance": 45,
+    "prompt": "Provide Frequency (Hz) value.",
+    "output": "50\u00a0/\u00a060\u00a0Hz"
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Power Consumption (W)",
+    "description": "Power Consumption (W) specification.",
+    "importance": 95,
+    "prompt": "Provide Power Consumption (W) value.",
+    "output": "\u2264\u00a0495\u00a0W"
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Max Power Output",
+    "description": "Max Power Output specification.",
+    "importance": 48,
+    "prompt": "Provide Max Power Output value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Standby Power",
+    "description": "Standby Power specification.",
+    "importance": 53,
+    "prompt": "Provide Standby Power value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Plug Type",
+    "description": "Plug Type specification.",
+    "importance": 46,
+    "prompt": "Provide Plug Type value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Cable Length",
+    "description": "Cable Length specification.",
+    "importance": 44,
+    "prompt": "Provide Cable Length value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Fuse Rating",
+    "description": "Fuse Rating specification.",
+    "importance": 57,
+    "prompt": "Provide Fuse Rating value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Power Supply Type (AC/DC)",
+    "description": "Power Supply Type (AC/DC) specification.",
+    "importance": 42,
+    "prompt": "Provide Power Supply Type (AC/DC) value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Battery Backup",
+    "description": "Battery Backup specification.",
+    "importance": 40,
+    "prompt": "Provide Battery Backup value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Energy Efficiency Class",
+    "description": "Energy Efficiency Class specification.",
+    "importance": 51,
+    "prompt": "Provide Energy Efficiency Class value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical Power",
+    "level3": "Surge Protection",
+    "description": "Surge Protection specification.",
+    "importance": 29,
+    "prompt": "Provide Surge Protection value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Thermal Properties",
+    "level3": "Heat Emission (BTU/hr)",
+    "description": "Heat Emission (BTU/hr) specification.",
+    "importance": 48,
+    "prompt": "Provide Heat Emission (BTU/hr) value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Display",
+    "level3": "Display Type",
+    "description": "Display Type specification.",
+    "importance": 71,
+    "prompt": "Provide Display Type value.",
+    "output": "Back\u2011lit LCD"
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Display",
+    "level3": "Display Size",
+    "description": "Display Size specification.",
+    "importance": 80,
+    "prompt": "Provide Display Size value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Display",
+    "level3": "Display Resolution",
+    "description": "Display Resolution specification.",
+    "importance": 69,
+    "prompt": "Provide Display Resolution value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Display",
+    "level3": "Touchscreen (Yes/No)",
+    "description": "Touchscreen (Yes/No) specification.",
+    "importance": 20,
+    "prompt": "Provide Touchscreen (Yes/No) value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "Multilingual Interface",
+    "description": "Multilingual Interface specification.",
+    "importance": 44,
+    "prompt": "Provide Multilingual Interface value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "Programmable Modes",
+    "description": "Programmable Modes specification.",
+    "importance": 58,
+    "prompt": "Provide Programmable Modes value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "Number of Stored Programs",
+    "description": "Number of Stored Programs specification.",
+    "importance": 50,
+    "prompt": "Provide Number of Stored Programs value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "Preset Profiles",
+    "description": "Preset Profiles specification.",
+    "importance": 14,
+    "prompt": "Provide Preset Profiles value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "Real-Time Monitoring",
+    "description": "Real-Time Monitoring specification.",
+    "importance": 52,
+    "prompt": "Provide Real-Time Monitoring value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Display",
+    "level3": "Error Codes Display",
+    "description": "Error Codes Display specification.",
+    "importance": 68,
+    "prompt": "Provide Error Codes Display value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "Auto-Shutdown Feature",
+    "description": "Auto-Shutdown Feature specification.",
+    "importance": 43,
+    "prompt": "Provide Auto-Shutdown Feature value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "Alarms / Notifications",
+    "description": "Alarms / Notifications specification.",
+    "importance": 68,
+    "prompt": "Provide Alarms / Notifications value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "Password Protection",
+    "description": "Password Protection specification.",
+    "importance": 79,
+    "prompt": "Provide Password Protection value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "User Management System",
+    "description": "User Management System specification.",
+    "importance": 55,
+    "prompt": "Provide User Management System value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "Lockout Mode",
+    "description": "Lockout Mode specification.",
+    "importance": 57,
+    "prompt": "Provide Lockout Mode value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "QR Code Support",
+    "description": "QR Code Support specification.",
+    "importance": 34,
+    "prompt": "Provide QR Code Support value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "RFID Access Support",
+    "description": "RFID Access Support specification.",
+    "importance": 31,
+    "prompt": "Provide RFID Access Support value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "I/O Ports",
+    "level3": "USB Port",
+    "description": "USB Port specification.",
+    "importance": 77,
+    "prompt": "Provide USB Port value.",
+    "output": "Service only (firmware)"
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "I/O Ports",
+    "level3": "RS-232",
+    "description": "RS-232 specification.",
+    "importance": 44,
+    "prompt": "Provide RS-232 value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "I/O Ports",
+    "level3": "Ethernet Port",
+    "description": "Ethernet Port specification.",
+    "importance": 76,
+    "prompt": "Provide Ethernet Port value.",
+    "output": "Via optional VisioNize\u00ae box"
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Computer Links",
+    "level3": "Wi-Fi",
+    "description": "Wi-Fi specification.",
+    "importance": 75,
+    "prompt": "Provide Wi-Fi value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Computer Links",
+    "level3": "Bluetooth",
+    "description": "Bluetooth specification.",
+    "importance": 29,
+    "prompt": "Provide Bluetooth value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Connectivity",
+    "level3": "API Support",
+    "description": "API Support specification.",
+    "importance": 69,
+    "prompt": "Provide API Support value.",
+    "output": "VisioNize\u00ae REST API (optional box)"
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Connectivity",
+    "level3": "Web Interface",
+    "description": "Web Interface specification.",
+    "importance": 77,
+    "prompt": "Provide Web Interface value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Connectivity",
+    "level3": "Mobile App Support",
+    "description": "Mobile App Support specification.",
+    "importance": 20,
+    "prompt": "Provide Mobile App Support value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Connectivity",
+    "level3": "Cloud Sync (Yes/No)",
+    "description": "Cloud Sync (Yes/No) specification.",
+    "importance": 53,
+    "prompt": "Provide Cloud Sync (Yes/No) value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Data Management",
+    "level3": "Data Export Options",
+    "description": "Data Export Options specification.",
+    "importance": 41,
+    "prompt": "Provide Data Export Options value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Misc",
+    "level2": "General",
+    "level3": "Export File Formats",
+    "description": "Export File Formats specification.",
+    "importance": 50,
+    "prompt": "Provide Export File Formats value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Data Management",
+    "level3": "Data Logging Interval",
+    "description": "Data Logging Interval specification.",
+    "importance": 66,
+    "prompt": "Provide Data Logging Interval value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Software Info",
+    "level3": "Software Included",
+    "description": "Software Included specification.",
+    "importance": 57,
+    "prompt": "Provide Software Included value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Software Info",
+    "level3": "Software Version",
+    "description": "Software Version specification.",
+    "importance": 40,
+    "prompt": "Provide Software Version value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Software Info",
+    "level3": "Updateable Firmware",
+    "description": "Updateable Firmware specification.",
+    "importance": 43,
+    "prompt": "Provide Updateable Firmware value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Connectivity",
+    "level3": "PC Connectivity",
+    "description": "PC Connectivity specification.",
+    "importance": 41,
+    "prompt": "Provide PC Connectivity value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Software Info",
+    "level3": "Compatible OS",
+    "description": "Compatible OS specification.",
+    "importance": 53,
+    "prompt": "Provide Compatible OS value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Software Info",
+    "level3": "Lab Management Software Integration",
+    "description": "Lab Management Software Integration specification.",
+    "importance": 52,
+    "prompt": "Provide Lab Management Software Integration value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Thermal",
+    "level3": "Operating Temperature",
+    "description": "Operating Temperature specification.",
+    "importance": 46,
+    "prompt": "Provide Operating Temperature value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Thermal",
+    "level3": "Storage Temperature",
+    "description": "Storage Temperature specification.",
+    "importance": 41,
+    "prompt": "Provide Storage Temperature value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Thermal",
+    "level3": "Operating Humidity",
+    "description": "Operating Humidity specification.",
+    "importance": 57,
+    "prompt": "Provide Operating Humidity value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Acoustic Properties",
+    "level3": "Noise Level (dB)",
+    "description": "Noise Level (dB) specification.",
+    "importance": 68,
+    "prompt": "Provide Noise Level (dB) value.",
+    "output": "<\u00a055\u00a0dB(A)"
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Ingress Protection",
+    "level3": "IP Rating",
+    "description": "IP Rating specification.",
+    "importance": 94,
+    "prompt": "Provide IP Rating value.",
+    "output": "IP20"
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Compliance",
+    "level3": "EMC Compliance",
+    "description": "EMC Compliance specification.",
+    "importance": 94,
+    "prompt": "Provide EMC Compliance value.",
+    "output": "EN\u00a061326\u20111"
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Fire Safety",
+    "level3": "Fire Safety Classification",
+    "description": "Fire Safety Classification specification.",
+    "importance": 52,
+    "prompt": "Provide Fire Safety Classification value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Software Info",
+    "level3": "Biosafety Level Compatibility",
+    "description": "Biosafety Level Compatibility specification.",
+    "importance": 91,
+    "prompt": "Provide Biosafety Level Compatibility value.",
+    "output": "BSL\u20112 with aerosol\u2011tight rotor"
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Sterility",
+    "level3": "Sterility Maintenance",
+    "description": "Sterility Maintenance specification.",
+    "importance": 47,
+    "prompt": "Provide Sterility Maintenance value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Filtration",
+    "level3": "HEPA Filtration",
+    "description": "HEPA Filtration specification.",
+    "importance": 93,
+    "prompt": "Provide HEPA Filtration value.",
+    "output": "N/A (sealed rotor provides aerosol containment)"
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Decontamination",
+    "level3": "Decontamination Support",
+    "description": "Decontamination Support specification.",
+    "importance": 47,
+    "prompt": "Provide Decontamination Support value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Decontamination",
+    "level3": "UV Sterilization Support",
+    "description": "UV Sterilization Support specification.",
+    "importance": 58,
+    "prompt": "Provide UV Sterilization Support value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Safety Features",
+    "level3": "Spill Containment",
+    "description": "Spill Containment specification.",
+    "importance": 49,
+    "prompt": "Provide Spill Containment value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Certifications",
+    "level3": "Cleanroom Certification",
+    "description": "Cleanroom Certification specification.",
+    "importance": 91,
+    "prompt": "Provide Cleanroom Certification value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Certifications",
+    "level3": "Safety Certifications (T\u00dcV, NRTL)",
+    "description": "Safety Certifications (T\u00dcV, NRTL) specification.",
+    "importance": 91,
+    "prompt": "Provide Safety Certifications (T\u00dcV, NRTL) value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Service & Maintenance",
+    "level2": "Service & Maintenance",
+    "level3": "Service Interval",
+    "description": "Service Interval specification.",
+    "importance": 87,
+    "prompt": "Provide Service Interval value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Service & Maintenance",
+    "level2": "Service & Maintenance",
+    "level3": "Maintenance Type (User/Certified)",
+    "description": "Maintenance Type (User/Certified) specification.",
+    "importance": 41,
+    "prompt": "Provide Maintenance Type (User/Certified) value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Service & Maintenance",
+    "level2": "Service & Maintenance",
+    "level3": "Calibration Required",
+    "description": "Calibration Required specification.",
+    "importance": 93,
+    "prompt": "Provide Calibration Required value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Service & Maintenance",
+    "level2": "Service & Maintenance",
+    "level3": "Calibration Interval",
+    "description": "Calibration Interval specification.",
+    "importance": 44,
+    "prompt": "Provide Calibration Interval value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Software Info",
+    "level3": "Self-Diagnostics",
+    "description": "Self-Diagnostics specification.",
+    "importance": 40,
+    "prompt": "Provide Self-Diagnostics value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Service & Maintenance",
+    "level2": "Service & Maintenance",
+    "level3": "Service Manual Included",
+    "description": "Service Manual Included specification.",
+    "importance": 50,
+    "prompt": "Provide Service Manual Included value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Consumables & Accessories",
+    "level2": "Spare Parts",
+    "level3": "Replaceable Parts",
+    "description": "Replaceable Parts specification.",
+    "importance": 41,
+    "prompt": "Provide Replaceable Parts value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Consumables & Accessories",
+    "level2": "Spare Parts",
+    "level3": "Spare Parts Availability",
+    "description": "Spare Parts Availability specification.",
+    "importance": 43,
+    "prompt": "Provide Spare Parts Availability value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Consumables & Accessories",
+    "level2": "Consumables",
+    "level3": "Consumables List",
+    "description": "Consumables List specification.",
+    "importance": 59,
+    "prompt": "Provide Consumables List value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Training",
+    "level3": "Training Required",
+    "description": "Training Required specification.",
+    "importance": 41,
+    "prompt": "Provide Training Required value.",
+    "output": "Not specified by manufacturer"
+  },
+  {
+    "level1": "Business Insights",
+    "level2": "Competitive Landscape",
+    "level3": "Analogs",
+    "description": "Analogs specification.",
+    "importance": 89,
+    "prompt": "Provide Analogs value.",
+    "output": "[\"Eppendorf 5425\u00a0R\",\"Thermo Scientific MicroCL\u00a021R\",\"Beckman Coulter Allegra CT18\"]"
+  },
+  {
+    "level1": "Business Insights",
+    "level2": "Pricing",
+    "level3": "Price Range",
+    "description": "Price Range specification.",
+    "importance": 88,
+    "prompt": "Provide Price Range value.",
+    "output": "$7\u202f500\u00a0\u2013\u00a09\u202f500 new / $3\u202f000\u00a0\u2013\u00a05\u202f000 used (2025\u201104)"
+  },
+  {
+    "level1": "Business Insights",
+    "level2": "Reliability",
+    "level3": "Common Issues",
+    "description": "Common Issues specification.",
+    "importance": 92,
+    "prompt": "Provide Common Issues value.",
+    "output": "Imbalance error, cooling slow to set\u2011point, lid\u2011lock failure"
+  }
+]

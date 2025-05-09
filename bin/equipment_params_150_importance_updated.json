@@ -1,0 +1,1226 @@
+[
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Equipment Name",
+    "description": "Provides the equipment name specification of the equipment.",
+    "importance": 60,
+    "prompt": "Please provide the value for Equipment Name."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Model Number",
+    "description": "Provides the model number specification of the equipment.",
+    "importance": 42,
+    "prompt": "Please provide the value for Model Number."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Manufacturer",
+    "description": "Provides the manufacturer specification of the equipment.",
+    "importance": 48,
+    "prompt": "Please provide the value for Manufacturer."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Product Line / Series",
+    "description": "Provides the product line / series specification of the equipment.",
+    "importance": 52,
+    "prompt": "Please provide the value for Product Line / Series."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "SKU",
+    "description": "Provides the sku specification of the equipment.",
+    "importance": 39,
+    "prompt": "Please provide the value for SKU."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Part Number",
+    "description": "Provides the part number specification of the equipment.",
+    "importance": 59,
+    "prompt": "Please provide the value for Part Number."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Country of Origin",
+    "description": "Provides the country of origin specification of the equipment.",
+    "importance": 41,
+    "prompt": "Please provide the value for Country of Origin."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Year of Manufacture",
+    "description": "Provides the year of manufacture specification of the equipment.",
+    "importance": 42,
+    "prompt": "Please provide the value for Year of Manufacture."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Date of First Use",
+    "description": "Provides the date of first use specification of the equipment.",
+    "importance": 59,
+    "prompt": "Please provide the value for Date of First Use."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Equipment Type",
+    "description": "Provides the equipment type specification of the equipment.",
+    "importance": 55,
+    "prompt": "Please provide the value for Equipment Type."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Instrument Category",
+    "description": "Provides the instrument category specification of the equipment.",
+    "importance": 37,
+    "prompt": "Please provide the value for Instrument Category."
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Compliance",
+    "level3": "Certification (e.g. CE, UL, ISO)",
+    "description": "Provides the certification (e.g. ce, ul, iso) specification of the equipment.",
+    "importance": 86,
+    "prompt": "Please provide the value for Certification (e.g. CE, UL, ISO)."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Compliance Standards",
+    "description": "Provides the compliance standards specification of the equipment.",
+    "importance": 93,
+    "prompt": "Please provide the value for Compliance Standards."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Warranty Period",
+    "description": "Provides the warranty period specification of the equipment.",
+    "importance": 88,
+    "prompt": "Please provide the value for Warranty Period."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Support Expiry Date",
+    "description": "Indicates whether the equipment provides support expiry date capability.",
+    "importance": 54,
+    "prompt": "Please provide the value for Support Expiry Date."
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Performance",
+    "level3": "Max RPM",
+    "description": "Specifies the max rpm limit of the device.",
+    "importance": 85,
+    "prompt": "Please provide the value for Max RPM."
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Performance",
+    "level3": "Min RPM",
+    "description": "Specifies the min rpm limit of the device.",
+    "importance": 90,
+    "prompt": "Please provide the value for Min RPM."
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Performance",
+    "level3": "Max RCF",
+    "description": "Specifies the max rcf limit of the device.",
+    "importance": 93,
+    "prompt": "Please provide the value for Max RCF."
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Thermal",
+    "level3": "Temperature Range (\u00b0C)",
+    "description": "Provides the temperature range (\u00b0c) specification of the equipment.",
+    "importance": 89,
+    "prompt": "Please provide the value for Temperature Range (\u00b0C)."
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Thermal",
+    "level3": "Heating (Yes/No)",
+    "description": "Indicates whether the equipment provides heating capability.",
+    "importance": 87,
+    "prompt": "Please provide the value for Heating (Yes/No)."
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Thermal",
+    "level3": "Cooling (Yes/No)",
+    "description": "Indicates whether the equipment provides cooling capability.",
+    "importance": 94,
+    "prompt": "Please provide the value for Cooling (Yes/No)."
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Thermal",
+    "level3": "Temperature Control Type",
+    "description": "Provides the temperature control type specification of the equipment.",
+    "importance": 92,
+    "prompt": "Please provide the value for Temperature Control Type."
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Thermal",
+    "level3": "Temperature Stability (\u00b1 \u00b0C)",
+    "description": "Provides the temperature stability (\u00b1 \u00b0c) specification of the equipment.",
+    "importance": 92,
+    "prompt": "Please provide the value for Temperature Stability (\u00b1 \u00b0C)."
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Thermal",
+    "level3": "Humidity Control (Yes/No)",
+    "description": "Indicates whether the equipment provides humidity control capability.",
+    "importance": 51,
+    "prompt": "Please provide the value for Humidity Control (Yes/No)."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "CO\u2082 Control (Yes/No)",
+    "description": "Indicates whether the equipment provides co\u2082 control capability.",
+    "importance": 41,
+    "prompt": "Please provide the value for CO\u2082 Control (Yes/No)."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "O\u2082 Control (Yes/No)",
+    "description": "Indicates whether the equipment provides o\u2082 control capability.",
+    "importance": 59,
+    "prompt": "Please provide the value for O\u2082 Control (Yes/No)."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Vacuum Control (Yes/No)",
+    "description": "Indicates whether the equipment provides vacuum control capability.",
+    "importance": 48,
+    "prompt": "Please provide the value for Vacuum Control (Yes/No)."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Gas Purge Options",
+    "description": "Provides the gas purge options specification of the equipment.",
+    "importance": 22,
+    "prompt": "Please provide the value for Gas Purge Options."
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Performance",
+    "level3": "Speed Range",
+    "description": "Provides the speed range specification of the equipment.",
+    "importance": 90,
+    "prompt": "Please provide the value for Speed Range."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Acceleration Time",
+    "description": "Provides the acceleration time specification of the equipment.",
+    "importance": 93,
+    "prompt": "Please provide the value for Acceleration Time."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Deceleration Time",
+    "description": "Provides the deceleration time specification of the equipment.",
+    "importance": 88,
+    "prompt": "Please provide the value for Deceleration Time."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Timer Range",
+    "description": "Provides the timer range specification of the equipment.",
+    "importance": 58,
+    "prompt": "Please provide the value for Timer Range."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Timed Modes",
+    "description": "Provides the timed modes specification of the equipment.",
+    "importance": 35,
+    "prompt": "Please provide the value for Timed Modes."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Continuous Run Mode",
+    "description": "Provides the continuous run mode specification of the equipment.",
+    "importance": 43,
+    "prompt": "Please provide the value for Continuous Run Mode."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Load Balancing System",
+    "description": "Provides the load balancing system specification of the equipment.",
+    "importance": 89,
+    "prompt": "Please provide the value for Load Balancing System."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Internal Sensors",
+    "description": "Provides the internal sensors specification of the equipment.",
+    "importance": 46,
+    "prompt": "Please provide the value for Internal Sensors."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Optical Detection (Yes/No)",
+    "description": "Indicates whether the equipment provides optical detection capability.",
+    "importance": 42,
+    "prompt": "Please provide the value for Optical Detection (Yes/No)."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "UV Support (Yes/No)",
+    "description": "Indicates whether the equipment provides uv support capability.",
+    "importance": 59,
+    "prompt": "Please provide the value for UV Support (Yes/No)."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Light Source Type",
+    "description": "Provides the light source type specification of the equipment.",
+    "importance": 51,
+    "prompt": "Please provide the value for Light Source Type."
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical",
+    "level3": "Frequency Range (Hz)",
+    "description": "Provides the frequency range (hz) specification of the equipment.",
+    "importance": 46,
+    "prompt": "Please provide the value for Frequency Range (Hz)."
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Capacity",
+    "level3": "Max Sample Capacity",
+    "description": "Specifies the max sample capacity limit of the device.",
+    "importance": 85,
+    "prompt": "Please provide the value for Max Sample Capacity."
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Capacity",
+    "level3": "Min Sample Volume",
+    "description": "Specifies the min sample volume limit of the device.",
+    "importance": 46,
+    "prompt": "Please provide the value for Min Sample Volume."
+  },
+  {
+    "level1": "Functional Characteristics",
+    "level2": "Capacity",
+    "level3": "Max Sample Volume",
+    "description": "Specifies the max sample volume limit of the device.",
+    "importance": 88,
+    "prompt": "Please provide the value for Max Sample Volume."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Tube Compatibility",
+    "description": "Indicates whether the equipment provides tube compatibility capability.",
+    "importance": 92,
+    "prompt": "Please provide the value for Tube Compatibility."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Plate Compatibility",
+    "description": "Indicates whether the equipment provides plate compatibility capability.",
+    "importance": 92,
+    "prompt": "Please provide the value for Plate Compatibility."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Rotor Compatibility",
+    "description": "Indicates whether the equipment provides rotor compatibility capability.",
+    "importance": 89,
+    "prompt": "Please provide the value for Rotor Compatibility."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Adapter Compatibility",
+    "description": "Indicates whether the equipment provides adapter compatibility capability.",
+    "importance": 88,
+    "prompt": "Please provide the value for Adapter Compatibility."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Chamber Volume",
+    "description": "Provides the chamber volume specification of the equipment.",
+    "importance": 57,
+    "prompt": "Please provide the value for Chamber Volume."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Working Volume",
+    "description": "Provides the working volume specification of the equipment.",
+    "importance": 47,
+    "prompt": "Please provide the value for Working Volume."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Number of Slots / Wells",
+    "description": "Provides the number of slots / wells specification of the equipment.",
+    "importance": 38,
+    "prompt": "Please provide the value for Number of Slots / Wells."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Slide Capacity",
+    "description": "Provides the slide capacity specification of the equipment.",
+    "importance": 11,
+    "prompt": "Please provide the value for Slide Capacity."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Well Format Supported",
+    "description": "Indicates whether the equipment provides well format supported capability.",
+    "importance": 53,
+    "prompt": "Please provide the value for Well Format Supported."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Cuvette Compatibility",
+    "description": "Indicates whether the equipment provides cuvette compatibility capability.",
+    "importance": 6,
+    "prompt": "Please provide the value for Cuvette Compatibility."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Number of Channels",
+    "description": "Provides the number of channels specification of the equipment.",
+    "importance": 18,
+    "prompt": "Please provide the value for Number of Channels."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Cartridge Type",
+    "description": "Provides the cartridge type specification of the equipment.",
+    "importance": 49,
+    "prompt": "Please provide the value for Cartridge Type."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Filter Type",
+    "description": "Provides the filter type specification of the equipment.",
+    "importance": 36,
+    "prompt": "Please provide the value for Filter Type."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Reagent Compatibility",
+    "description": "Indicates whether the equipment provides reagent compatibility capability.",
+    "importance": 42,
+    "prompt": "Please provide the value for Reagent Compatibility."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Biohazard Compatibility",
+    "description": "Indicates whether the equipment provides biohazard compatibility capability.",
+    "importance": 47,
+    "prompt": "Please provide the value for Biohazard Compatibility."
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Footprint",
+    "level3": "Dimensions (W \u00d7 D \u00d7 H)",
+    "description": "Provides the dimensions (w \u00d7 d \u00d7 h) specification of the equipment.",
+    "importance": 86,
+    "prompt": "Please provide the value for Dimensions (W \u00d7 D \u00d7 H)."
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Mass & Load",
+    "level3": "Weight",
+    "description": "Provides the weight specification of the equipment.",
+    "importance": 90,
+    "prompt": "Please provide the value for Weight."
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Footprint",
+    "level3": "Shipping Dimensions",
+    "description": "Provides the shipping dimensions specification of the equipment.",
+    "importance": 92,
+    "prompt": "Please provide the value for Shipping Dimensions."
+  },
+  {
+    "level1": "Physical Specifications",
+    "level2": "Mass & Load",
+    "level3": "Shipping Weight",
+    "description": "Provides the shipping weight specification of the equipment.",
+    "importance": 95,
+    "prompt": "Please provide the value for Shipping Weight."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Benchtop or Floor",
+    "description": "Provides the benchtop or floor specification of the equipment.",
+    "importance": 57,
+    "prompt": "Please provide the value for Benchtop or Floor."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Stackable",
+    "description": "Provides the stackable specification of the equipment.",
+    "importance": 51,
+    "prompt": "Please provide the value for Stackable."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Mounting Options",
+    "description": "Provides the mounting options specification of the equipment.",
+    "importance": 79,
+    "prompt": "Please provide the value for Mounting Options."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Door Type",
+    "description": "Provides the door type specification of the equipment.",
+    "importance": 76,
+    "prompt": "Please provide the value for Door Type."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Door Opening Angle",
+    "description": "Provides the door opening angle specification of the equipment.",
+    "importance": 65,
+    "prompt": "Please provide the value for Door Opening Angle."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Chamber Insulation Type",
+    "description": "Provides the chamber insulation type specification of the equipment.",
+    "importance": 46,
+    "prompt": "Please provide the value for Chamber Insulation Type."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Housing Material",
+    "description": "Provides the housing material specification of the equipment.",
+    "importance": 75,
+    "prompt": "Please provide the value for Housing Material."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Chamber Material",
+    "description": "Provides the chamber material specification of the equipment.",
+    "importance": 65,
+    "prompt": "Please provide the value for Chamber Material."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Rotor Material",
+    "description": "Provides the rotor material specification of the equipment.",
+    "importance": 93,
+    "prompt": "Please provide the value for Rotor Material."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Construction Type (Monoblock, Modular)",
+    "description": "Provides the construction type (monoblock, modular) specification of the equipment.",
+    "importance": 73,
+    "prompt": "Please provide the value for Construction Type (Monoblock, Modular)."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Chemical Resistance",
+    "description": "Provides the chemical resistance specification of the equipment.",
+    "importance": 74,
+    "prompt": "Please provide the value for Chemical Resistance."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Autoclavable Components",
+    "description": "Provides the autoclavable components specification of the equipment.",
+    "importance": 51,
+    "prompt": "Please provide the value for Autoclavable Components."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Surface Coating",
+    "description": "Provides the surface coating specification of the equipment.",
+    "importance": 61,
+    "prompt": "Please provide the value for Surface Coating."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Dust Protection",
+    "description": "Provides the dust protection specification of the equipment.",
+    "importance": 87,
+    "prompt": "Please provide the value for Dust Protection."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Vibration Damping System",
+    "description": "Provides the vibration damping system specification of the equipment.",
+    "importance": 92,
+    "prompt": "Please provide the value for Vibration Damping System."
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical",
+    "level3": "Voltage (V)",
+    "description": "Provides the voltage (v) specification of the equipment.",
+    "importance": 90,
+    "prompt": "Please provide the value for Voltage (V)."
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical",
+    "level3": "Frequency (Hz)",
+    "description": "Provides the frequency (hz) specification of the equipment.",
+    "importance": 46,
+    "prompt": "Please provide the value for Frequency (Hz)."
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical",
+    "level3": "Power Consumption (W)",
+    "description": "Provides the power consumption (w) specification of the equipment.",
+    "importance": 86,
+    "prompt": "Please provide the value for Power Consumption (W)."
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical",
+    "level3": "Max Power Output",
+    "description": "Specifies the max power output limit of the device.",
+    "importance": 51,
+    "prompt": "Please provide the value for Max Power Output."
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical",
+    "level3": "Standby Power",
+    "description": "Provides the standby power specification of the equipment.",
+    "importance": 77,
+    "prompt": "Please provide the value for Standby Power."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Plug Type",
+    "description": "Provides the plug type specification of the equipment.",
+    "importance": 71,
+    "prompt": "Please provide the value for Plug Type."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Cable Length",
+    "description": "Provides the cable length specification of the equipment.",
+    "importance": 57,
+    "prompt": "Please provide the value for Cable Length."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Fuse Rating",
+    "description": "Provides the fuse rating specification of the equipment.",
+    "importance": 70,
+    "prompt": "Please provide the value for Fuse Rating."
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "Electrical",
+    "level3": "Power Supply Type (AC/DC)",
+    "description": "Provides the power supply type (ac/dc) specification of the equipment.",
+    "importance": 52,
+    "prompt": "Please provide the value for Power Supply Type (AC/DC)."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Battery Backup",
+    "description": "Provides the battery backup specification of the equipment.",
+    "importance": 56,
+    "prompt": "Please provide the value for Battery Backup."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Energy Efficiency Class",
+    "description": "Provides the energy efficiency class specification of the equipment.",
+    "importance": 59,
+    "prompt": "Please provide the value for Energy Efficiency Class."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Surge Protection",
+    "description": "Provides the surge protection specification of the equipment.",
+    "importance": 24,
+    "prompt": "Please provide the value for Surge Protection."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Heat Emission (BTU/hr)",
+    "description": "Provides the heat emission (btu/hr) specification of the equipment.",
+    "importance": 56,
+    "prompt": "Please provide the value for Heat Emission (BTU/hr)."
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Display",
+    "level3": "Display Type",
+    "description": "Provides the display type specification of the equipment.",
+    "importance": 50,
+    "prompt": "Please provide the value for Display Type."
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Display",
+    "level3": "Display Size",
+    "description": "Provides the display size specification of the equipment.",
+    "importance": 51,
+    "prompt": "Please provide the value for Display Size."
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Display",
+    "level3": "Display Resolution",
+    "description": "Provides the display resolution specification of the equipment.",
+    "importance": 56,
+    "prompt": "Please provide the value for Display Resolution."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Touchscreen (Yes/No)",
+    "description": "Indicates whether the equipment provides touchscreen capability.",
+    "importance": 26,
+    "prompt": "Please provide the value for Touchscreen (Yes/No)."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Multilingual Interface",
+    "description": "Provides the multilingual interface specification of the equipment.",
+    "importance": 25,
+    "prompt": "Please provide the value for Multilingual Interface."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Programmable Modes",
+    "description": "Provides the programmable modes specification of the equipment.",
+    "importance": 6,
+    "prompt": "Please provide the value for Programmable Modes."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Number of Stored Programs",
+    "description": "Provides the number of stored programs specification of the equipment.",
+    "importance": 28,
+    "prompt": "Please provide the value for Number of Stored Programs."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Preset Profiles",
+    "description": "Provides the preset profiles specification of the equipment.",
+    "importance": 8,
+    "prompt": "Please provide the value for Preset Profiles."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Real-Time Monitoring",
+    "description": "Provides the real-time monitoring specification of the equipment.",
+    "importance": 64,
+    "prompt": "Please provide the value for Real-Time Monitoring."
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Display",
+    "level3": "Error Codes Display",
+    "description": "Provides the error codes display specification of the equipment.",
+    "importance": 80,
+    "prompt": "Please provide the value for Error Codes Display."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Auto-Shutdown Feature",
+    "description": "Provides the auto-shutdown feature specification of the equipment.",
+    "importance": 60,
+    "prompt": "Please provide the value for Auto-Shutdown Feature."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Alarms / Notifications",
+    "description": "Provides the alarms / notifications specification of the equipment.",
+    "importance": 78,
+    "prompt": "Please provide the value for Alarms / Notifications."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Password Protection",
+    "description": "Provides the password protection specification of the equipment.",
+    "importance": 68,
+    "prompt": "Please provide the value for Password Protection."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "User Management System",
+    "description": "Provides the user management system specification of the equipment.",
+    "importance": 50,
+    "prompt": "Please provide the value for User Management System."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Lockout Mode",
+    "description": "Provides the lockout mode specification of the equipment.",
+    "importance": 59,
+    "prompt": "Please provide the value for Lockout Mode."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "QR Code Support",
+    "description": "Indicates whether the equipment provides qr code support capability.",
+    "importance": 23,
+    "prompt": "Please provide the value for QR Code Support."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "RFID Access Support",
+    "description": "Indicates whether the equipment provides rfid access support capability.",
+    "importance": 6,
+    "prompt": "Please provide the value for RFID Access Support."
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "I/O",
+    "level3": "USB Port",
+    "description": "Provides the usb port specification of the equipment.",
+    "importance": 58,
+    "prompt": "Please provide the value for USB Port."
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "I/O",
+    "level3": "RS-232",
+    "description": "Provides the rs-232 specification of the equipment.",
+    "importance": 52,
+    "prompt": "Please provide the value for RS-232."
+  },
+  {
+    "level1": "Utilities & Interfaces",
+    "level2": "I/O",
+    "level3": "Ethernet Port",
+    "description": "Provides the ethernet port specification of the equipment.",
+    "importance": 79,
+    "prompt": "Please provide the value for Ethernet Port."
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Connectivity",
+    "level3": "Wi-Fi",
+    "description": "Provides the wi-fi specification of the equipment.",
+    "importance": 59,
+    "prompt": "Please provide the value for Wi-Fi."
+  },
+  {
+    "level1": "User Interface & Software",
+    "level2": "Connectivity",
+    "level3": "Bluetooth",
+    "description": "Provides the bluetooth specification of the equipment.",
+    "importance": 7,
+    "prompt": "Please provide the value for Bluetooth."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "API Support",
+    "description": "Indicates whether the equipment provides api support capability.",
+    "importance": 62,
+    "prompt": "Please provide the value for API Support."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Web Interface",
+    "description": "Provides the web interface specification of the equipment.",
+    "importance": 67,
+    "prompt": "Please provide the value for Web Interface."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Mobile App Support",
+    "description": "Indicates whether the equipment provides mobile app support capability.",
+    "importance": 19,
+    "prompt": "Please provide the value for Mobile App Support."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Cloud Sync (Yes/No)",
+    "description": "Indicates whether the equipment provides cloud sync capability.",
+    "importance": 53,
+    "prompt": "Please provide the value for Cloud Sync (Yes/No)."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Data Export Options",
+    "description": "Provides the data export options specification of the equipment.",
+    "importance": 67,
+    "prompt": "Please provide the value for Data Export Options."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Export File Formats",
+    "description": "Provides the export file formats specification of the equipment.",
+    "importance": 43,
+    "prompt": "Please provide the value for Export File Formats."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Data Logging Interval",
+    "description": "Provides the data logging interval specification of the equipment.",
+    "importance": 79,
+    "prompt": "Please provide the value for Data Logging Interval."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Software Included",
+    "description": "Provides the software included specification of the equipment.",
+    "importance": 62,
+    "prompt": "Please provide the value for Software Included."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Software Version",
+    "description": "Provides the software version specification of the equipment.",
+    "importance": 73,
+    "prompt": "Please provide the value for Software Version."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Updateable Firmware",
+    "description": "Provides the updateable firmware specification of the equipment.",
+    "importance": 52,
+    "prompt": "Please provide the value for Updateable Firmware."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "PC Connectivity",
+    "description": "Provides the pc connectivity specification of the equipment.",
+    "importance": 56,
+    "prompt": "Please provide the value for PC Connectivity."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Compatible OS",
+    "description": "Provides the compatible os specification of the equipment.",
+    "importance": 39,
+    "prompt": "Please provide the value for Compatible OS."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Lab Management Software Integration",
+    "description": "Provides the lab management software integration specification of the equipment.",
+    "importance": 53,
+    "prompt": "Please provide the value for Lab Management Software Integration."
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Thermal",
+    "level3": "Operating Temperature",
+    "description": "Provides the operating temperature specification of the equipment.",
+    "importance": 86,
+    "prompt": "Please provide the value for Operating Temperature."
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Thermal",
+    "level3": "Storage Temperature",
+    "description": "Provides the storage temperature specification of the equipment.",
+    "importance": 38,
+    "prompt": "Please provide the value for Storage Temperature."
+  },
+  {
+    "level1": "Environmental Requirements",
+    "level2": "Thermal",
+    "level3": "Operating Humidity",
+    "description": "Provides the operating humidity specification of the equipment.",
+    "importance": 52,
+    "prompt": "Please provide the value for Operating Humidity."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Noise Level (dB)",
+    "description": "Provides the noise level (db) specification of the equipment.",
+    "importance": 86,
+    "prompt": "Please provide the value for Noise Level (dB)."
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Compliance",
+    "level3": "IP Rating",
+    "description": "Provides the ip rating specification of the equipment.",
+    "importance": 90,
+    "prompt": "Please provide the value for IP Rating."
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Compliance",
+    "level3": "EMC Compliance",
+    "description": "Provides the emc compliance specification of the equipment.",
+    "importance": 91,
+    "prompt": "Please provide the value for EMC Compliance."
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Safety",
+    "level3": "Fire Safety Classification",
+    "description": "Provides the fire safety classification specification of the equipment.",
+    "importance": 44,
+    "prompt": "Please provide the value for Fire Safety Classification."
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Safety",
+    "level3": "Biosafety Level Compatibility",
+    "description": "Indicates whether the equipment provides biosafety level compatibility capability.",
+    "importance": 94,
+    "prompt": "Please provide the value for Biosafety Level Compatibility."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Sterility Maintenance",
+    "description": "Provides the sterility maintenance specification of the equipment.",
+    "importance": 43,
+    "prompt": "Please provide the value for Sterility Maintenance."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "HEPA Filtration",
+    "description": "Provides the hepa filtration specification of the equipment.",
+    "importance": 92,
+    "prompt": "Please provide the value for HEPA Filtration."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Decontamination Support",
+    "description": "Indicates whether the equipment provides decontamination support capability.",
+    "importance": 59,
+    "prompt": "Please provide the value for Decontamination Support."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "UV Sterilization Support",
+    "description": "Indicates whether the equipment provides uv sterilization support capability.",
+    "importance": 51,
+    "prompt": "Please provide the value for UV Sterilization Support."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Spill Containment",
+    "description": "Provides the spill containment specification of the equipment.",
+    "importance": 70,
+    "prompt": "Please provide the value for Spill Containment."
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Compliance",
+    "level3": "Cleanroom Certification",
+    "description": "Provides the cleanroom certification specification of the equipment.",
+    "importance": 89,
+    "prompt": "Please provide the value for Cleanroom Certification."
+  },
+  {
+    "level1": "Regulatory & Safety",
+    "level2": "Safety",
+    "level3": "Safety Certifications (T\u00dcV, NRTL)",
+    "description": "Provides the safety certifications (t\u00fcv, nrtl) specification of the equipment.",
+    "importance": 95,
+    "prompt": "Please provide the value for Safety Certifications (T\u00dcV, NRTL)."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Service Interval",
+    "description": "Provides the service interval specification of the equipment.",
+    "importance": 90,
+    "prompt": "Please provide the value for Service Interval."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Maintenance Type (User/Certified)",
+    "description": "Provides the maintenance type (user/certified) specification of the equipment.",
+    "importance": 44,
+    "prompt": "Please provide the value for Maintenance Type (User/Certified)."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Calibration Required",
+    "description": "Provides the calibration required specification of the equipment.",
+    "importance": 94,
+    "prompt": "Please provide the value for Calibration Required."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Calibration Interval",
+    "description": "Provides the calibration interval specification of the equipment.",
+    "importance": 92,
+    "prompt": "Please provide the value for Calibration Interval."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Self-Diagnostics",
+    "description": "Provides the self-diagnostics specification of the equipment.",
+    "importance": 38,
+    "prompt": "Please provide the value for Self-Diagnostics."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Service Manual Included",
+    "description": "Provides the service manual included specification of the equipment.",
+    "importance": 41,
+    "prompt": "Please provide the value for Service Manual Included."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Replaceable Parts",
+    "description": "Provides the replaceable parts specification of the equipment.",
+    "importance": 35,
+    "prompt": "Please provide the value for Replaceable Parts."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Spare Parts Availability",
+    "description": "Provides the spare parts availability specification of the equipment.",
+    "importance": 56,
+    "prompt": "Please provide the value for Spare Parts Availability."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Consumables List",
+    "description": "Provides the consumables list specification of the equipment.",
+    "importance": 40,
+    "prompt": "Please provide the value for Consumables List."
+  },
+  {
+    "level1": "Other",
+    "level2": "General",
+    "level3": "Training Required",
+    "description": "Provides the training required specification of the equipment.",
+    "importance": 41,
+    "prompt": "Please provide the value for Training Required."
+  }
+  {
+    "level1": "Business Insights",
+    "level2": "Competitive Landscape",
+    "level3": "Analogs",
+    "description": "Identifies comparable instruments on the market, giving buyers context for performance, features and price–performance trade-offs.",
+    "importance": 92,
+    "prompt": "Create a list (array) of analog instruments for this model, including key technical specifications, control interfaces, typical applications, and estimated prices."
+  },
+  {
+    "level1": "Business Insights",
+    "level2": "Pricing",
+    "level3": "Price Range",
+    "description": "Shows the current market price span—both new-unit and used-unit—helping customers budget and benchmark quotations.",
+    "importance": 90,
+    "prompt": "Provide the current price range for the instrument, both new and used, including sources if available."
+  },
+  {
+    "level1": "Business Insights",
+    "level2": "Reliability",
+    "level3": "Common Issues",
+    "description": "Lists the most frequently reported malfunctions, typical symptoms and likely root causes, supporting risk assessment and maintenance planning.",
+    "importance": 88,
+    "prompt": "List the most common malfunctions for the instrument, along with their symptoms and possible causes."
+  }
+]

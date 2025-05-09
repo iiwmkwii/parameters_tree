@@ -1,0 +1,149 @@
+{
+  "domains": [
+    {
+      "id": "ID",
+      "name": "Identification"
+    }
+  ],
+  "areas": [
+    {
+      "id": "ID_MI",
+      "domain_id": "ID",
+      "name": "Manufacturer Info"
+    },
+    {
+      "id": "ID_CI",
+      "domain_id": "ID",
+      "name": "Catalog Info"
+    },
+    {
+      "id": "ID_MFI",
+      "domain_id": "ID",
+      "name": "Manufacturing Info"
+    },
+    {
+      "id": "ID_LI",
+      "domain_id": "ID",
+      "name": "Lifecycle Info"
+    },
+    {
+      "id": "ID_CL",
+      "domain_id": "ID",
+      "name": "Class"
+    }
+  ],
+  "attributes": [
+    {
+      "id": "ID_MAN",
+      "area_id": "ID_MI",
+      "name": "Manufacturer"
+    },
+    {
+      "id": "ID_PL",
+      "area_id": "ID_MI",
+      "name": "Product Line"
+    },
+    {
+      "id": "ID_EN",
+      "area_id": "ID_MI",
+      "name": "Equipment Name"
+    },
+    {
+      "id": "ID_MN",
+      "area_id": "ID_MI",
+      "name": "Model Number"
+    },
+    {
+      "id": "ID_SKU",
+      "area_id": "ID_CI",
+      "name": "SKU"
+    },
+    {
+      "id": "ID_PN",
+      "area_id": "ID_CI",
+      "name": "Part Number"
+    },
+    {
+      "id": "ID_CO",
+      "area_id": "ID_MFI",
+      "name": "Country of Origin"
+    },
+    {
+      "id": "ID_YM",
+      "area_id": "ID_MFI",
+      "name": "Year of Manufacture"
+    },
+    {
+      "id": "ID_DFU",
+      "area_id": "ID_LI",
+      "name": "Date of First Use"
+    },
+    {
+      "id": "ID_ET",
+      "area_id": "ID_CL",
+      "name": "Equipment Type"
+    }
+  ],
+  "parameters": [
+    {
+      "parameter": "Manufacturer",
+      "domain_id": "ID",
+      "area_id": "ID_MI",
+      "attribute_id": "ID_MAN"
+    },
+    {
+      "parameter": "Product Line / Series",
+      "domain_id": "ID",
+      "area_id": "ID_MI",
+      "attribute_id": "ID_PL"
+    },
+    {
+      "parameter": "Equipment Name",
+      "domain_id": "ID",
+      "area_id": "ID_MI",
+      "attribute_id": "ID_EN"
+    },
+    {
+      "parameter": "Model Number",
+      "domain_id": "ID",
+      "area_id": "ID_MI",
+      "attribute_id": "ID_MN"
+    },
+    {
+      "parameter": "SKU",
+      "domain_id": "ID",
+      "area_id": "ID_CI",
+      "attribute_id": "ID_SKU"
+    },
+    {
+      "parameter": "Part Number",
+      "domain_id": "ID",
+      "area_id": "ID_CI",
+      "attribute_id": "ID_PN"
+    },
+    {
+      "parameter": "Country of Origin",
+      "domain_id": "ID",
+      "area_id": "ID_MFI",
+      "attribute_id": "ID_CO"
+    },
+    {
+      "parameter": "Year of Manufacture",
+      "domain_id": "ID",
+      "area_id": "ID_MFI",
+      "attribute_id": "ID_YM"
+    },
+    {
+      "parameter": "Date of First Use",
+      "domain_id": "ID",
+      "area_id": "ID_LI",
+      "attribute_id": "ID_DFU"
+    },
+    {
+      "parameter": "Equipment Type",
+      "domain_id": "ID",
+      "area_id": "ID_CL",
+      "attribute_id": "ID_ET"
+    }
+  ]
+}
