@@ -1,0 +1,362 @@
+[
+  {
+    "level1": "Instrument Specification",
+    "level2": "Performance",
+    "level3": "Speed Range",
+    "description": "The CM‑6MT’s brushless drive lets users program any speed between 100 rpm and 3500 rpm, accommodating gentle cell pelleting as well as high‑g serum prep. citeturn1view0",
+    "importance": 95,
+    "prompt": "Return JSON with keys min_rpm and max_rpm for the CM‑6MT centrifuge.",
+    "output": "{\"min_rpm\":100,\"max_rpm\":3500}",
+    "parameter_name": "Speed Range",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Defines the range of centrifugal speeds available for different protocols."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Higher speeds generate greater g‑forces for faster sedimentation, while lower speeds protect delicate samples."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "Factory startup defaults to the last speed used; users typically begin around 1500 rpm."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "Yes; speed can be increased or decreased while the run is active."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "Blood separation often uses 3000 rpm; cell culture harvest 800–1200 rpm."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Running above 3400 rpm with unbalanced loads may cause protective shutdown."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Performance",
+    "level3": "Max RCF",
+    "description": "At its top speed the swing‑out rotor generates up to 2300 × g, sufficient for platelet‑poor plasma and most clinical separations. citeturn1view0",
+    "importance": 90,
+    "prompt": "Return JSON with key max_rcf_g (integer) for the CM‑6MT.",
+    "output": "{\"max_rcf_g\":2300}",
+    "parameter_name": "Maximum RCF",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Indicates the greatest centrifugal force achievable, determining sedimentation efficiency."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Higher RCF shortens run time for pellets that require strong force."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "No fixed default; max RCF is calculated automatically from selected speed."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "Indirectly—changing rpm alters RCF, and the display can toggle between units."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "Clinical labs often operate at 1300–2000 × g for serum tubes."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "For very dense particles (e.g., viral preps), 2300 × g may be insufficient; a higher‑speed unit would be needed."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Capacity",
+    "level3": "Rotor Options",
+    "description": "Interchangeable swing‑out rotors accept 6 × 50 mL, 12 × 15 mL, 24 × 12 mL tubes or two micro‑plate carriers, all rated to 3500 rpm. citeturn2view0",
+    "importance": 85,
+    "prompt": "Return JSON array rotors with objects {model, capacity_desc}.",
+    "output": "[{\"model\":\"6M.06\",\"capacity_desc\":\"6×50 mL\"},{\"model\":\"6M\",\"capacity_desc\":\"12×12 mL\"},{\"model\":\"6M.05\",\"capacity_desc\":\"12×15 mL\"},{\"model\":\"6M.02\",\"capacity_desc\":\"24×12 mL\"},{\"model\":\"6M.04\",\"capacity_desc\":\"2×microplates (≤2500 rpm)\"}]",
+    "parameter_name": "Rotor Capacity",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Specifies how many and what size tubes or plates can be processed."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Larger capacity increases throughput but may require longer acceleration time."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "Units ship with the 6‑place 50 mL swing rotor unless otherwise specified."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "Rotors must be changed manually when the lid is open and the chamber is at rest."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "PRP prep typically uses the 6×50 mL rotor; routine labs choose the 12×15 mL rotor."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Running the plate rotor above 2500 rpm can damage carriers."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Control",
+    "level3": "Timer Range",
+    "description": "Digital timer allows user‑set run times from 1 min to 99 min with last‑minute countdown in seconds for precise protocols. citeturn1view0",
+    "importance": 80,
+    "prompt": "Return JSON with keys min_min and max_min for timer range.",
+    "output": "{\"min_min\":1,\"max_min\":99}",
+    "parameter_name": "Timer Range",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Defines how long the centrifuge will maintain the target speed before braking."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Accurate timing ensures reproducible separations and pellet dryness."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "Default is 10 min at power‑on."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "Yes; remaining time can be increased or decreased mid‑run."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "Serum separation is commonly 10 min; PRP often 5 and 12 min two‑step."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Power loss resets the timer; runs must be repeated."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Performance",
+    "level3": "Brake Levels",
+    "description": "Six electronically selectable brake profiles stop a 3500 rpm run in 30 – 150 s, protecting sensitive gradients. citeturn2view0",
+    "importance": 78,
+    "prompt": "Return JSON key brake_levels (integer) for the CM‑6MT.",
+    "output": "{\"brake_levels\":6}",
+    "parameter_name": "Brake Profiles",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Controls deceleration rate to minimize resuspension of pellets or shorten cycle time."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Gentler brakes preserve layer interfaces; hard brakes maximize throughput."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "Level 2 (≈45 s) is the factory default."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "Brake level can be changed when the rotor is at rest; setting persists in memory."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "Blood labs often use Level 3; density gradients use Level 1."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Selecting Level 6 may loosen tube caps if fill volumes are high."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Safety",
+    "level3": "Imbalance Detection",
+    "description": "Microprocessor shuts down if tube imbalance exceeds 5 g, preventing damage and sample loss. citeturn1view0",
+    "importance": 85,
+    "prompt": "Return JSON key max_imbalance_g.",
+    "output": "{\"max_imbalance_g\":5}",
+    "parameter_name": "Imbalance Tolerance",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Defines allowable weight difference between opposite buckets before protective stop."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Ensures smooth rotation and prolongs motor life."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "Factory‑set to 5 g imbalance limit."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "No; it is fixed for safety."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "Users strive for near‑perfect balance; errors trigger ‘Erdb’ fault."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Very viscous samples can create dynamic imbalance even when weights match."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Performance",
+    "level3": "Noise Level",
+    "description": "Operational noise does not exceed 61 dB(A) at 1 m, allowing placement in open labs without hearing fatigue. citeturn1view0",
+    "importance": 60,
+    "prompt": "Return JSON key noise_dbA.",
+    "output": "{\"noise_dbA\":61}",
+    "parameter_name": "Acoustic Noise",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Indicates sound pressure level during maximum‑speed runs."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Low noise improves operator comfort and allows conversation nearby."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "≤61 dB(A) as specified."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "Noise is inherent; lower speeds reduce sound output."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "Many benchtop centrifuges operate 60–65 dB(A); CM‑6MT is competitive."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Worn lid gaskets can raise noise; replace if whistling is heard."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Physical",
+    "level3": "Dimensions",
+    "description": "Compact footprint of 430 × 400 × 230 mm (16.9 × 15.7 × 9.1 in) fits easily under biosafety hoods or on crowded benches. citeturn1view0",
+    "importance": 58,
+    "prompt": "Return JSON with keys mm and inches arrays [length, width, height].",
+    "output": "{\"mm\":[430,400,230],\"inches\":[16.9,15.7,9.1]}",
+    "parameter_name": "Dimensions",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Helps plan bench space and enclosure clearances."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Does not affect centrifugation but influences placement near other instruments."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "As specified above."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "No."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "CM‑6MT is smaller than refrigerated swing‑out models that exceed 500 mm length."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Leave ≥50 mm at rear vents for proper cooling."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Physical",
+    "level3": "Weight",
+    "description": "Net mass is 13 kg (28.7 lb), light enough for one‑person relocation yet heavy enough to stay stable at top speed. citeturn1view0",
+    "importance": 55,
+    "prompt": "Return JSON keys kg and lb for unit weight.",
+    "output": "{\"kg\":13,\"lb\":28.7}",
+    "parameter_name": "Weight",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Important for shipping, bench load calculation, and ergonomic moves."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Adequate mass dampens vibration, enhancing precision."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "13 kg unboxed."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "No."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "Similar swing‑out models range 12–18 kg."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "High benches should be secured to prevent tipping during lid opening."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Electrical",
+    "level3": "Power Requirements",
+    "description": "Universal power supply accepts 100–240 V, 50/60 Hz and draws up to 250 W at full load, simplifying global deployment. citeturn1view0",
+    "importance": 70,
+    "prompt": "Return JSON with keys voltage_v, frequency_hz, max_power_w.",
+    "output": "{\"voltage_v\":\"100‑240\",\"frequency_hz\":\"50‑60\",\"max_power_w\":250}",
+    "parameter_name": "Power",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Specifies electrical service needed to operate the centrifuge."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Stable voltage ensures accurate speed control; wide input range prevents brownouts."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "Device auto‑detects mains within stated range."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "No; internal electronics handle input variation automatically."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "Average draw during routine runs is ~120 W."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Sites with unstable AC may need a conditioner to avoid ‘LV’ low‑voltage errors."
+      }
+    ]
+  }
+]
