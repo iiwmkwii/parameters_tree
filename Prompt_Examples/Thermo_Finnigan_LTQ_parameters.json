@@ -1,0 +1,362 @@
+[
+  {
+    "level1": "Instrument Specification",
+    "level2": "Performance",
+    "level3": "Mass Range",
+    "description": "The LTQ linear ion trap can acquire ions across a standard mass range of m/z 50–2000, with optional extended settings that push the lower boundary to ~15 m/z and the upper boundary to 4000 m/z for specialized workflows.",
+    "importance": 95,
+    "prompt": "Provide the supported mass-to-charge (m/z) range for the Thermo Electron Finnigan LTQ linear ion trap mass spectrometer, including standard and any extended operating modes. Return JSON with keys: min_mz, max_mz, extended_modes (list of objects with mode and range).",
+    "output": "{\"min_mz\":50,\"max_mz\":2000,\"extended_modes\":[{\"mode\":\"low-mass\",\"range\":\"15-50\"},{\"mode\":\"high-mass\",\"range\":\"2000-4000\"}]}",
+    "parameter_name": "Mass Range",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "It defines the smallest and largest m/z values the instrument can detect, determining which analytes can be measured."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "A wider mass range enables detection of diverse analytes but may trade off with resolution and scan speed at the extremes."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "Default full-scan range is m/z 50–2000."
+      },
+      {
+        "question": "Can this parameter be adjusted during acquisition?",
+        "answer": "Yes; users can program narrower or extended ranges in the tune method or sequence to optimize duty cycle."
+      },
+      {
+        "question": "What are the common values used for this parameter?",
+        "answer": "Proteomics often uses 350–1800 m/z, metabolomics 70–1000 m/z; calibration uses set points across 138–1822 m/z."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "At very low m/z (<50) ion optics transmission drops, and at >2000 high-mass ions may suffer reduced trapping efficiency."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Scanning",
+    "level3": "Scan Speed",
+    "description": "In normal full-scan mode the LTQ XL collects spectra at approximately 16 700 amu s⁻¹, while TurboScan reaches up to 125 000 amu s⁻¹, supporting rapid chromatography and data-dependent workflows.",
+    "importance": 90,
+    "prompt": "State the range of scan speeds (amu per second) available on the Thermo Finnigan LTQ, distinguishing between Normal, Enhanced and Turbo modes. Return JSON with keys mode and scan_rate_amu_per_s for each mode.",
+    "output": "[{\"mode\":\"Normal\",\"scan_rate_amu_per_s\":16666},{\"mode\":\"Enhanced\",\"scan_rate_amu_per_s\":5000},{\"mode\":\"Turbo\",\"scan_rate_amu_per_s\":125000}]",
+    "parameter_name": "Scan Speed",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "It indicates how quickly the instrument can acquire a full mass spectrum."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Higher scan speeds capture more data points across narrow chromatographic peaks but may reduce resolving power."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "Normal mode (~16 700 amu s⁻¹) is the factory default."
+      },
+      {
+        "question": "Can this parameter be adjusted during acquisition?",
+        "answer": "Yes; users select scan rate by choosing Normal, Enhanced, or Turbo in the method."
+      },
+      {
+        "question": "What are the common values used for this parameter?",
+        "answer": "Proteomic LC-MS/MS often alternates between Normal and Turbo scans to balance speed and signal-to-noise."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Turbo scans can increase electronic noise and reduce mass accuracy if ion statistics are very low."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Performance",
+    "level3": "Mass Resolution",
+    "description": "The LTQ offers nominal resolution of 0.7 FWHM across the mass range; Zoom and Ultra-Zoom modes tighten resolution to 0.3 FWHM and 0.15 FWHM respectively, enabling isotopic pattern clarity.",
+    "importance": 85,
+    "prompt": "List the full-width half-maximum (FWHM) resolution values achievable on the LTQ in Normal, Zoom, and Ultra-Zoom modes. Return JSON keys mode and FWHM.",
+    "output": "[{\"mode\":\"Normal\",\"FWHM\":0.7},{\"mode\":\"Zoom\",\"FWHM\":0.3},{\"mode\":\"Ultra-Zoom\",\"FWHM\":0.15}]",
+    "parameter_name": "Mass Resolution",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "It specifies how closely two ions with similar m/z can be distinguished."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Higher resolution improves mass accuracy and reduces spectral overlap but can slow scan speed."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "0.7 FWHM is the default in Normal mode."
+      },
+      {
+        "question": "Can this parameter be adjusted during acquisition?",
+        "answer": "Yes; method events can call Zoom or Ultra-Zoom scans for specific scan segments."
+      },
+      {
+        "question": "What are the common values used for this parameter?",
+        "answer": "Routine LC-MS/MS uses 0.7 FWHM; isotope pattern verification may use 0.3 FWHM."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Operating at 0.15 FWHM dramatically decreases ion statistics and scan speed, impacting sensitivity."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Ion Source",
+    "level3": "Ionization Techniques",
+    "description": "The system supports Heated Electrospray Ionization (HESI) and Atmospheric Pressure Chemical Ionization (APCI) sources in addition to its standard ESI probe, covering flow rates from nanoliter LC to direct infusion.",
+    "importance": 80,
+    "prompt": "Enumerate the ionization techniques available for the LTQ (ESI, HESI, APCI) and indicate suitable flow-rate ranges. Return JSON with keys technique and recommended_flow_rate_ul_min.",
+    "output": "[{\"technique\":\"ESI\",\"recommended_flow_rate_ul_min\":0.05},{\"technique\":\"HESI\",\"recommended_flow_rate_ul_min\":0.3},{\"technique\":\"APCI\",\"recommended_flow_rate_ul_min\":200}]",
+    "parameter_name": "Ionization Techniques",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Determines how analyte molecules are converted into gas-phase ions for analysis."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Choosing the appropriate ionization mode directly impacts sensitivity and ion fragmentation pathways."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "The factory configuration ships with an ESI source."
+      },
+      {
+        "question": "Can this parameter be adjusted during acquisition?",
+        "answer": "Yes; the physical probe can be swapped and method parameters (spray voltage, vaporizer temp) optimized."
+      },
+      {
+        "question": "What are the common values used for this parameter?",
+        "answer": "Proteomics commonly uses HESI at 2 kV spray voltage; small-molecule LC/MS often uses APCI with 4.5 kV corona."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "APCI can exhibit high chemical background in complex matrices, reducing mass accuracy."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Sensitivity",
+    "level3": "LOD/LOQ",
+    "description": "Vendor specifications cite sub-ppm concentration detection with limits in the low attomole-to-femtomole range for peptides when using HESI, enabling trace-level quantification.",
+    "importance": 88,
+    "prompt": "Report the limit of detection (LOD) in moles for a standard peptide (e.g., reserpine) on the LTQ using HESI. Return JSON with keys analyte and LOD_mol.",
+    "output": "{\"analyte\":\"Reserpine\",\"LOD_mol\":1e-18}",
+    "parameter_name": "Sensitivity",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Indicates the smallest quantity of analyte that can be reliably detected."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Higher sensitivity improves detection of low-abundance species, expanding dynamic range in complex samples."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "Specification sheet lists LOD of 125 fg (≈1×10⁻¹⁸ mol) for reserpine."
+      },
+      {
+        "question": "Can this parameter be adjusted during acquisition?",
+        "answer": "Indirectly; tuning source conditions, capillary temperature, and gas settings optimizes sensitivity."
+      },
+      {
+        "question": "What are the common values used for this parameter?",
+        "answer": "Proteomics methods target attomole-level detection for tryptic peptides."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Contamination and matrix effects can suppress signal, masking true sensitivity."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Scanning",
+    "level3": "MSn Capability",
+    "description": "The linear ion trap architecture allows data-dependent fragmentation up to MS¹⁰, providing rich structural elucidation for complex molecules.",
+    "importance": 92,
+    "prompt": "Specify the maximum number of sequential fragmentation stages (n) the LTQ supports and typical use-cases for high MSn depth. Return JSON keys max_n and example_applications.",
+    "output": "{\"max_n\":10,\"example_applications\":[\"glycan structure elucidation\",\"polypeptide sequencing\"]}",
+    "parameter_name": "MSn Capability",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Indicates how many rounds of fragmentation can be performed on a precursor ion."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Higher MSn depth yields detailed structural information but extends duty-cycle time."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "Methods commonly use MS² or MS³; the hardware supports up to MS¹⁰."
+      },
+      {
+        "question": "Can this parameter be adjusted during acquisition?",
+        "answer": "Yes; MSn depth is set in the instrument method for each data-dependent event."
+      },
+      {
+        "question": "What are the common values used for this parameter?",
+        "answer": "Proteomics uses MS²; metabolite-ID workflows may employ MS⁴ or MS⁵ for structural confirmation."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Extended MSn reduces total cycle speed, lowering overall spectral sampling."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Polarity Control",
+    "level3": "Polarity Switching Time",
+    "description": "The LTQ transitions between positive and negative ion modes in less than 100 ms, enabling fast polarity switching within a single chromatographic run.",
+    "importance": 75,
+    "prompt": "Provide the measured time required for the LTQ to switch between positive and negative polarity. Return JSON key switching_time_ms.",
+    "output": "{\"switching_time_ms\":100}",
+    "parameter_name": "Polarity Switching Time",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "It determines how quickly the instrument can alternate polarity to detect oppositely charged species."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Faster switching minimizes data loss during fast LC gradients that require both polarities."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "<100 ms according to manufacturer."
+      },
+      {
+        "question": "Can this parameter be adjusted during acquisition?",
+        "answer": "No; it is hardware-defined, but the user decides where to place polarity-switching events."
+      },
+      {
+        "question": "What are the common values used for this parameter?",
+        "answer": "Most methods employ polarity switching every other scan (~1 s) to balance duty cycle."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Rapid switching can momentarily destabilize the spray, causing signal dips."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Performance",
+    "level3": "Dynamic Range",
+    "description": "The instrument maintains linear response across more than a 4 000-fold concentration range within a single scan, supporting quantitative assays without signal saturation.",
+    "importance": 78,
+    "prompt": "State the dynamic range (ratio) achievable in a single scan on the LTQ. Return JSON key dynamic_range.",
+    "output": "{\"dynamic_range\":4000}",
+    "parameter_name": "Dynamic Range",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Indicates the range of ion intensities the instrument can measure accurately in one scan."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "A wide dynamic range allows simultaneous detection of high- and low-abundance species."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "Specification lists >4 000:1 within a single scan."
+      },
+      {
+        "question": "Can this parameter be adjusted during acquisition?",
+        "answer": "Not directly; dynamic range is inherent to the detector and ion-trap capacity."
+      },
+      {
+        "question": "What are the common values used for this parameter?",
+        "answer": "Quantitative workflows assume linearity across at least 3 orders of magnitude."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Very high ion counts may lead to space-charge effects, compressing the dynamic range."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Physical",
+    "level3": "Dimensions",
+    "description": "Approximate footprint is 42 cm × 34 cm × 51 cm (16.5 in × 13.4 in × 20.1 in), allowing the LTQ to fit comfortably on a standard laboratory bench with space for ancillary pumps.",
+    "importance": 60,
+    "prompt": "Provide the external dimensions (width, depth, height) of the LTQ chassis in centimeters and inches. Return JSON keys cm and inches as arrays.",
+    "output": "{\"cm\":[42,34,51],\"inches\":[16.5,13.4,20.1]}",
+    "parameter_name": "Dimensions",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Determines the bench space required for installation."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "It does not affect performance but impacts laboratory layout and ergonomics."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "See specification above."
+      },
+      {
+        "question": "Can this parameter be adjusted during acquisition?",
+        "answer": "No; it is a fixed physical property."
+      },
+      {
+        "question": "What are the common values used for this parameter?",
+        "answer": "Most units share the same chassis; variants differ by only a few centimeters."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Adequate clearance (>10 cm) is required around the vents to prevent overheating."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Physical",
+    "level3": "Weight",
+    "description": "The LTQ mass spectrometer weighs approximately 143 kg (315 lb); listings that include additional vacuum accessories report up to 177 kg.",
+    "importance": 55,
+    "prompt": "State the shipping weight of the LTQ instrument in kilograms and pounds. Return JSON keys kg and lb.",
+    "output": "{\"kg\":143,\"lb\":315}",
+    "parameter_name": "Weight",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Informs shipping, rigging, and bench-load considerations."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "It does not directly affect performance but influences vibrational stability."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "~143 kg without external pumps."
+      },
+      {
+        "question": "Can this parameter be adjusted during acquisition?",
+        "answer": "No."
+      },
+      {
+        "question": "What are the common values used for this parameter?",
+        "answer": "Units typically range 140–177 kg depending on configuration."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Floor loading must be verified for upper-level labs."
+      }
+    ]
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "level1": "Instrument Specification",
+    "level2": "Deck",
+    "level3": "Stage Configuration",
+    "description": "Six‑position stage uses an innovative dual‑level deck design, minimizing space requirements while giving flexible placement of plates or tube racks.",
+    "importance": 90,
+    "prompt": "Return a JSON object with keys positions (integer) and deck_type (string) for the Versette liquid handler.",
+    "output": "{\"positions\":6,\"deck_type\":\"dual-level\"}",
+    "parameter_name": "Stage Configuration",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "It defines the number and arrangement of usable deck locations for labware."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "More deck positions enable larger or more complex workflows without manual intervention."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "The 650‑03‑SPS model ships with 6 positions in a dual‑level configuration."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "Physical stage layout is fixed; users choose which positions to populate in each method."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "Versette models are available in 2‑ or 6‑position variants; high‑throughput labs favor 6."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Placing tall labware on the lower tier can sometimes restrict pipette head clearance if not accounted for."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Performance",
+    "level3": "Pipetting Volume Range",
+    "description": "Depending on the installed pipetting head, the system dispenses from 0.5 µL to 300 µL, covering low‑volume and bulk transfers.",
+    "importance": 95,
+    "prompt": "Return JSON with keys min_ul and max_ul indicating the minimum and maximum dispense volumes in microliters.",
+    "output": "{\"min_ul\":0.5,\"max_ul\":300}",
+    "parameter_name": "Volume Range",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "It specifies the smallest and largest liquid volumes the instrument can accurately handle."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "A broader volume range increases application flexibility but may require swapping heads for optimal accuracy."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "0.5 µL–300 µL across the full head portfolio."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "Yes; users program dispense volumes within this range in each protocol step."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "PCR setup often uses 2‑20 µL, while serial dilutions may span 10‑100 µL."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "At sub‑microliter volumes, evaporation and tip wetting can degrade accuracy if lab conditions are not controlled."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Hardware",
+    "level3": "Pipetting Heads",
+    "description": "User‑swappable 96‑ and 384‑channel air‑displacement heads identified by RFID enable rapid format changes without tools.",
+    "importance": 88,
+    "prompt": "Return a JSON array listing objects with keys head and volume_ul indicating channel count and supported volume range.",
+    "output": "[{\"head\":\"96-channel\",\"volume_ul\":\"0.5-300\"},{\"head\":\"384-channel\",\"volume_ul\":\"1-100\"}]",
+    "parameter_name": "Pipetting Heads",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Specifies the multi‑channel configurations available for parallel dispensing."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Choosing the correct head balances throughput (channel count) with volume accuracy."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "Systems typically ship without heads; users add heads matching their workflow."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "Heads can be manually swapped between runs; the deck will not move while a head change is in progress."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "High‑throughput screening uses 384‑channel heads; sample prep often uses 96‑channel."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Heads must be recalibrated periodically to maintain accuracy, especially after transport."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Performance",
+    "level3": "Pipetting Resolution",
+    "description": "The control electronics deliver volume increments as fine as 0.1 µL for precise dispenses and serial dilutions.",
+    "importance": 80,
+    "prompt": "Return JSON with key resolution_ul for minimal programmable increment in microliters.",
+    "output": "{\"resolution_ul\":0.1}",
+    "parameter_name": "Pipetting Resolution",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Defines the smallest change in volume that can be set in software."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Higher resolution allows fine titrations and accurate standard curve preparations."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "0.1 µL as factory setting."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "No; it is hardware‑defined but affects method programming."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "Biochemical assays often step volumes by 1‑5 µL; resolution ensures each step is consistent."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "None noted, though mechanical backlash can limit practical resolution at very low volumes."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Performance",
+    "level3": "Pipetting Accuracy",
+    "description": "Factory‑calibrated accuracy is ±2.0 % or fixed offset (whichever is greater) across supported heads, e.g., ±0.15 µL at 7.5 µL on the 0.5–30 µL 96‑channel head.",
+    "importance": 85,
+    "prompt": "Return a JSON array with keys head and accuracy for each pipette head specification.",
+    "output": "[{\"head\":\"96‑channel 0.5–30 µL\",\"accuracy\":\"±2.0 % or 0.15 µL\"},{\"head\":\"96‑channel 5–300 µL\",\"accuracy\":\"±2.0 % or 1.00 µL\"},{\"head\":\"384‑channel 1–100 µL\",\"accuracy\":\"±2.0 % or 0.50 µL\"}]",
+    "parameter_name": "Pipetting Accuracy",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Indicates how close dispensed volumes are to target values."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Greater accuracy improves quantitative assay reliability and reduces need for replicate corrections."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "±2 % or fixed offset depending on head and volume range."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "Users can run calibration routines to restore accuracy if deviations are detected."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "Most assays accept ±5 %; Versette exceeds this with ±2 %."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Temperature fluctuations and tip quality can influence achieved accuracy."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Performance",
+    "level3": "Pipetting Precision",
+    "description": "Coefficient of variation (CV) better than ±1.5 % or ≤0.10 µL for low‑volume 96‑channel operation ensures reliable replicates.",
+    "importance": 84,
+    "prompt": "Return a JSON array with keys head and precision for each pipette head specification.",
+    "output": "[{\"head\":\"96‑channel 0.5–30 µL\",\"precision\":\"±1.5 % or 0.10 µL\"},{\"head\":\"96‑channel 5–300 µL\",\"precision\":\"±1.5 % or 0.75 µL\"},{\"head\":\"384‑channel 1–100 µL\",\"precision\":\"±1.5 % or 0.25 µL\"}]",
+    "parameter_name": "Pipetting Precision",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Shows repeatability of dispensed volumes across multiple channels and cycles."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Higher precision reduces intra‑assay variability and improves statistical power."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "CV ≤1.5 % or a small fixed volume, depending on head."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "Precision is inherent; however, optimizing liquid class settings can enhance it for difficult fluids."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "<2 % CV is typical for high‑quality liquid handlers; Versette meets or exceeds this."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Foaming or viscous liquids can increase variability; specialized protocols mitigate this."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Compatibility",
+    "level3": "Supported Labware",
+    "description": "Accepts standard 96‑ and 384‑well plates of varying heights plus Thermo racks for storage tubes, broadening application reach.",
+    "importance": 70,
+    "prompt": "Return JSON key labware containing an array of supported labware types.",
+    "output": "{\"labware\":[\"96‑well plates\",\"384‑well plates\",\"racked storage tubes\"]}",
+    "parameter_name": "Compatible Labware",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Outlines which plates or vessels can be loaded onto the deck."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Wider compatibility enables diverse workflows without custom adapters."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "Standard SBS‑format plates and Thermo racks are recognized out‑of‑the‑box."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "Users can define custom labware in ControlMate software for non‑standard items."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "Most labs alternate between 96 deep‑well and 384 PCR plates."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Tall labware may exceed pipette Z‑axis clearance if upper deck is occupied."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Physical",
+    "level3": "Dimensions",
+    "description": "Overall footprint is 68 cm × 68 cm × 55.9 cm (27 in × 27 in × 22 in), allowing installation on standard benches and within biosafety hoods.",
+    "importance": 60,
+    "prompt": "Return JSON with keys cm and inches, each an array [width, depth, height].",
+    "output": "{\"cm\":[68,68,55.9],\"inches\":[27,27,22]}",
+    "parameter_name": "Dimensions",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Helps plan bench space, enclosure size, and ergonomic reach."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Dimensions do not affect pipetting but impact placement under hoods or enclosures."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "As specified by Thermo Fisher Scientific datasheet."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "No; fixed physical property."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "All Versette 6‑position units share these dimensions."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Ensure at least 5 cm clearance at rear vents for cooling airflow."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Physical",
+    "level3": "Weight",
+    "description": "Base unit weighs approximately 69 kg (152 lb) without pipetting head, ensuring stability during high‑speed plate movements.",
+    "importance": 55,
+    "prompt": "Return JSON keys kg and lb for the shipping weight.",
+    "output": "{\"kg\":69,\"lb\":152}",
+    "parameter_name": "Weight",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Important for shipping, bench load capacity, and ergonomic considerations."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Heavier frame reduces vibration, improving pipetting precision."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "≈69 kg without installed head."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "Weight is fixed; adding optional modules increases total mass slightly."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "Units typically range 58‑70 kg depending on accessories."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Second‑floor labs should verify floor load ratings for heavy automation."
+      }
+    ]
+  },
+  {
+    "level1": "Instrument Specification",
+    "level2": "Control",
+    "level3": "Software & Interface",
+    "description": "Features an onboard color touchscreen for simple methods, or Thermo Scientific ControlMate PC software via RS‑232; compatible with Windows XP SP3 and Windows 7 (32/64‑bit).",
+    "importance": 75,
+    "prompt": "Return JSON with keys onboard_touchscreen (bool), pc_software (string), interface (string), supported_OS (array).",
+    "output": "{\"onboard_touchscreen\":true,\"pc_software\":\"ControlMate\",\"interface\":\"RS232\",\"supported_OS\":[\"Windows XP SP3\",\"Windows 7 32‑bit\",\"Windows 7 64‑bit\"]}",
+    "parameter_name": "Control & Interface",
+    "FAQs": [
+      {
+        "question": "What is the purpose of this parameter?",
+        "answer": "Describes how users create, edit, and run liquid‑handling protocols."
+      },
+      {
+        "question": "How does this parameter affect the model's performance?",
+        "answer": "Advanced PC software unlocks complex scheduling and custom labware definitions."
+      },
+      {
+        "question": "What are the default values for this parameter?",
+        "answer": "Onboard touchscreen enabled; ControlMate available at no extra cost."
+      },
+      {
+        "question": "Can this parameter be adjusted during operation?",
+        "answer": "Users can switch between local and PC control modes without rebooting."
+      },
+      {
+        "question": "What are common values for this parameter?",
+        "answer": "Most users design methods in ControlMate and trigger them via the touchscreen."
+      },
+      {
+        "question": "Are there any known issues with this parameter?",
+        "answer": "Legacy RS‑232 requires USB adapters on modern PCs; driver installation may be needed."
+      }
+    ]
+  }
+]
